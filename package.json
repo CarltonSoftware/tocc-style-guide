@@ -8,12 +8,15 @@
     "create": "node src/scripts/start.js $*",
     "buildcss": "node src/scripts/build.js $*",
     "start": "PORT=7777 react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "react-scripts build && cp CNAME build/CNAME",
+    "deploy": "gh-pages -d build",
   },
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.7.4",
     "fs-extra": "^7.0.1",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "object-path": "^0.11.4",
     "prop-types": "^15.7.2",
