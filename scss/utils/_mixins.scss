@@ -1,0 +1,24 @@
+@mixin ellipsis() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin clearfix(){
+  &:before,
+  &:after{
+    content: " "; 
+    display: table; 
+  }
+
+  &:after{
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  &{
+    *zoom: 1;
+  }
+}
