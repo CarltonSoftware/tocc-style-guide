@@ -28,7 +28,7 @@ class NavBar extends React.Component {
       <nav className="navbar">
         <div className="navbar-brand">
           <NavLink className="navbar-item" to={ { pathname: '/' } }>
-            <img src={ process.env.PUBLIC_URL + '/img/logo.gif' } alt="The Criginal Cottage Company" height="28" />
+            <img src={ process.env.PUBLIC_URL + '/img/logo.gif' } alt="The Criginal Cottage Company" />
           </NavLink>
 
           <ToggleClassButton className="navbar-burger burger" target="navbarBasicExample">
@@ -56,6 +56,7 @@ class NavBar extends React.Component {
           </div>
 
           <div className="navbar-end">
+            { this.props.Tabs.user && <div className="navbar-item">{ this.props.Tabs.user.getFullName() }</div> }
             <div className="navbar-item">
               <div className="buttons">
                 { !this.props.Tabs.user && this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && <button className="button is-light" onClick={ this.whoAmi.bind(this) }>Login</button> }

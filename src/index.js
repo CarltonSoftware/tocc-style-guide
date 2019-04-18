@@ -24,18 +24,10 @@ if (window.location.hash) {
   window.location = l;
 }
 
-if (!client.getInstance().token) {
-  ReactDOM.render(
-    <Provider store={store()}>
-      <Login />
-    </Provider>,
-    document.getElementById('root')
-  );
-} else {
-  ReactDOM.render(
-    <Provider store={store()}>
-      <App />
-    </Provider>,
-    document.getElementById('root')
-  );
-}
+ReactDOM.render(
+  <Provider store={store()}>
+    { !client.getInstance().token && <Login /> }
+    { client.getInstance().token && <App /> }
+  </Provider>,
+  document.getElementById('root')
+);

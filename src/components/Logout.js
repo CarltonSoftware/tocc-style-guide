@@ -9,8 +9,12 @@ class Logout extends React.Component {
 
   render() {
     return (
-      <div className="LogoutScreen">
-        You have been logged out.
+      <div className="container">
+        <div className="columns">
+          <div className="column">
+            You have been logged out.
+          </div>
+        </div>
       </div>
     );
   }
