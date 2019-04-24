@@ -5,6 +5,14 @@ import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
 
 class Element extends React.Component {
+  getCssPath() {
+    return '../../../css/1/index.css';
+  }
+
+  getScss() {
+    return this.getCssPath();
+  }
+
   render() {
     if (!elements[this.props.match.params.element] 
       || elements[this.props.match.params.element].length === 0
@@ -25,8 +33,9 @@ class Element extends React.Component {
       );
     }
 
-    const style = require('../../../scss/' + this.props.match.params.element + '/vanilla/_' + this.props.match.params.item + '.scss');
-    console.log(style.toString());
+    import('../../scss/1.scss').then((t) => {
+      console.log(t);
+    });
 
     return (
       <div className="container ElementListScreen">

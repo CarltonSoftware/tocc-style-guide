@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 const moment = require('moment');
 const utils = require('./utils');
 
-const basescsspath = __dirname + '/../../scss/';
+const basescsspath = __dirname + '/../scss/';
 const basejspath = __dirname + '/../';
 
 const createCssFile = (me, responses, brand, brandname, additional) => {
