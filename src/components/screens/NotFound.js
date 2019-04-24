@@ -1,10 +1,10 @@
 import React from 'react';
-import connect from '../connect';
+import connect from '../../connect';
 
 class NotFound extends React.Component {
   render() {
     return (
-      <div className="NotFoundScreen">
+      <div className="container NotFoundScreen">
         <h1>Sorry :(</h1>
         <p>Page not found</p>
       </div>

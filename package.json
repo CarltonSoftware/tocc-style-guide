@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Alex Wyett",
   "scripts": {
-    "create": "node src/scripts/start.js $*",
+    "createelement": "node src/scripts/start.js $*",
     "buildcss": "node src/scripts/build.js $*",
     "start": "PORT=7777 react-scripts start",
     "build": "react-scripts build",

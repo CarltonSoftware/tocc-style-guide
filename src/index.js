@@ -9,7 +9,7 @@ import Login from './components/Login';
 client.getInstance().setInstance({
   apiRoot: 'https://toccl.test.api.tabs-software.co.uk',
   apiPrefix: '/v2',
-  oAuthRedirectUrl: window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/oauth',
+  oAuthRedirectUrl: window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/oauth.html',
   clientId: '16_41n59rhkvnqc408400scg4soww4goo0koc8gksg8oggwwc44co',
 });
 
