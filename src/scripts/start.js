@@ -15,6 +15,17 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
   var utillines = utils.getUtilLines(
     '../../utils'
   );
+
+  fs.ensureFileSync(basescsspath + '/variables/_vanilla.scss');
+  fs.ensureFileSync(basescsspath + '/variables/_' +  brand + '.scss');
+
+  utillines.push('');
+  utillines.push('// Include global variables');
+  if (brand !== 'vanilla') {
+    utillines.push('@import \'../../variables/vanilla\';');
+  }
+  utillines.push('@import \'../../variables/' + brand + '\';');
+
   fs.writeFileSync(
     cssFile, [
       '/**',
@@ -78,6 +89,11 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
   });
 
   fs.writeFileSync(elementsSrc, JSON.stringify(elementsSrcJson));
+
+  // Create snippet
+  var snippetPath = __dirname + '/../../public/snippets/' + responses.type + '/' + responses.name + '.html';
+  fs.ensureFileSync(snippetPath);
+  fs.writeFileSync(snippetPath, '<div><div>');
 
   // Create vanilla type
   createCssFile(me, responses, 'vanilla', 'Vanilla', []);

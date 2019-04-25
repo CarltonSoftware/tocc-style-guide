@@ -5,7 +5,7 @@ const whoAmi = require('tabsutils/utils/whoAmi');
 const fs = require('fs-extra');
 const utils = require('./utils');
 const basescsspath = __dirname + '/../scss/';
-const basecsspath = __dirname + '/../../css/';
+const basecsspath = __dirname + '/../../public/css/';
 const getdir = utils.getdir;
 const getbranddir = utils.getbranddir;
 const getfilepath = utils.getfilepath;
@@ -28,6 +28,7 @@ const sass = require('node-sass');
 
   // Loop through all of the brands to create a new file
   const marketingbrands = await clientUtils.getCollection(instance, 'MarketingBrand');
+  marketingbrands.push({ id: 'vanilla' })
   marketingbrands.forEach((mb) => {
     const baseCssPath = basecsspath + mb.id;
     const scssPath = basescsspath + mb.id + '.scss';

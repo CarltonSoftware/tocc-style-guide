@@ -54,6 +54,26 @@ class NavBar extends React.Component {
                   { links }
                 </div>
               </div> }
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a href="#" className="navbar-link">
+                  { this.props.Tabs.selectedMarketingBrand ? this.props.Tabs.selectedMarketingBrand.name : 'Vanilla'} Theme
+                </a>
+
+                { this.props.Tabs.MarketingBrand && <div className="navbar-dropdown">
+                  <a href="#" onClick={ () => { this.props.selectMarketingBrand(this.props.Tabs.user, null); } } className="navbar-item">Vanilla</a>
+                  { 
+                    this.props.Tabs.MarketingBrand.map((mb, i) => {
+                      const selectMb = () => {
+                        this.props.selectMarketingBrand(this.props.Tabs.user, mb);
+                      };
+                      return (
+                        <a key={i} href="#" onClick={ selectMb } className="navbar-item">{ mb.name }</a>
+                      );
+                    })
+                  }
+                </div> }
+              </div>
             </div>
 
             <div className="navbar-end">

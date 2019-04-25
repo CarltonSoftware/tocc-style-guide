@@ -39,7 +39,7 @@ const Tabs = (state = {}, action) => {
   case EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_START:
   case EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_SUCCESS:
   case EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_ERROR:
-    collection = objectPath.get(state, action.collectionpath);
+    collection = objectPath.get(state, action.objectpath);
     if (!collection) {
       return state;
     }
@@ -58,10 +58,10 @@ const Tabs = (state = {}, action) => {
     }
 
     if (action.error) {
-      action.error.namespace = action.collectionpath;
+      action.error.namespace = action.objectpath;
     }
 
-    objectPath(state).set(action.collectionpath, collection);
+    objectPath(state).set(action.objectpath, collection);
     break;
   }
 
@@ -106,6 +106,8 @@ const Tabs = (state = {}, action) => {
     return { ...state, updatingsettings: false };
   case EVENTS.GET_CURRENTUSER_SUCCESS:
     return {...state, user: action.user };
+  case EVENTS.SELECT_MARKETINGBRAND:
+    return {...state, selectedMarketingBrand: action.marketingBrand };
   case EVENTS.GET_CURRENTUSER_ERROR:
   case EVENTS.LOGOUT:
     return {...state, user: undefined };

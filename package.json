@@ -5,8 +5,8 @@
   "main": "index.js",
   "author": "Alex Wyett",
   "scripts": {
-    "createelement": "node src/scripts/start.js $*",
-    "buildcss": "node src/scripts/build.js $*",
+    "createelement": "node src/scripts/start.js",
+    "buildcss": "node src/scripts/build.js && cp -R src/scss/fonts ./public/fonts",
     "start": "PORT=7777 react-scripts start",
     "build": "react-scripts build",
     "predeploy": "react-scripts build && cp CNAME build/CNAME",

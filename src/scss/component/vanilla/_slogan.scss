@@ -10,6 +10,27 @@
 // Include Utilities
 @import '../../utils/index';
 
+$slogan-font-color: #999 !default;
+$slogan-font-size: 18px !default;
+$slogan-line-height: 28px !default;
+$slogan-font-family: null !default;
+$slogan-font-weight: null !default;
+
 .slogan {
-	font-size: 18px;
+  font-size: $slogan-font-size;
+  line-height: $slogan-line-height;
+  margin: 0;
+  padding: $site-padding / 2 0;
+  border: 0 none;
+  color: $slogan-font-color;
+  
+  @if $slogan-font-weight != null {
+    font-weight: $slogan-font-weight;
+  }
+
+  font-family: sans-serif;
+  
+  @if $slogan-font-family != null {
+    font-family: $slogan-font-family;
+  }
 }

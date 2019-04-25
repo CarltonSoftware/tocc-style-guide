@@ -2,6 +2,13 @@ import { client, common } from 'plato-js-client';
 import * as EVENTS from '../events';
 import * as Utils from '../utils';
 
+const marketingBrand_settingname = 'toccstyleguide__selectedMarketingBrand';
+const getSelectedMarketingBrandSetting = (actor, settingName) => {
+  return actor.settings.filter(function(setting) {
+    return setting.name === settingName;
+  }).shift();
+};
+
 export const whoAmi = function() {
   return function(dispatch) {
     dispatch({
@@ -13,6 +20,14 @@ export const whoAmi = function() {
 
       var a = new actor(response.entity.id);
       a.mutateResponse(response.entity);
+
+      var setting = getSelectedMarketingBrandSetting(a, marketingBrand_settingname);
+      if (setting) {
+        dispatch({
+          type: EVENTS.SELECT_MARKETINGBRAND,
+          marketingBrand: setting.getDecodedValue().pop()
+        });
+      }
 
       // Load root
       client.getInstance().getRootCacheable().then(function(json) {
@@ -54,16 +69,14 @@ export const logOut = function() {
   }
 };
 
-export const addUpdateActorSettingValueByIndex = function(actor, settingName, data, index) {
+export const addUpdateActorSettingValueByIndex = function(actor, settingName, data, index, callback) {
   return function(dispatch) {
 
     dispatch({
       type: EVENTS.CURRENTUSER_SETTING_START
     });
 
-    var setting = actor.settings.filter(function(setting) {
-      return setting.name === settingName;
-    }).shift();
+    var setting = getSelectedMarketingBrandSetting(actor, settingName);
 
     if (!setting) {
       setting = new common.ActorSetting();
@@ -103,15 +116,43 @@ export const addUpdateActorSettingValueByIndex = function(actor, settingName, da
       objectpath: 'user.settings'
     });
 
-    setting.update().then(function() {
+    var p;
+    if (setting.id) {
+      p = setting.update();
+    } else {
+      p = setting.create();
+    }
+
+    p.then(function() {
       dispatch({
         type: EVENTS.CURRENTUSER_SETTING_SUCCESS
       });
+
+      if (typeof callback === 'function') {
+        callback.call(this);
+      }
     }).catch(function(error) {
       dispatch({
-        type: EVENTS.GET_CURRENTUSER_ERROR,
+        type: EVENTS.CURRENTUSER_SETTING_ERROR,
         error: error
       });
     });
+  }
+};
+
+
+export const selectMarketingBrand = function(actor, marketingBrand) {
+  return function(dispatch) {
+    dispatch(
+      addUpdateActorSettingValueByIndex(
+        actor,
+        marketingBrand_settingname,
+        marketingBrand === null ? marketingBrand : { id: marketingBrand.id, name: marketingBrand.name },
+        marketingBrand === null ? -1 : 0,
+        function() {
+          window.location.reload()
+        }
+      )
+    );
   }
 };
