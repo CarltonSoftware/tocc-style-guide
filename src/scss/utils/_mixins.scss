@@ -4,7 +4,7 @@
   white-space: nowrap;
 }
 
-@mixin clearfix(){
+@mixin clearfix() {
   &:before,
   &:after{
     content: " "; 
@@ -21,4 +21,12 @@
   &{
     *zoom: 1;
   }
+}
+
+@mixin title() {
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }

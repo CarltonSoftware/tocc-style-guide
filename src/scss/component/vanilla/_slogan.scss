@@ -10,13 +10,17 @@
 // Include Utilities
 @import '../../utils/index';
 
+// Include global variables
+@import '../../variables/vanilla';
+
 $slogan-font-color: #999 !default;
 $slogan-font-size: 18px !default;
 $slogan-line-height: 28px !default;
 $slogan-font-family: null !default;
 $slogan-font-weight: null !default;
+$slogan-font-transform: null !default;
 
-.slogan {
+.tocc__slogan {
   font-size: $slogan-font-size;
   line-height: $slogan-line-height;
   margin: 0;
@@ -32,5 +36,9 @@ $slogan-font-weight: null !default;
   
   @if $slogan-font-family != null {
     font-family: $slogan-font-family;
+  }
+  
+  @if $slogan-font-transform != null {
+    text-transform: $slogan-font-transform;
   }
 }

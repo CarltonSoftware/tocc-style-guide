@@ -8,14 +8,7 @@ class Element extends React.Component {
   constructor(props) {
     super(props);
 
-    let mb = {
-      id: 'vanilla'
-    };
-    if (props.Tabs.selectedMarketingBrand) {
-      mb = props.Tabs.selectedMarketingBrand;
-    }
-
-    import('../../scss/' + mb.id + '.scss');
+    this.importScss(props);
 
     this.state = {
       loadingHtml: false,
@@ -24,13 +17,23 @@ class Element extends React.Component {
     };
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.Tabs.selectedMarketingBrand) {
-      import('../../scss/' + this.props.Tabs.selectedMarketingBrand.id + '.scss');
+  importScss(props) {
+    let mb = {
+      id: 'vanilla'
+    };
+    if (props.Tabs.selectedMarketingBrand) {
+      mb = props.Tabs.selectedMarketingBrand;
     }
 
-    if (this.props.match.params.item !== prevProps.match.params.item) {
-      this.loadHtml()
+    import('../../scss/' + props.match.params.element + '/' + mb.id + '/_' + props.match.params.item + '.scss');
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params.element !== prevProps.match.params.element 
+      || this.props.match.params.item !== prevProps.match.params.item
+    ) {
+      this.importScss(this.props);
+      this.loadHtml();
     }
   }
 
@@ -56,7 +59,14 @@ class Element extends React.Component {
     var styles = document.getElementsByTagName('style');
     var style = styles[styles.length - 1];
 
-    return style.innerText;
+    for (var i = 0; i < styles.length; i++) {
+      const m = '@filename _' + this.props.match.params.item + '.scss';
+      if (styles[i].innerText.indexOf(m) >= 0) {
+        return styles[i].innerText;
+      }
+    }
+
+    return null;
   }
 
   render() {

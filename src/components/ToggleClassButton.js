@@ -3,8 +3,7 @@ import React from 'react';
 class ToggleClassButton extends React.Component {
 
   toggleClass(event) {
-    const target = event.target.dataset.target;
-    const $target = document.getElementById(target);
+    const $target = document.getElementById(event.target.dataset.target);
     event.target.classList.toggle('is-active');
     $target.classList.toggle('is-active');
   }

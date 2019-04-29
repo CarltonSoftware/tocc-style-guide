@@ -28,19 +28,19 @@ class NavBar extends React.Component {
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <NavLink className="navbar-item" to={ { pathname: '/' } }>
+            <a className="navbar-item" href="/">
               <img src={ process.env.PUBLIC_URL + '/img/logo.gif' } alt="The Original Cottage Company" />
-            </NavLink>
+            </a>
 
-            <ToggleClassButton className="navbar-burger burger" target="navbarBasicExample">
+            <ToggleClassButton className="navbar-burger burger" target="mainnavsection">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </ToggleClassButton>
           </div>
 
-          <div id="navbarBasicExample" className="navbar-menu">
-            <div className="navbar-start">
+          <div id="mainnavsection" className="navbar-menu">
+            { this.props.Tabs.state !== EVENTS.LOGOUT && <div className="navbar-start">
               <NavLink className="navbar-item" to={ { pathname: '/' } }>
                 Home
               </NavLink>
@@ -74,7 +74,7 @@ class NavBar extends React.Component {
                   }
                 </div> }
               </div>
-            </div>
+            </div> }
 
             <div className="navbar-end">
               { this.props.Tabs.user && <div className="navbar-item">{ this.props.Tabs.user.getFullName() }</div> }

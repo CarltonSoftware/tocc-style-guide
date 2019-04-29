@@ -10,5 +10,11 @@
 // Include Utilities
 @import '../../utils/index';
 
+// Include global variables
+@import '../../variables/vanilla';
+@import '../../variables/26';
+
+$slogan-font-family: $oswald;
+$slogan-font-transform: uppercase;
 
 @import '../vanilla/slogan';

@@ -1,13 +1,16 @@
 import React from 'react';
+import CenteredHero from '../CenteredHero';
 import connect from '../../connect';
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="container HomeScreen">
-        <p>Home Screen</p>
-      </div>
-    );
+      <CenteredHero size="is-large">
+        <h1 className="title">
+          <p>Home Screen</p>
+        </h1>
+      </CenteredHero>
+    )
   }
 }
 
