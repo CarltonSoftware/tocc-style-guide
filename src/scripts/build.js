@@ -69,7 +69,7 @@ const sass = require('node-sass');
               ]
             ).join('\n'),
             outputStyle: 'expanded'
-          }).css.toString()
+          }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '')
         );
 
         // Add element import to main css file
@@ -106,7 +106,7 @@ const sass = require('node-sass');
 
     fs.writeFileSync(
       baseCssPath + '/index.css',
-      result.css.toString()
+      result.css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '')
     );
 
     // Remove map file

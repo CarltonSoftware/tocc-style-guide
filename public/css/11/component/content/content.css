@@ -1,0 +1,60 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _content.scss
+ * @brand    Flagship Holiday Homes
+ * @name     content
+ * @author   Alex Wyett
+ * @date     2019-04-25
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _content.scss
+ * @brand    Vanilla
+ * @name     content
+ * @author   Alex Wyett
+ * @date     2019-04-25
+ */
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  padding: 0.5rem 0;
+}
+
+.tocc__content h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.tocc__content h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.tocc__content h3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.tocc__content h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tocc__content h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tocc__content p {
+  font-size: 14px;
+  line-height: 1.8;
+}

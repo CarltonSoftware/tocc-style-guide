@@ -12,18 +12,31 @@ class Element extends React.Component {
 
     this.state = {
       loadingHtml: false,
+      loadingCss: false,
       html: '',
-      view: 'View'
+      css: '',
+      view: 'Preview'
     };
   }
 
-  importScss(props) {
+  getMb(props) {
     let mb = {
       id: 'vanilla'
     };
+
+    if (!props) {
+      props = this.props;
+    }
+
     if (props.Tabs.selectedMarketingBrand) {
       mb = props.Tabs.selectedMarketingBrand;
     }
+
+    return mb;
+  }
+
+  importScss(props) {
+    let mb = this.getMb(props);
 
     import('../../scss/' + props.match.params.element + '/' + mb.id + '/_' + props.match.params.item + '.scss');
   }
@@ -34,6 +47,7 @@ class Element extends React.Component {
     ) {
       this.importScss(this.props);
       this.loadHtml();
+      this.loadCss();
     }
   }
 
@@ -47,26 +61,24 @@ class Element extends React.Component {
     });
   }
 
+  loadCss() {
+    let mb = this.getMb();
+    this.setState({ loadingCss: true}, () => {
+      fetch(process.env.PUBLIC_URL + '/css/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
+        res.text().then((css) => {
+          this.setState({ loadingCss: false, css: css });
+        });
+      });
+    });
+  }
+
   componentDidMount() {
     this.loadHtml();
+    this.loadCss();
   }
 
   setView(event) {
     this.setState({ view: event.target.innerHTML });
-  }
-
-  getScss() {
-    var styles = document.getElementsByTagName('style');
-    var style = styles[styles.length - 1];
-
-    for (var i = 0; i < styles.length; i++) {
-      const m = '@filename _' + this.props.match.params.item + '.scss';
-      if (styles[i].innerText.indexOf(m) >= 0) {
-        return styles[i].innerText;
-      }
-    }
-
-    return null;
   }
 
   render() {
@@ -99,7 +111,7 @@ class Element extends React.Component {
         </div>
         <div className="tags is-small">
           { 
-            ['View', 'Text', 'Scss'].map((t, i) => {
+            ['Preview', 'HTML', 'CSS'].map((t, i) => {
               let cls = ['tag'];
               if (this.state.view === t) {
                 cls.push('is-primary');
@@ -110,9 +122,9 @@ class Element extends React.Component {
             })
           }
         </div>
-        { this.state.view === 'View' && <div dangerouslySetInnerHTML={ {__html: this.state.html } } /> }
-        { this.state.view === 'Text' && <pre>{ this.state.html }</pre> }
-        { this.state.view === 'Scss' && <pre>{ this.getScss() }</pre> }
+        { this.state.view === 'Preview' && <div dangerouslySetInnerHTML={ {__html: this.state.html } } /> }
+        { this.state.view === 'HTML' && <pre>{ this.state.html }</pre> }
+        { this.state.view === 'CSS' && <pre>{ this.state.css }</pre> }
         { this.props.children }
       </div>
     );
