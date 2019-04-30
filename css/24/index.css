@@ -7,6 +7,35 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _slogan.scss
+ * @brand    Vanilla
+ * @name     slogan
+ * @author   Alex Wyett
+ * @date     2019-04-24
+ */
+.tocc__slogan {
+  font-size: 28px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0.5rem 0;
+  border: 0 none;
+  color: #999;
+  font-family: sans-serif;
+  font-family: "wheatland";
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _content.scss
+ * @brand    Suffolk Cottage Holidays
+ * @name     content
+ * @author   Alex Wyett
+ * @date     2019-04-25
+ */
 @font-face {
   font-family: 'wheatland';
   src: url("/fonts/24/wheatland/wheatland.eot");
@@ -18,18 +47,51 @@
 /**
  * TOCC Style Guide Element
  * 
- * @filename _slogan.scss
+ * @filename _content.scss
  * @brand    Vanilla
- * @name     slogan
+ * @name     content
  * @author   Alex Wyett
- * @date     2019-04-24
+ * @date     2019-04-25
  */
-.slogan {
-  font-size: 18px;
-  line-height: 28px;
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
   margin: 0;
+  padding: 0;
   padding: 0.5rem 0;
-  border: 0 none;
-  color: #999;
-  font-family: "wheatland";
+}
+
+.tocc__content h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.tocc__content h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.tocc__content h3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.tocc__content h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tocc__content h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tocc__content p {
+  font-size: 14px;
+  line-height: 1.8;
 }
