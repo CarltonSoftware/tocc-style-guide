@@ -101,6 +101,8 @@ class Element extends React.Component {
       );
     }
 
+    const cdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/" + this.getMb().id;
+
     return (
       <div className="container ElementListScreen">
         <ElementSubNav element={ this.props.match.params.element } />
@@ -111,7 +113,7 @@ class Element extends React.Component {
         </div>
         <div className="tags is-small">
           { 
-            ['Preview', 'HTML', 'CSS'].map((t, i) => {
+            ['Preview', 'HTML', 'CSS', 'Use'].map((t, i) => {
               let cls = ['tag'];
               if (this.state.view === t) {
                 cls.push('is-primary');
@@ -125,6 +127,22 @@ class Element extends React.Component {
         { this.state.view === 'Preview' && <div dangerouslySetInnerHTML={ {__html: this.state.html } } /> }
         { this.state.view === 'HTML' && <pre>{ this.state.html }</pre> }
         { this.state.view === 'CSS' && <pre>{ this.state.css }</pre> }
+        { this.state.view === 'Use' && <div className="content">
+          <h3>Usage instructions</h3>
+          <ol>
+            <li>Add the following into the &lt;head&gt; tag:
+              <pre>
+                &lt;link rel="stylesheet" type="text/css" href="{cdn}/index.css" /&gt;
+              </pre>
+            </li>
+            <li>Alternatively, if you just want the css for this component, add the following::
+              <pre>
+                &lt;link rel="stylesheet" type="text/css" href="{cdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
+              </pre>
+            </li>
+            <li>Use the html shown in the markup tab to create your element.</li>
+          </ol>
+        </div> }
         { this.props.children }
       </div>
     );
