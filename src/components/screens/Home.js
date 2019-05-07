@@ -4,13 +4,13 @@ import connect from '../../connect';
 class Home extends React.Component {
   render() {
     return (
-      <section class="hero">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
+      <section className="hero">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">
               The Original Cottage Company
             </h1>
-            <h2 class="subtitle">
+            <h2 className="subtitle">
               Style Guide
             </h2>
             <p>This site is intended to be a store of the components used in TOCC web applications.</p>

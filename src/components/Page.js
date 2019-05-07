@@ -12,9 +12,9 @@ class Page extends React.Component {
         <NavBar />
         { this.props.Tabs.state === EVENTS.GET_CURRENTUSER_START && <div className="container"><p>Please wait...</p></div> }
         { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && this.props.children }
-        <footer class="footer">
+        <footer className="footer">
          	<div className="container">
-      		  <div class="content">
+      		  <div className="content">
       		    <p>
       		      <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank">IT/Marketing</a>.
       		    </p>
