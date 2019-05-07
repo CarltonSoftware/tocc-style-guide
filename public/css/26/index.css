@@ -1,12 +1,4 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _slogan.scss
- * @brand    Good Life Lake District Cottages
- * @name     slogan
- * @author   Alex Wyett
- * @date     2019-04-24
- */
+
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 /**
  * TOCC Style Guide Element
@@ -17,6 +9,7 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 .tocc__slogan {
   font-size: 18px;
@@ -98,4 +91,36 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline_special_offer.scss
+ * @brand    Good Life Lake District Cottages
+ * @name     strapline_special_offer
+ * @author   Mr George Crisan
+ * @date     2019-05-07
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline_special_offer.scss
+ * @brand    Vanilla
+ * @name     strapline_special_offer
+ * @author   Mr George Crisan
+ * @date     2019-05-07
+ */
+.tabsapiproperty__specialoffers__item {
+  border: 1px solid black;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.tabsapiproperty__specialoffers__item span {
+  color: red;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -1,12 +1,4 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _content.scss
- * @brand    Good Life Lake District Cottages
- * @name     content
- * @author   Alex Wyett
- * @date     2019-04-25
- */
+
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 .tocc__content h1,
 .tocc__content h2,

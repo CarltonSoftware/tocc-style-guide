@@ -58,7 +58,7 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
     name: 'name',
     message: 'Enter the element name you want to create.',
     validate: (value) => {
-      if ((/^[a-z]+$/.test(value))) {
+      if ((/^[a-z_]+$/.test(value))) {
         return true;
       } else {
         return 'Only lower case letters with no additional formatting is allowed.';
