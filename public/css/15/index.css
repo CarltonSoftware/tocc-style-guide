@@ -1,4 +1,15 @@
 
+h1.tocc__title,
+h2.tocc__title,
+h3.tocc__title,
+h4.tocc__title,
+h5.tocc__title,
+h6.tocc__title,
+h1, h2, h3, h4, h5, h6 {
+  color: #888569;
+  font-weight: bold !important;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -27,6 +38,17 @@
  * @author   Alex Wyett
  * @date     2019-04-25
  */
+h1.tocc__title,
+h2.tocc__title,
+h3.tocc__title,
+h4.tocc__title,
+h5.tocc__title,
+h6.tocc__title,
+h1, h2, h3, h4, h5, h6 {
+  color: #888569;
+  font-weight: bold !important;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -88,6 +110,17 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
+h1.tocc__title,
+h2.tocc__title,
+h3.tocc__title,
+h4.tocc__title,
+h5.tocc__title,
+h6.tocc__title,
+h1, h2, h3, h4, h5, h6 {
+  color: #888569;
+  font-weight: bold !important;
+}
+
 /**
  * TOCC Style Guide Element
  * 

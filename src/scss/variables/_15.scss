@@ -1,0 +1,20 @@
+$brand-color-one: #888569; // Thatch
+$brand-color-two: #F04F38; // Starfish
+$brand-color-three: #BBB89D; // Sand
+$brand-color-four: #231F20; // Twinkle
+$brand-color-five: #C0C481; // Apple
+$brand-color-six: #80AEAF; // Ocean
+$brand-color-seven: #FFD65C; // Buttermilk 
+$brand-badge-shadow-color: #757765;
+$brand-badge-logo-color: $brand-color-one;
+
+h1.tocc__title,
+h2.tocc__title,
+h3.tocc__title,
+h4.tocc__title,
+h5.tocc__title,
+h6.tocc__title,
+h1, h2, h3, h4, h5, h6 {
+    color: $brand-color-one;
+    font-weight: bold !important;
+}
