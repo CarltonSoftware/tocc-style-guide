@@ -119,7 +119,7 @@ class Element extends React.Component {
                 cls.push('is-primary');
               }
               return (
-                <a key={ i } onClick={ this.setView.bind(this) } className={ cls.join(' ') }>{ t }</a>
+                <a key={ i }  onClick={ this.setView.bind(this) } className={ cls.join(' ') }>{ t }</a>
               );
             })
           }

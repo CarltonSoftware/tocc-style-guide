@@ -82,20 +82,20 @@
 /**
  * TOCC Style Guide Element
  * 
- * @filename _strapline_special_offer.scss
+ * @filename _strapline--special-offer.scss
  * @brand    Wales Cottage Holidays
- * @name     strapline_special_offer
+ * @name     strapline--special-offer
  * @author   Mr George Crisan
- * @date     2019-05-07
+ * @date     2019-05-20
  */
 /**
  * TOCC Style Guide Element
  * 
- * @filename _strapline_special_offer.scss
+ * @filename _strapline--special-offer.scss
  * @brand    Vanilla
- * @name     strapline_special_offer
+ * @name     strapline--special-offer
  * @author   Mr George Crisan
- * @date     2019-05-07
+ * @date     2019-05-20
  */
 .tabsapiproperty__specialoffers__item {
   border: 1px solid black;

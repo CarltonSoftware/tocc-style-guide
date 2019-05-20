@@ -1,0 +1,18 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline--special-offer.scss
+ * @brand    Best of Wales
+ * @name     strapline--special-offer
+ * @author   Mr George Crisan
+ * @date     2019-05-20
+ */
+// Include Utilities
+@import '../../utils/index';
+
+// Include global variables
+@import '../../variables/vanilla';
+@import '../../variables/31';
+
+
+@import '../vanilla/strapline--special-offer';
