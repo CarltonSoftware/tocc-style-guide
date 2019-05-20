@@ -17,14 +17,15 @@
 $strapline-font-size: 14px !default;
 
 .tabsapiproperty__specialoffers__item {
-    border: 1px solid black;
-    padding: 5px 5px 5px 15px;
-    width: 100%;
-    font-size: $strapline-font-size;
-    span {
-        color: red;
-        padding-right: 10px;
-        font-size: 14px;
-        font-weight: bold;
-    }
+  border: 1px solid black;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  font-size: $strapline-font-size;
+
+  span {
+    color: red;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }

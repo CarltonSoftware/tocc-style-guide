@@ -20,14 +20,3 @@ $brand-badge-shadow-color: #757765;
 $brand-badge-logo-color: $brand-color-one;
 $header-font-family: "Helvetica Neue", Helvetica, Arial ,sans-serif;
 
-h1.tocc__title,
-h2.tocc__title,
-h3.tocc__title,
-h4.tocc__title,
-h5.tocc__title,
-h6.tocc__title,
-h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font-family;
-    color: $brand-color-one;
-    font-weight: bold !important;
-}

@@ -7,18 +7,6 @@
   font-style: normal;
 }
 
-h1.tocc__title,
-h2.tocc__title,
-h3.tocc__title,
-h4.tocc__title,
-h5.tocc__title,
-h6.tocc__title,
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #888569;
-  font-weight: bold !important;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -69,4 +57,31 @@ h1, h2, h3, h4, h5, h6 {
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+}
+
+h1.tocc__title,
+h2.tocc__title,
+h3.tocc__title,
+h4.tocc__title,
+h5.tocc__title,
+h6.tocc__title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888569;
+  font-weight: bold;
+}
+
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888569;
+  font-weight: bold;
 }
