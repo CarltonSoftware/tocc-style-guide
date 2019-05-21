@@ -37,6 +37,7 @@
 	src: url('/fonts/bauhaus/377E09_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/bauhaus/377E09_1_0.woff2') format('woff2'),url('/fonts/bauhaus/377E09_1_0.woff') format('woff'),url('/fonts/bauhaus/377E09_1_0.ttf') format('truetype');
 }
 
+//Colors
 $brand-color-primary:  #444444; // IV Tundora
 $brand-color-primary-hover: #444444;  // IV Tundora
 $brand-color-secondary: #44A542; // IV Fruit Salad
@@ -51,4 +52,7 @@ $brand-color-seven: #28A2AF;  //IV Lochinvar
 $brand-color-eight: #FFED9E; // IV Parchment
 $brand-badge-logo-color: $brand-color-primary;
 $brand-badge-shadow-color: #414141; 
+
+//Font
 $header-font-family: 'Bauhaus', sans-serif; 
+$body-font-family: 'Open Sans', sans-serif;
