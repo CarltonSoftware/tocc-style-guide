@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -27,6 +34,13 @@
  * @author   Alex Wyett
  * @date     2019-04-25
  */
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -79,6 +93,17 @@
   line-height: 1.8;
 }
 
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "Museo Sans 300", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #263545;
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -88,6 +113,13 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 

@@ -58,5 +58,6 @@
 .tocc__content h5 {
   font-family: "Montserrat", sans-serif;
   color: #626366;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: bold;
 }

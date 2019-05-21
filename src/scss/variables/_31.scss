@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Museo Sans 300';
+    src: url('/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2') format('woff2'),
+         url('/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Colors
+$brand-color-one: #263545; // BW Pickled Bluewood
+$brand-color-seven: #4F6884; // BW Chambray
+$brand-color-three: #8CA8bc; // BW Ship Cove
+$brand-color-four: #BACBD7; // BW Spindle
+$brand-color-five: #DCE5f2; // Moon Raker
+$brand-color-six: #6C084A; // BW Claret
+$brand-color-two: #C4A000; // BW Buddha Gold
+$brand-badge-shadow-color:  #F2F2F2;
+$brand-badge-logo-color: #FFF;
+$brand-color-primary-hover: #243241;
+$brand-color-secondary-hover: #BA9800;
+
+//Fonts
+$body-font-family: 'Open Sans', sans-serif;
+$header-font-family: "Museo Sans 300", Helvetica Neue,Helvetica,Arial,sans-serif;
