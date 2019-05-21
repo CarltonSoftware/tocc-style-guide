@@ -79,6 +79,16 @@
   line-height: 1.8;
 }
 
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #626366;
+  font-weight: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
