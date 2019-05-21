@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Arcon Regular';
+    src: url('/fonts/arconregular/arcon-regular-webfont.woff2') format('woff2'),
+         url('/fonts/arconregular/arcon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arcon Regular Bold';
+    src: url('/fonts/arconregular/arcon-regular-webfont.woff2') format('woff2'),
+         url('/fonts/arconregular/arcon-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+//Colors
+$brand-color-one: #27387A; // BC Astronaut
+$brand-color-two: #4CA8DB; // BC Viking
+$brand-color-three: #C3A887; // BC Rodeo Dust
+$brand-color-four: #575756; //BC Chicago 
+$brand-color-five: #99ADBF; // BC Nepal
+$brand-color-six: #F9CCC5; // BC Coral Candy
+$brand-color-seven: #83B1AA; // BC Gulf Stream
+$brand-color-eight: #9899B1; // BC Spun Pearl
+$brand-badge-shadow-color:  #23326E;
+$brand-badge-logo-color: $brand-color-one;
+
+//Font
+$body-font-family: 'Open Sans', sans-serif;
+$header-font-family: 'Arcon Regular Bold', sans-serif;
