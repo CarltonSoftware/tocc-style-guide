@@ -79,6 +79,15 @@
   line-height: 1.8;
 }
 
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #1E345D;
+}
+
 /**
  * TOCC Style Guide Element
  * 
