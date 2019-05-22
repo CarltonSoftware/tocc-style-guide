@@ -1,4 +1,13 @@
 
+@import url("//hello.myfonts.net/count/37bc59");
+@import url("//hello.myfonts.net/count/37bc59");
+@import url("//hello.myfonts.net/count/37bc59");
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot");
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/avenirltpro/37BC59_0_0.woff2") format("woff2"), url("/fonts/avenirltpro/37BC59_0_0.woff") format("woff"), url("/fonts/avenirltpro/37BC59_0_0.ttf") format("truetype");
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -27,6 +36,12 @@
  * @author   Alex Wyett
  * @date     2019-04-25
  */
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot");
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/avenirltpro/37BC59_0_0.woff2") format("woff2"), url("/fonts/avenirltpro/37BC59_0_0.woff") format("woff"), url("/fonts/avenirltpro/37BC59_0_0.ttf") format("truetype");
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -79,6 +94,15 @@
   line-height: 1.8;
 }
 
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "AvenirLTPro-Heavy", sans-serif;
+  color: #1D1D1B;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -88,6 +112,12 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot");
+  src: url("/fonts/avenirltpro/37BC59_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/avenirltpro/37BC59_0_0.woff2") format("woff2"), url("/fonts/avenirltpro/37BC59_0_0.woff") format("woff"), url("/fonts/avenirltpro/37BC59_0_0.ttf") format("truetype");
+}
+
 /**
  * TOCC Style Guide Element
  * 
