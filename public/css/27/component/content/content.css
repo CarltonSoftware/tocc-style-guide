@@ -1,4 +1,32 @@
 
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -49,4 +77,14 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+}
+
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "sharpsansbook", sans-serif;
+  color: #045A4B;
+  font-weight: normal;
 }

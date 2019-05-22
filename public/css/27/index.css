@@ -1,4 +1,32 @@
 
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -14,8 +42,10 @@
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
+  color: #045A4B;
+  font-weight: normal;
   font-family: sans-serif;
+  font-family: "sharpsansbook";
 }
 
 /**
@@ -27,6 +57,34 @@
  * @author   Alex Wyett
  * @date     2019-04-25
  */
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -79,6 +137,16 @@
   line-height: 1.8;
 }
 
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "sharpsansbook", sans-serif;
+  color: #045A4B;
+  font-weight: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -88,6 +156,34 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /**
  * TOCC Style Guide Element
  * 
