@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'jenna_sueregular';
+    src: url('/fonts/jennasue/jennasue-webfont.woff2') format('woff2'),
+         url('/fonts/jennasue/jennasue-webfont.woff') format('woff'),
+         url('/fonts/jennasue/jennasue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Adventor';
+    src: url('/fonts/texgyreadentor/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('/fonts/texgyreadentor/texgyreadventor-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Adventor Bold';
+    src: url('/fonts/texgyreadentor/texgyreadventor-bold-webfont.woff') format('woff'),
+         url('/fonts/texgyreadentor/texgyreadventor-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$brand-color-one: #44697C; // Tax Break
+$brand-color-two: #739600; // Olive
+$brand-color-three: #D10074; // Medium Violet Red
+$brand-color-four: #0088CE; // Pacific Blue
+$brand-color-five: #E05206; // Persimmon
+$brand-color-six: #009B3A; // Pigment Green
+$brand-color-seven: #240078; // Persian Indigo
+$brand-badge-shadow-color: #598A30;
+$brand-badge-logo-color:  #739600;
+                        
+
+$body-font-family: 'Open Sans', sans-serif;
+$header-font-family: 'Century Gothic', 'TeX Gyre Adventor', 'Futura', 'Tw Cen MT', sans-serif;
+$slogan-font-family: 'jenna_sueregular', "Segoe Script", "BradleyHandITCTT-Bold", sans-serif;

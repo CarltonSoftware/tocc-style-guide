@@ -14,4 +14,10 @@
 @import '../../variables/vanilla';
 @import '../../variables/29';
 
+$slogan-font-size: 36px;
+$slogan-line-height: 28px;
+$slogan-font-family: 'jenna_sueregular', "Segoe Script", "BradleyHandITCTT-Bold", sans-serif;
+$slogan-font-color: $brand-color-two;
+
 @import '../vanilla/slogan';
+
