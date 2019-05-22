@@ -8,6 +8,8 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
+@import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Actor");
 .tocc__slogan {
   font-size: 28px;
   line-height: 28px;
@@ -15,6 +17,7 @@
   padding: 0.5rem 0;
   border: 0 none;
   color: #999;
+  font-weight: bold;
   font-family: sans-serif;
   font-family: "wheatland";
 }
@@ -86,6 +89,16 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+}
+
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-family: "Actor", sans-serif;
+  color: #5B8772;
+  font-weight: bold;
 }
 
 /**
