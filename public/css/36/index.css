@@ -24,8 +24,14 @@
  * 
  * © 2018 MyFonts Inc
 */
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("//hello.myfonts.net/count/377e09");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("//hello.myfonts.net/count/377e09");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @font-face {
   font-family: 'Bauhaus';
   src: url("/fonts/bauhaus/377E09_0_0.eot");
@@ -54,8 +60,10 @@
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
-  font-family: sans-serif;
+  color: #444444;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-family: "Bauhaus", sans-serif;
 }
 
 /**
@@ -122,7 +130,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #444444;
+  font-weight: bold;
+  font-family: "Bauhaus", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -153,24 +168,17 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
-}
-
-.tocc__content h1,
-.tocc__content h2,
-.tocc__content h3,
-.tocc__content h4,
-.tocc__content h5 {
-  font-family: "Bauhaus", sans-serif;
-  color: #444444;
-  font-weight: bold;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }
 
 /**
  * TOCC Style Guide Element
  * 
- * @filename _strapline--special-offer.scss
+ * @filename _strapline.scss
  * @brand    St. Ives Holidays
- * @name     strapline--special-offer
+ * @name     strapline
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
@@ -219,14 +227,14 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
-.tabsapiproperty__specialoffers__item {
+.strapline--specialoffer {
   border: 1px solid black;
   padding: 5px 5px 5px 15px;
   width: 100%;
   font-size: 14px;
 }
 
-.tabsapiproperty__specialoffers__item span {
+.strapline--specialoffer span {
   color: red;
   padding-right: 10px;
   font-size: 14px;

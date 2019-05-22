@@ -13,18 +13,18 @@
   font-style: normal;
 }
 
-$brand-color-one: #5B8772; // SF Cutty Sark
-$brand-color-two: #C47E0E; //SF Dark Goldenrod
-$brand-color-three: #a3af07; // SF Pistachio
-$brand-color-four: #c66005; // SF Tenne
-$brand-color-five: #76881d; // SF Trendy Green
-$brand-color-six: #d6ce49; // SF Confetti
-$brand-color-seven: #003d4c; // SF Cyprus
-$brand-color-eight: #c31f3d; // SF Tamarillo
-$brand-badge-shadow-color:  #56806C;
-$brand-badge-logo-color: $brand-color-one;
+$site-color-one: #5B8772; // SF Cutty Sark
+$site-color-two: #C47E0E; //SF Dark Goldenrod
+$site-color-three: #a3af07; // SF Pistachio
+$site-color-four: #c66005; // SF Tenne
+$site-color-five: #76881d; // SF Trendy Green
+$site-color-six: #d6ce49; // SF Confetti
+$site-color-seven: #003d4c; // SF Cyprus
+$site-color-eight: #c31f3d; // SF Tamarillo
 
+$site-content-header-font-family: 'Actor', sans-serif;
 
-$body-font-family: 'Open Sans', sans-serif;
-$header-font-family: 'Actor', sans-serif;
-$slogan-font-family: 'wheatland';
+$site-slogan-font-family: 'wheatland';
+$site-slogan-font-size: 28px;
+$site-slogan-font-weight: bold;
+$site-slogan-font-color: $site-color-three;

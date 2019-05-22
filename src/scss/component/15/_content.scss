@@ -11,37 +11,7 @@
 @import '../../utils/index';
 
 // Include global variables
-@import '../../variables/vanilla';
 @import '../../variables/15';
-
+@import '../../variables/vanilla';
 
 @import '../vanilla/content';
-
-h1.tocc__title,
-h2.tocc__title,
-h3.tocc__title,
-h4.tocc__title,
-h5.tocc__title,
-h6.tocc__title,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $header-font-family;
-    color: $brand-color-one;
-    font-weight: bold;
-}
-
-.tocc__content {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: $header-font-family;
-        color: $brand-color-one;
-        font-weight: bold;
-    }
-}

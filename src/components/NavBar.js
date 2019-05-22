@@ -58,6 +58,7 @@ class NavBar extends React.Component {
               <div className="navbar-item has-dropdown is-hoverable">
                 <a href="#" className="navbar-link">
                   { this.props.Tabs.selectedMarketingBrand ? this.props.Tabs.selectedMarketingBrand.name : 'Vanilla'} Theme
+                  { this.props.Tabs.selectedMarketingBrand ? ' (' + this.props.Tabs.selectedMarketingBrand.id + ')' : null}
                 </a>
 
                 { this.props.Tabs.MarketingBrand && <div className="navbar-dropdown">
@@ -68,7 +69,7 @@ class NavBar extends React.Component {
                         this.props.selectMarketingBrand(this.props.Tabs.user, mb);
                       };
                       return (
-                        <a key={i} href="#" onClick={ selectMb } className="navbar-item">{ mb.name }</a>
+                        <a key={i} href="#" onClick={ selectMb } className="navbar-item">{ mb.name } ({ mb.id })</a>
                       );
                     })
                   }

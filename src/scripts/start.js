@@ -21,10 +21,10 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
 
   utillines.push('');
   utillines.push('// Include global variables');
+  utillines.push('@import \'../../variables/' + brand + '\';');
   if (brand !== 'vanilla') {
     utillines.push('@import \'../../variables/vanilla\';');
   }
-  utillines.push('@import \'../../variables/' + brand + '\';');
 
   fs.writeFileSync(
     cssFile, [

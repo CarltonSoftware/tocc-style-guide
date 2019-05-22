@@ -11,19 +11,7 @@
 @import '../../utils/index';
 
 // Include global variables
-@import '../../variables/vanilla';
 @import '../../variables/26';
-
-.tocc__content {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: $oswald;
-    text-transform: uppercase;
-  }
-}
-
+@import '../../variables/vanilla';
 
 @import '../vanilla/content';

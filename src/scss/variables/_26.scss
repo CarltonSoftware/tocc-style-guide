@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-$brand-color-one: #54284E; // GL LOULOU
-$brand-color-six: #006068; // GL ATTOLL
-$brand-color-three: #A87EB1; // GL EAST SIDE
-$brand-color-four: #64B1BC; // GL Fountain Blue
-$brand-color-five: #3E3935; // GL Kilamanjaro
-$brand-color-two: #F5C400; // GL SWEET CORN
-$brand-color-seven: #8D846A; // Buttermilk #3E3935
-$brand-color-eight: #DBD9D6; // GL GALLERY
-$reassurance-bar-icon-odd: $brand-color-one;
-$brand-badge-shadow-color:  #F2F2F2;
-$brand-badge-logo-color: #FFF;
-$site-header-background: $brand-color-one;
+$site-color-one: #54284E; // GL LOULOU
+$site-color-six: #006068; // GL ATTOLL
+$site-color-three: #A87EB1; // GL EAST SIDE
+$site-color-four: #64B1BC; // GL Fountain Blue
+$site-color-five: #3E3935; // GL Kilamanjaro
+$site-color-two: #F5C400; // GL SWEET CORN
+$site-color-seven: #8D846A; // Buttermilk #3E3935
+$site-color-eight: #DBD9D6; // GL GALLERY
 
-$oswald: 'Oswald', sans-serif;
+
+$site-content-header-font-family: 'Oswald', sans-serif;
+$site-content-header-text-transform: uppercase;
+
+$site-slogan-font-family:  'Oswald', sans-serif;
+$site-slogan-font-transform: uppercase;

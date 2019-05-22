@@ -1,11 +1,17 @@
 
 @import url("//fast.fonts.net/lt/1.css?apiType=css&c=2e98ef88-ba20-44a4-bdf3-22e5b874b65b&fontids=1475500,1475548");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("//fast.fonts.net/lt/1.css?apiType=css&c=2e98ef88-ba20-44a4-bdf3-22e5b874b65b&fontids=1475500,1475548");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("//fast.fonts.net/lt/1.css?apiType=css&c=2e98ef88-ba20-44a4-bdf3-22e5b874b65b&fontids=1475500,1475548");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @font-face {
   font-family: "Avenir LT";
   src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix");
-  src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
+  src: url("/fonts/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
   font-weight: normal;
 }
 
@@ -31,8 +37,8 @@
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
-  font-family: sans-serif;
+  color: #4E4E4C;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /**
@@ -47,7 +53,7 @@
 @font-face {
   font-family: "Avenir LT";
   src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix");
-  src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
+  src: url("/fonts/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
   font-weight: normal;
 }
 
@@ -77,7 +83,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #4E4E4C;
+  font-weight: bold;
+  font-family: "Avenir LT";
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -108,31 +121,24 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
-}
-
-.tocc__content h1,
-.tocc__content h2,
-.tocc__content h3,
-.tocc__content h4,
-.tocc__content h5 {
-  font-family: "Avenir LT";
-  color: #4E4E4C;
-  font-weight: bold;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }
 
 /**
  * TOCC Style Guide Element
  * 
- * @filename _strapline--special-offer.scss
+ * @filename _strapline.scss
  * @brand    Abersoch Holiday Homes
- * @name     strapline--special-offer
+ * @name     strapline
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
 @font-face {
   font-family: "Avenir LT";
   src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix");
-  src: url("/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
+  src: url("/fonts/fonts/avenirlt/1475500/c886ac4d-0476-43f2-859c-69521d566f36.eot?#iefix") format("eot"), url("/fonts/avenirlt/1475500/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d.svg#57fd8d3b-c855-4bd8-9e49-04ae9a760f9d") format("svg"), url("/fonts/avenirlt/1475500/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"), url("/fonts/avenirlt/1475500/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b.woff") format("woff"), url("/fonts/avenirlt/1475500/3441ac36-8e74-4708-8a0e-bc7eb293b307.ttf") format("truetype");
   font-weight: normal;
 }
 
@@ -152,14 +158,14 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
-.tabsapiproperty__specialoffers__item {
+.strapline--specialoffer {
   border: 1px solid black;
   padding: 5px 5px 5px 15px;
   width: 100%;
   font-size: 14px;
 }
 
-.tabsapiproperty__specialoffers__item span {
+.strapline--specialoffer span {
   color: red;
   padding-right: 10px;
   font-size: 14px;

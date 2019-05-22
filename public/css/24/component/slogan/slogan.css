@@ -1,5 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @font-face {
   font-family: 'wheatland';
   src: url("/fonts/24/wheatland/wheatland.eot");
@@ -25,6 +27,6 @@
   border: 0 none;
   color: #a3af07;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-family: "wheatland";
 }

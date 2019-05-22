@@ -1,0 +1,18 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline.scss
+ * @brand    Suffolk Secrets
+ * @name     strapline
+ * @author   Mr George Crisan
+ * @date     2019-05-20
+ */
+// Include Utilities
+@import '../../utils/index';
+
+// Include global variables
+@import '../../variables/25';
+@import '../../variables/vanilla';
+
+
+@import '../vanilla/strapline';

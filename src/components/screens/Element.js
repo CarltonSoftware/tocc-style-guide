@@ -105,45 +105,51 @@ class Element extends React.Component {
 
     return (
       <div className="container ElementListScreen">
-        <ElementSubNav element={ this.props.match.params.element } />
-        { this.state.loadingHtml && <p>Loading preview</p> }
-        <div className="content">
-          <h2>{ element.name }</h2>
-          <p>{ element.description }</p>
-        </div>
-        <div className="tags is-small">
-          { 
-            ['Preview', 'HTML', 'CSS', 'Use'].map((t, i) => {
-              let cls = ['tag'];
-              if (this.state.view === t) {
-                cls.push('is-primary');
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <ElementSubNav element={ this.props.match.params.element } />
+          </div>
+          <div className="column is-three-quarters">
+            { this.state.loadingHtml && <p>Loading preview</p> }
+            <div className="content">
+              <h2>{ element.name }</h2>
+              <p>{ element.description }</p>
+            </div>
+            <div className="tags is-small">
+              { 
+                ['Preview', 'HTML', 'CSS', 'Use'].map((t, i) => {
+                  let cls = ['tag'];
+                  if (this.state.view === t) {
+                    cls.push('is-primary');
+                  }
+                  return (
+                    <a key={ i }  onClick={ this.setView.bind(this) } className={ cls.join(' ') }>{ t }</a>
+                  );
+                })
               }
-              return (
-                <a key={ i }  onClick={ this.setView.bind(this) } className={ cls.join(' ') }>{ t }</a>
-              );
-            })
-          }
+            </div>
+            { this.state.view === 'Preview' && <div dangerouslySetInnerHTML={ {__html: this.state.html } } /> }
+            { this.state.view === 'HTML' && <pre>{ this.state.html }</pre> }
+            { this.state.view === 'CSS' && <pre>{ this.state.css }</pre> }
+            { this.state.view === 'Use' && <div className="content">
+              <h3>Usage instructions</h3>
+              <ol>
+                <li>Add the following into the &lt;head&gt; tag:
+                  <pre>
+                    &lt;link rel="stylesheet" type="text/css" href="{cdn}/index.css" /&gt;
+                  </pre>
+                </li>
+                <li>Alternatively, if you just want the css for this component, add the following::
+                  <pre>
+                    &lt;link rel="stylesheet" type="text/css" href="{cdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
+                  </pre>
+                </li>
+                <li>Use the html shown in the markup tab to create your element.</li>
+              </ol>
+            </div> }
+            { this.props.children }
+          </div>
         </div>
-        { this.state.view === 'Preview' && <div dangerouslySetInnerHTML={ {__html: this.state.html } } /> }
-        { this.state.view === 'HTML' && <pre>{ this.state.html }</pre> }
-        { this.state.view === 'CSS' && <pre>{ this.state.css }</pre> }
-        { this.state.view === 'Use' && <div className="content">
-          <h3>Usage instructions</h3>
-          <ol>
-            <li>Add the following into the &lt;head&gt; tag:
-              <pre>
-                &lt;link rel="stylesheet" type="text/css" href="{cdn}/index.css" /&gt;
-              </pre>
-            </li>
-            <li>Alternatively, if you just want the css for this component, add the following::
-              <pre>
-                &lt;link rel="stylesheet" type="text/css" href="{cdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
-              </pre>
-            </li>
-            <li>Use the html shown in the markup tab to create your element.</li>
-          </ol>
-        </div> }
-        { this.props.children }
       </div>
     );
   }

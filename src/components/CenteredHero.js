@@ -1,13 +1,8 @@
 import React from 'react';
+import Hero from './Hero';
 
 export default (props) => {
   return (
-    <section className={ "hero " + props.size }>
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          { props.children }
-        </div>
-      </div>
-    </section>
+    <Hero className='has-text-centered'>{ props.children }</Hero>
   );
 }

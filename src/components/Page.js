@@ -10,9 +10,9 @@ class Page extends React.Component {
     return (
       <BrowserRouter>
         <NavBar />
-        { this.props.Tabs.state === EVENTS.GET_CURRENTUSER_START && <div className="container"><p>Please wait...</p></div> }
-        { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && this.props.children }
-        <footer className="footer">
+        { this.props.Tabs.state === EVENTS.GET_CURRENTUSER_START && <div className="container" style={ { minHeight: '70vh', paddingTop: '2rem' } }><p>Please wait...</p></div> }
+        { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && <main style={ { minHeight: '70vh', paddingTop: '2rem' } }>{ this.props.children }</main> }
+        <footer className="footer" style={ { minHeight: '30vh' } }>
          	<div className="container">
       		  <div className="content">
       		    <p>

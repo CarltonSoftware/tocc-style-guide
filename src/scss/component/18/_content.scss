@@ -14,17 +14,4 @@
 @import '../../variables/vanilla';
 @import '../../variables/18';
 
- 
 @import '../vanilla/content';
-
-.tocc__content {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: $header-font-family;
-        color: $brand-color-one;
-        font-weight: bold;
-    }
-}

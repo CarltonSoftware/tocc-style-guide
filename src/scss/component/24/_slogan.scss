@@ -9,12 +9,9 @@
  */
 // Include Utilities
 @import '../../utils/index';
-@import '../../variables/24';
 
-$slogan-font-family: 'wheatland';
-$slogan-font-size: 28px;
-$slogan-font-weight: bold;
-$slogan-font-color: $brand-color-three;
+@import '../../variables/24';
+@import '../../variables/vanilla'; 
 
 @import '../vanilla/slogan';
 

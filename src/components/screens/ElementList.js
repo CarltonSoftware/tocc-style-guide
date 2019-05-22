@@ -3,6 +3,7 @@ import connect from '../../connect';
 import elements from '../../elements.json';
 import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
+import Hero from '../Hero';
 
 class ElementList extends React.Component {
   render() {
@@ -14,10 +15,14 @@ class ElementList extends React.Component {
       );
     }
 
+    const name = this.props.match.params.element;
+
     return (
       <div className="container ElementListScreen">
-        <ElementSubNav element={ this.props.match.params.element } />
-        { this.props.children }
+        <Hero>
+          <h3>{ name.charAt(0).toUpperCase() + name.slice(1) }</h3>
+          <ElementSubNav element={ this.props.match.params.element } />
+        </Hero>
       </div>
     );
   }

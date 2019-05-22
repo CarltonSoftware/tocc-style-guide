@@ -1,7 +1,14 @@
 // This is needed for font license
 @import url("//hello.myfonts.net/count/37bc59");
   
-@font-face {font-family: 'AvenirLTPro-Heavy';src: url('/fonts/avenirltpro/37BC59_0_0.eot');src: url('/fonts/avenirltpro/37BC59_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/avenirltpro/37BC59_0_0.woff2') format('woff2'),url('/fonts/avenirltpro/37BC59_0_0.woff') format('woff'),url('/fonts/avenirltpro/37BC59_0_0.ttf') format('truetype');}
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url('/fonts/12/avenirltpro/37BC59_0_0.eot');
+  src: url('/fonts/12/avenirltpro/37BC59_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/12/avenirltpro/37BC59_0_0.woff2') format('woff2'),
+    url('/fonts/12/avenirltpro/37BC59_0_0.woff') format('woff'),
+    url('/fonts/12/avenirltpro/37BC59_0_0.ttf') format('truetype');
+  }
 
 $brand-color-one: #1D1D1B; // Ebony
 $brand-color-two: #C1A01E; // Nugget
@@ -11,4 +18,4 @@ $brand-color-five: #BFB7B0; // Tide
 $brand-color-six: #F6D44D; // Energy Yellow
 $brand-color-seven: #DBFDD2; // Thistle
 
-$header-font-family: 'AvenirLTPro-Heavy', sans-serif;
+$site-content-header-font-family: 'AvenirLTPro-Heavy', sans-serif;

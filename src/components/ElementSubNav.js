@@ -8,8 +8,8 @@ export default (props) => {
   }
 
   return (
-    <div className="tabs">
-      <ul>
+    <aside className="menu">
+      <ul className="menu-list">
         { 
           elements[props.element].map((e, i) => {
             return (
@@ -18,6 +18,6 @@ export default (props) => {
           })
         }
       </ul>
-    </div>
+    </aside>
   );
 }

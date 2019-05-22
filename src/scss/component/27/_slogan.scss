@@ -11,12 +11,7 @@
 @import '../../utils/index';
 
 // Include global variables
-@import '../../variables/vanilla';
 @import '../../variables/27';
-
-$slogan-font-family: 'sharpsansbook';
-$slogan-font-size: 18px;
-$slogan-font-weight: normal;
-$slogan-font-color: $brand-color-one;
+@import '../../variables/vanilla';
 
 @import '../vanilla/slogan';

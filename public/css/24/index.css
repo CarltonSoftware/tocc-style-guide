@@ -1,7 +1,13 @@
 
 @import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 @font-face {
   font-family: 'wheatland';
   src: url("/fonts/24/wheatland/wheatland.eot");
@@ -27,7 +33,7 @@
   border: 0 none;
   color: #a3af07;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-family: "wheatland";
 }
 
@@ -67,7 +73,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #5B8772;
+  font-weight: normal;
+  font-family: "Actor", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -98,24 +111,17 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
-}
-
-.tocc__content h1,
-.tocc__content h2,
-.tocc__content h3,
-.tocc__content h4,
-.tocc__content h5 {
-  font-family: "Actor", sans-serif;
-  color: #5B8772;
-  font-weight: bold;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }
 
 /**
  * TOCC Style Guide Element
  * 
- * @filename _strapline--special-offer.scss
+ * @filename _strapline.scss
  * @brand    Suffolk Cottage Holidays
- * @name     strapline--special-offer
+ * @name     strapline
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
@@ -136,14 +142,14 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
-.tabsapiproperty__specialoffers__item {
+.strapline--specialoffer {
   border: 1px solid black;
   padding: 5px 5px 5px 15px;
   width: 100%;
   font-size: 14px;
 }
 
-.tabsapiproperty__specialoffers__item span {
+.strapline--specialoffer span {
   color: red;
   padding-right: 10px;
   font-size: 14px;
