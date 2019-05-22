@@ -1,12 +1,5 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _content.scss
- * @brand    Salt Norfolk
- * @name     content
- * @author   Alex Wyett
- * @date     2019-04-25
- */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 /**
  * TOCC Style Guide Element
  * 
@@ -16,6 +9,7 @@
  * @author   Alex Wyett
  * @date     2019-04-25
  */
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 .tocc__content h1,
 .tocc__content h2,
 .tocc__content h3,
@@ -26,7 +20,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #555555;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -57,4 +58,7 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }

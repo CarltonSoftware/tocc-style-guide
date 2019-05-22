@@ -1,12 +1,5 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _slogan.scss
- * @brand    Peak District Cottages
- * @name     slogan
- * @author   Alex Wyett
- * @date     2019-04-24
- */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 /**
  * TOCC Style Guide Element
  * 
@@ -16,12 +9,13 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 .tocc__slogan {
   font-size: 18px;
   line-height: 28px;
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
-  font-family: sans-serif;
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
 }

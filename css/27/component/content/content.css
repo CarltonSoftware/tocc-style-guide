@@ -1,12 +1,34 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _content.scss
- * @brand    Wales Cottage Holidays
- * @name     content
- * @author   Alex Wyett
- * @date     2019-04-25
- */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsansbook';
+  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -26,7 +48,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #045A4B;
+  font-weight: normal;
+  font-family: "sharpsansbook", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -57,4 +86,7 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }

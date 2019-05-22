@@ -1,12 +1,44 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("//hello.myfonts.net/count/377e09");
 /**
- * TOCC Style Guide Element
+ * @license
+ * MyFonts Webfont Build ID 3636745, 2018-09-07T04:13:04-0400
  * 
- * @filename _content.scss
- * @brand    St. Ives Holidays
- * @name     content
- * @author   Alex Wyett
- * @date     2019-04-25
- */
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BauhausStd-Light by ITC
+ * URL: https://www.myfonts.com/fonts/itc/bauhaus/std-light-177552/
+ * 
+ * Webfont: BauhausStd-Medium by ITC
+ * URL: https://www.myfonts.com/fonts/itc/bauhaus/std-medium-177552/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3636745
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 Monotype ITC Inc. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@font-face {
+  font-family: 'Bauhaus';
+  src: url("/fonts/bauhaus/377E09_0_0.eot");
+  src: url("/fonts/bauhaus/377E09_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/bauhaus/377E09_0_0.woff2") format("woff2"), url("/fonts/bauhaus/377E09_0_0.woff") format("woff"), url("/fonts/bauhaus/377E09_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Bauhaus';
+  font-weight: bold;
+  src: url("/fonts/bauhaus/377E09_1_0.eot");
+  src: url("/fonts/bauhaus/377E09_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/bauhaus/377E09_1_0.woff2") format("woff2"), url("/fonts/bauhaus/377E09_1_0.woff") format("woff"), url("/fonts/bauhaus/377E09_1_0.ttf") format("truetype");
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -26,7 +58,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #444444;
+  font-weight: bold;
+  font-family: "Bauhaus", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -57,4 +96,7 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }

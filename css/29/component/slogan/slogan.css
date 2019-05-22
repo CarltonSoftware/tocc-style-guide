@@ -1,12 +1,27 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _slogan.scss
- * @brand    Yorkshire Holiday Cottages
- * @name     slogan
- * @author   Alex Wyett
- * @date     2019-04-24
- */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@font-face {
+  font-family: 'jenna_sueregular';
+  src: url("/fonts/29/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/29/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/29/jennasue/jennasue-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Adventor';
+  src: url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Adventor Bold';
+  src: url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -17,11 +32,12 @@
  * @date     2019-04-24
  */
 .tocc__slogan {
-  font-size: 18px;
+  font-size: 36px;
   line-height: 28px;
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
-  font-family: sans-serif;
+  color: #739600;
+  font-family: 'Open Sans', sans-serif;
+  font-family: "jenna_sueregular", "Segoe Script", "BradleyHandITCTT-Bold", sans-serif;
 }

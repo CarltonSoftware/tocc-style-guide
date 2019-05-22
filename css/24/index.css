@@ -1,12 +1,21 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _slogan.scss
- * @brand    Suffolk Cottage Holidays
- * @name     slogan
- * @author   Alex Wyett
- * @date     2019-04-24
- */
+
+@import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Actor");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@font-face {
+  font-family: 'wheatland';
+  src: url("/fonts/24/wheatland/wheatland.eot");
+  src: url("/fonts/24/wheatland/wheatland.eot?#iefix") format("embedded-opentype"), url("/fonts/24/wheatland/wheatland.woff2") format("woff2"), url("/fonts/24/wheatland/wheatland.woff") format("woff"), url("/fonts/24/wheatland/wheatland.ttf") format("truetype"), url("/fonts/24/wheatland/wheatland.svg#wheatland") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -22,8 +31,9 @@
   margin: 0;
   padding: 0.5rem 0;
   border: 0 none;
-  color: #999;
-  font-family: sans-serif;
+  color: #a3af07;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   font-family: "wheatland";
 }
 
@@ -63,7 +73,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #5B8772;
+  font-weight: normal;
+  font-family: "Actor", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -94,4 +111,47 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline.scss
+ * @brand    Suffolk Cottage Holidays
+ * @name     strapline
+ * @author   Mr George Crisan
+ * @date     2019-05-20
+ */
+@font-face {
+  font-family: 'wheatland';
+  src: url("/fonts/24/wheatland/wheatland.eot");
+  src: url("/fonts/24/wheatland/wheatland.eot?#iefix") format("embedded-opentype"), url("/fonts/24/wheatland/wheatland.woff2") format("woff2"), url("/fonts/24/wheatland/wheatland.woff") format("woff"), url("/fonts/24/wheatland/wheatland.ttf") format("truetype"), url("/fonts/24/wheatland/wheatland.svg#wheatland") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline--special-offer.scss
+ * @brand    Vanilla
+ * @name     strapline--special-offer
+ * @author   Mr George Crisan
+ * @date     2019-05-20
+ */
+.strapline--specialoffer {
+  border: 1px solid black;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.strapline--specialoffer span {
+  color: red;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }

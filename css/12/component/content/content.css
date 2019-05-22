@@ -1,12 +1,13 @@
-/**
- * TOCC Style Guide Element
- * 
- * @filename _content.scss
- * @brand    Kent and Sussex Holiday Cottages
- * @name     content
- * @author   Alex Wyett
- * @date     2019-04-25
- */
+
+@import url("//hello.myfonts.net/count/37bc59");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url("/fonts/12/avenirltpro/37BC59_0_0.eot");
+  src: url("/fonts/12/avenirltpro/37BC59_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/12/avenirltpro/37BC59_0_0.woff2") format("woff2"), url("/fonts/12/avenirltpro/37BC59_0_0.woff") format("woff"), url("/fonts/12/avenirltpro/37BC59_0_0.ttf") format("truetype");
+}
+
 /**
  * TOCC Style Guide Element
  * 
@@ -26,7 +27,14 @@
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  padding: 0.5rem 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #555555;
+  font-weight: normal;
+  font-family: "AvenirLTPro-Heavy", sans-serif;
+  text-transform: none;
 }
 
 .tocc__content h1 {
@@ -57,4 +65,7 @@
 .tocc__content p {
   font-size: 14px;
   line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1.2rem;
 }
