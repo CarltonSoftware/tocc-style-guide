@@ -1,6 +1,6 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @font-face {
   font-family: 'sharpsansbook';
   src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");

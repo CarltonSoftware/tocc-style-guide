@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("//hello.myfonts.net/count/377e09");
 /**
  * @license
@@ -24,14 +25,13 @@
  * 
  * © 2018 MyFonts Inc
 */
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("//hello.myfonts.net/count/377e09");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("//hello.myfonts.net/count/377e09");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @font-face {
   font-family: 'Bauhaus';
   src: url("/fonts/bauhaus/377E09_0_0.eot");
@@ -73,7 +73,7 @@
  * @brand    St. Ives Holidays
  * @name     content
  * @author   Alex Wyett
- * @date     2019-04-25
+ * @date     2019-05-23
  */
 /**
  * @license
@@ -170,6 +170,9 @@
   line-height: 1.8;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
   margin-bottom: 1.2rem;
 }
 
@@ -180,7 +183,7 @@
  * @brand    St. Ives Holidays
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-20
+ * @date     2019-05-23
  */
 /**
  * @license

@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 /**
  * TOCC Style Guide Element
@@ -10,7 +10,7 @@
  * @author   Mr George Crisan
  * @date     2019-05-20
  */
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .strapline--specialoffer {
   border: 1px solid black;
   padding: 5px 5px 5px 15px;

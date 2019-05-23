@@ -5,41 +5,8 @@ const whoAmi = require('tabsutils/utils/whoAmi');
 const fs = require('fs-extra');
 const moment = require('moment');
 const utils = require('./utils');
-
 const basescsspath = __dirname + '/../scss/';
 const basejspath = __dirname + '/../';
-
-const createCssFile = (me, responses, brand, brandname, additional) => {
-  const cssFile = basescsspath + responses.type + '/' + brand + '/_' + responses.name + '.scss';
-  fs.ensureFileSync(cssFile);
-  var utillines = utils.getUtilLines(
-    '../../utils'
-  );
-
-  fs.ensureFileSync(basescsspath + '/variables/_vanilla.scss');
-  fs.ensureFileSync(basescsspath + '/variables/_' +  brand + '.scss');
-
-  utillines.push('');
-  utillines.push('// Include global variables');
-  utillines.push('@import \'../../variables/' + brand + '\';');
-  if (brand !== 'vanilla') {
-    utillines.push('@import \'../../variables/vanilla\';');
-  }
-
-  fs.writeFileSync(
-    cssFile, [
-      '/**',
-      ' * TOCC Style Guide Element',
-      ' * ',
-      ' * @filename ' + '_' + responses.name + '.scss',
-      ' * @brand    ' + brandname,
-      ' * @name     ' + responses.name,
-      ' * @author   ' + me.getFullName(),
-      ' * @date     ' + moment().format('YYYY-MM-DD'),
-      ' */'
-    ].concat(utillines).concat(additional).join('\n')
-  );
-};
 
 (async function() {
   const instance = await connect();
@@ -96,7 +63,7 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
   fs.writeFileSync(snippetPath, '<div><div>');
 
   // Create vanilla type
-  createCssFile(me, responses, 'vanilla', 'Vanilla', []);
+  utils.createCssFile(basescsspath, me, responses, 'vanilla', 'Vanilla', []);
 
   // Get marketing brands from client
   const marketingbrands = await clientUtils.getCollection(instance, 'MarketingBrand');
@@ -104,8 +71,9 @@ const createCssFile = (me, responses, brand, brandname, additional) => {
   // Create marketing brand folders
   marketingbrands.forEach((mb, i) => {
     // Create brand variants
-    createCssFile(
-      me,
+    utils.createScssFile(
+      basescsspath,
+      me.getFullName(),
       responses,
       mb.id,
       mb.name,

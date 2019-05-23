@@ -1,14 +1,16 @@
+@import 'vanilla';
+
 // This is needed for font license
 @import url("//hello.myfonts.net/count/37bc59");
   
 @font-face {
   font-family: 'AvenirLTPro-Heavy';
-  src: url('/fonts/12/avenirltpro/37BC59_0_0.eot');
-  src: url('/fonts/12/avenirltpro/37BC59_0_0.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/12/avenirltpro/37BC59_0_0.woff2') format('woff2'),
-    url('/fonts/12/avenirltpro/37BC59_0_0.woff') format('woff'),
-    url('/fonts/12/avenirltpro/37BC59_0_0.ttf') format('truetype');
-  }
+  src: url('#{$tocc-site-fonts-dir}/avenirltpro/37BC59_0_0.eot');
+  src: url('#{$tocc-site-fonts-dir}/avenirltpro/37BC59_0_0.eot?#iefix') format('embedded-opentype'),
+    url('#{$tocc-site-fonts-dir}/avenirltpro/37BC59_0_0.woff2') format('woff2'),
+    url('#{$tocc-site-fonts-dir}/avenirltpro/37BC59_0_0.woff') format('woff'),
+    url('#{$tocc-site-fonts-dir}/avenirltpro/37BC59_0_0.ttf') format('truetype');
+}
 
 $brand-color-one: #1D1D1B; // Ebony
 $brand-color-two: #C1A01E; // Nugget

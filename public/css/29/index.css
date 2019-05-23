@@ -1,27 +1,27 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @font-face {
   font-family: 'jenna_sueregular';
-  src: url("/fonts/29/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/29/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/29/jennasue/jennasue-webfont.ttf") format("truetype");
+  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -53,25 +53,25 @@
  * @brand    Yorkshire Holiday Cottages
  * @name     content
  * @author   Alex Wyett
- * @date     2019-04-25
+ * @date     2019-05-23
  */
 @font-face {
   font-family: 'jenna_sueregular';
-  src: url("/fonts/29/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/29/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/29/jennasue/jennasue-webfont.ttf") format("truetype");
+  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -135,6 +135,9 @@
   line-height: 1.8;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
   margin-bottom: 1.2rem;
 }
 
@@ -145,25 +148,25 @@
  * @brand    Yorkshire Holiday Cottages
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-20
+ * @date     2019-05-23
  */
 @font-face {
   font-family: 'jenna_sueregular';
-  src: url("/fonts/29/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/29/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/29/jennasue/jennasue-webfont.ttf") format("truetype");
+  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/29/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
+  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

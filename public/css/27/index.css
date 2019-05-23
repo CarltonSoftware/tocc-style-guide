@@ -1,10 +1,10 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @font-face {
   font-family: 'sharpsansbook';
   src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
@@ -60,7 +60,7 @@
  * @brand    Wales Cottage Holidays
  * @name     content
  * @author   Alex Wyett
- * @date     2019-04-25
+ * @date     2019-05-23
  */
 @font-face {
   font-family: 'sharpsansbook';
@@ -149,6 +149,9 @@
   line-height: 1.8;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
   margin-bottom: 1.2rem;
 }
 
@@ -159,7 +162,7 @@
  * @brand    Wales Cottage Holidays
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-20
+ * @date     2019-05-23
  */
 @font-face {
   font-family: 'sharpsansbook';
