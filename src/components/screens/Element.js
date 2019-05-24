@@ -103,8 +103,9 @@ class Element extends React.Component {
       );
     }
 
-    const cdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/" + packageJson.version + '/' + this.getMb().id;
-    const fontCdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/fonts/" + packageJson.version + '/' + this.getMb().id + '.css';
+    const cdn = "https://s3.eu-west-2.amazonaws.com/tocc-style-guide";
+    const cssCdn = cdn + "/css/" + packageJson.version + '/' + this.getMb().id;
+    const fontCdn = cdn + "/fonts/" + packageJson.version + '/' + this.getMb().id + '.css';
 
     return (
       <div className="container ElementListScreen">
@@ -142,7 +143,7 @@ class Element extends React.Component {
                     &lt;link rel="stylesheet" type="text/css" href="{fontCdn}" /&gt;
                   </pre>
                   <pre>
-                    &lt;link rel="stylesheet" type="text/css" href="{cdn}/index.css" /&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="{cssCdn}/index.css" /&gt;
                   </pre>
                 </li>
                 <li>Alternatively, if you just want the css for this component, add the following:
@@ -150,7 +151,7 @@ class Element extends React.Component {
                     &lt;link rel="stylesheet" type="text/css" href="{fontCdn}" /&gt;
                   </pre>
                   <pre>
-                    &lt;link rel="stylesheet" type="text/css" href="{cdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="{cssCdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
                   </pre>
                 </li>
                 <li>Use the html shown in the markup tab to create your element.</li>
