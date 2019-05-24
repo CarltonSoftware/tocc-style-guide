@@ -61,7 +61,7 @@ const sass = require('node-sass');
         file: basescsspath + 'fonts/_' + mb.id + '.scss',
         sourceMap: true,
         outputStyle: 'expanded'
-      }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '').replace(/\/fonts\//g, '../fonts/')
+      }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '').replace(/\/fonts\//g, '../../fonts/')
     );
 
     // Loop through all of the different types of elements

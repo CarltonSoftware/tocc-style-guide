@@ -1,0 +1,126 @@
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _slogan.scss
+ * @brand    Vanilla
+ * @name     slogan
+ * @author   Alex Wyett
+ * @date     2019-04-24
+ */
+.tocc__slogan {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0.5rem 0;
+  border: 0 none;
+  color: #045A4B;
+  font-family: 'Open Sans', sans-serif;
+  font-family: "sharpsansbook", sans-serif;
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _content.scss
+ * @brand    Wales Cottage Holidays
+ * @name     content
+ * @author   Alex Wyett
+ * @date     2019-05-24
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _content.scss
+ * @brand    Vanilla
+ * @name     content
+ * @author   Alex Wyett
+ * @date     2019-04-25
+ */
+.tocc__content h1,
+.tocc__content h2,
+.tocc__content h3,
+.tocc__content h4,
+.tocc__content h5 {
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: #045A4B;
+  font-weight: normal;
+  font-family: "sharpsansbook", sans-serif;
+  text-transform: none;
+}
+
+.tocc__content h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.tocc__content h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.tocc__content h3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.tocc__content h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tocc__content h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tocc__content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline.scss
+ * @brand    Wales Cottage Holidays
+ * @name     strapline
+ * @author   Mr George Crisan
+ * @date     2019-05-24
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _strapline--special-offer.scss
+ * @brand    Vanilla
+ * @name     strapline--special-offer
+ * @author   Mr George Crisan
+ * @date     2019-05-20
+ */
+.strapline--specialoffer {
+  border: 1px solid black;
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.strapline--specialoffer span {
+  color: red;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}

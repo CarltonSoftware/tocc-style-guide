@@ -1,0 +1,7 @@
+@import url("//hello.myfonts.net/count/37bc59");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url("../../fonts/avenirltpro/37BC59_0_0.eot");
+  src: url("../../fonts/avenirltpro/37BC59_0_0.eot?#iefix") format("embedded-opentype"), url("../../fonts/avenirltpro/37BC59_0_0.woff2") format("woff2"), url("../../fonts/avenirltpro/37BC59_0_0.woff") format("woff"), url("../../fonts/avenirltpro/37BC59_0_0.ttf") format("truetype");
+}
