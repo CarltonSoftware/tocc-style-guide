@@ -1,6 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
 /**
  * TOCC Style Guide Element
  * 
@@ -10,13 +8,6 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
 .tocc__slogan {
   font-size: 18px;
   line-height: 28px;
@@ -35,7 +26,7 @@
  * @brand    Good Life Lake District Cottages
  * @name     content
  * @author   Alex Wyett
- * @date     2019-04-25
+ * @date     2019-05-24
  */
 /**
  * TOCC Style Guide Element
@@ -96,6 +87,9 @@
   line-height: 1.8;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
   margin-bottom: 1.2rem;
 }
 
@@ -106,7 +100,7 @@
  * @brand    Good Life Lake District Cottages
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-20
+ * @date     2019-05-24
  */
 /**
  * TOCC Style Guide Element

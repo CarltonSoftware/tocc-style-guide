@@ -1,34 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Open+Sans+Condensed:300|Montserrat:600|Roboto+Slab|Lato:400,700,400italic&display=swap");
-@font-face {
-  font-family: 'sharpsansbook';
-  src: url("/fonts/sharpsansbook/SharpSans-Book.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Book.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Book.eot") format("eot");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sharpsansbook';
-  src: url("/fonts/sharpsansbook/SharpSans-BookItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-BookItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-BookItalic.eot") format("eot");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'sharpsansbook';
-  src: url("/fonts/sharpsansbook/SharpSans-Semibold.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-Semibold.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-Semibold.eot") format("eot");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sharpsansbook';
-  src: url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff2") format("woff2"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.woff") format("woff"), url("/fonts/sharpsansbook/SharpSans-SemiboldItalic.eot") format("eot");
-  font-weight: bold;
-  font-style: italic;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -88,5 +58,8 @@
   line-height: 1.8;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
+}
+
+.tocc__content p:not(:last-child) {
   margin-bottom: 1.2rem;
 }
