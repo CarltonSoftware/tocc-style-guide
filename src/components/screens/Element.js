@@ -103,6 +103,7 @@ class Element extends React.Component {
     }
 
     const cdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/" + this.getMb().id;
+    const fontCdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/fonts/" + this.getMb().id + '.css';
 
     return (
       <div className="container ElementListScreen">
@@ -137,10 +138,16 @@ class Element extends React.Component {
               <ol>
                 <li>Add the following into the &lt;head&gt; tag:
                   <pre>
+                    &lt;link rel="stylesheet" type="text/css" href="{fontCdn}" /&gt;
+                  </pre>
+                  <pre>
                     &lt;link rel="stylesheet" type="text/css" href="{cdn}/index.css" /&gt;
                   </pre>
                 </li>
-                <li>Alternatively, if you just want the css for this component, add the following::
+                <li>Alternatively, if you just want the css for this component, add the following:
+                  <pre>
+                    &lt;link rel="stylesheet" type="text/css" href="{fontCdn}" /&gt;
+                  </pre>
                   <pre>
                     &lt;link rel="stylesheet" type="text/css" href="{cdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
                   </pre>
