@@ -1,21 +1,3 @@
-@import 'vanilla';
-
-@font-face {
-    font-family: 'Arcon Regular';
-    src: url('#{$tocc-site-fonts-dir}/arconregular/arcon-regular-webfont.woff2') format('woff2'),
-         url('#{$tocc-site-fonts-dir}/arconregular/arcon-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Arcon Regular Bold';
-    src: url('#{$tocc-site-fonts-dir}/arconregular/arcon-regular-webfont.woff2') format('woff2'),
-         url('#{$tocc-site-fonts-dir}/arconregular/arcon-regular-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: bold;
-}
-
 //Colors
 $site-color-one: #27387A; // BC Astronaut
 $site-color-two: #4CA8DB; // BC Viking
@@ -31,3 +13,5 @@ $site-content-header-font-family: 'Arcon Regular Bold', sans-serif;
 $site-content-header-font-weight: bold;
 $site-slogan-font-family: 'Arcon Regular Bold', sans-serif;
 $site-slogan-font-weight: bold;
+
+@import 'vanilla';

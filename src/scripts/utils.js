@@ -37,11 +37,20 @@ module.exports = {
 
     fs.ensureFileSync(basescsspath + '/variables/_vanilla.scss');
     fs.ensureFileSync(basescsspath + '/variables/_' +  brand + '.scss');
+    fs.ensureFileSync(basescsspath + '/fonts/_' +  brand + '.scss');
+    
+    // Write fonts file
+    fs.writeFileSync(
+      basescsspath + '/fonts/_' +  brand + '.scss', [
+        '@import \'../variables/' + brand + '\';',
+        '@import \'vanilla\';',
+      ].join('\n')
+    );
 
     utillines.push('');
     utillines.push('// Include global variables');
     if (brand !== 'vanilla') {
-      //utillines.push('@import \'../../variables/vanilla\';');
+      utillines.push('@import \'../../variables/vanilla\';');
     }
     utillines.push('@import \'../../variables/' + brand + '\';');
     

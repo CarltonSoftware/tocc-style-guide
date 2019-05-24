@@ -38,6 +38,7 @@ class Element extends React.Component {
   importScss(props) {
     let mb = this.getMb(props);
 
+    import('../../scss/fonts/_' + mb.id + '.scss');
     import('../../scss/' + props.match.params.element + '/' + mb.id + '/_' + props.match.params.item + '.scss');
   }
 

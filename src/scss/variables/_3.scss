@@ -1,5 +1,4 @@
-@import 'vanilla';
-
+$tocc-google-fonts: 'Open+Sans|Oswald';
 $site-color-one: #4C565C;
 $site-color-two: #01A6AA;
 $site-color-three: #E50171;  // BB Razzamatazz
@@ -14,3 +13,5 @@ $site-content-header-text-transform: uppercase;
 
 $site-slogan-font-family: 'Oswald', sans-serif;
 $site-slogan-text-transform: uppercase;
+
+@import 'vanilla';

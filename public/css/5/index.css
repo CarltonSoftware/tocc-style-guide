@@ -1,24 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@font-face {
-  font-family: 'Arcon Regular';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Arcon Regular Bold';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: bold;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -47,22 +27,8 @@
  * @brand    Blueriver Cottages
  * @name     content
  * @author   Alex Wyett
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'Arcon Regular';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Arcon Regular Bold';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: bold;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -135,22 +101,8 @@
  * @brand    Blueriver Cottages
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'Arcon Regular';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Arcon Regular Bold';
-  src: url("/fonts/arconregular/arcon-regular-webfont.woff2") format("woff2"), url("/fonts/arconregular/arcon-regular-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: bold;
-}
-
 /**
  * TOCC Style Guide Element
  * 

@@ -1,31 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@font-face {
-  font-family: 'jenna_sueregular';
-  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -53,29 +26,8 @@
  * @brand    Yorkshire Holiday Cottages
  * @name     content
  * @author   Alex Wyett
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'jenna_sueregular';
-  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -148,29 +100,8 @@
  * @brand    Yorkshire Holiday Cottages
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'jenna_sueregular';
-  src: url("/fonts/jennasue/jennasue-webfont.woff2") format("woff2"), url("/fonts/jennasue/jennasue-webfont.woff") format("woff"), url("/fonts/jennasue/jennasue-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor';
-  src: url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TeX Gyre Adventor Bold';
-  src: url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.woff") format("woff"), url("/fonts/texgyreadventor/texgyreadventor-bold-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 

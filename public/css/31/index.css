@@ -1,17 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@font-face {
-  font-family: 'Museo Sans 300';
-  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -39,15 +26,8 @@
  * @brand    Best of Wales
  * @name     content
  * @author   Alex Wyett
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'Museo Sans 300';
-  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 
@@ -120,15 +100,8 @@
  * @brand    Best of Wales
  * @name     strapline
  * @author   Mr George Crisan
- * @date     2019-05-23
+ * @date     2019-05-24
  */
-@font-face {
-  font-family: 'Museo Sans 300';
-  src: url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff2") format("woff2"), url("/fonts/museosans/exljbris_-_museosans-300_3-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /**
  * TOCC Style Guide Element
  * 

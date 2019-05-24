@@ -1,5 +1,3 @@
-@import 'vanilla';
-
 // Colors
 $site-color-one:  #626366; // CO Tuna
 $site-color-two: #97ACB5; // CO Botticelli
@@ -15,3 +13,7 @@ $site-content-header-font-family: 'Montserrat', sans-serif;
 $site-content-header-font-weight: bold;
 $site-slogan-font-family: 'Montserrat', sans-serif;
 $site-slogan-font-weight: bold;
+
+$tocc-google-fonts: 'Open+Sans|Montserrat';
+
+@import 'vanilla';

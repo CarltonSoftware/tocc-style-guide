@@ -1,6 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
 /**
  * TOCC Style Guide Element
  * 
@@ -10,7 +8,6 @@
  * @author   Alex Wyett
  * @date     2019-04-24
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .tocc__slogan {
   font-size: 18px;
   line-height: 28px;

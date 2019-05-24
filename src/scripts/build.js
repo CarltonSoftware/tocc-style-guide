@@ -45,6 +45,24 @@ const sass = require('node-sass');
     lines = lines.concat(utillines);
     lines.push('');
     lines.push('');
+    
+    if (mb.id !== 'vanilla') {
+      // Create font file for the marketing brand
+      const fontPath = basecsspath + '../fonts/' + mb.id + '.css';
+
+      if (fsCheckExists(fontPath)) {
+        fs.unlinkSync(fontPath);
+      }
+
+      fs.writeFileSync(
+        fontPath,
+        sass.renderSync({
+          file: basescsspath + 'fonts/_' + mb.id + '.scss',
+          sourceMap: true,
+          outputStyle: 'expanded'
+        }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '')
+      );
+    }
 
     // Loop through all of the different types of elements
     for (const t in types) {

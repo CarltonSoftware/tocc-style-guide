@@ -1,7 +1,5 @@
 @import 'vanilla';
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 $site-color-one: #54284E; // GL LOULOU
 $site-color-six: #006068; // GL ATTOLL
 $site-color-three: #A87EB1; // GL EAST SIDE
@@ -11,6 +9,7 @@ $site-color-two: #F5C400; // GL SWEET CORN
 $site-color-seven: #8D846A; // Buttermilk #3E3935
 $site-color-eight: #DBD9D6; // GL GALLERY
 
+$tocc-google-fonts: 'Open+Sans|Oswald';
 
 $site-content-header-font-family: 'Oswald', sans-serif;
 $site-content-header-text-transform: uppercase;
