@@ -4,8 +4,9 @@ const prompt = require('tabsutils/utils/prompt');
 const whoAmi = require('tabsutils/utils/whoAmi');
 const fs = require('fs-extra');
 const utils = require('./utils');
+const packageJson = require('../../package.json');
 const basescsspath = __dirname + '/../scss/';
-const basecsspath = __dirname + '/../../public/css/';
+const basecsspath = __dirname + '/../../public/css/' + packageJson.version + '/';
 const getdir = utils.getdir;
 const getbranddir = utils.getbranddir;
 const getfilepath = utils.getfilepath;
@@ -47,7 +48,8 @@ const sass = require('node-sass');
     lines.push('');
     
     // Create font file for the marketing brand
-    const fontPath = basecsspath + '../fonts/' + mb.id + '.css';
+    const fontPath = basecsspath + '../../fonts/' +  packageJson.version + '/' + mb.id + '.css';
+    fs.ensureFileSync(fontPath);
 
     if (fsCheckExists(fontPath)) {
       fs.unlinkSync(fontPath);
@@ -59,7 +61,7 @@ const sass = require('node-sass');
         file: basescsspath + 'fonts/_' + mb.id + '.scss',
         sourceMap: true,
         outputStyle: 'expanded'
-      }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '').replace(/\/fonts\//g, './fonts/')
+      }).css.toString().replace(/\/\*[^*]*\*+([^\/][^*]*\*+)*\//, '').replace(/\/fonts\//g, '../fonts/')
     );
 
     // Loop through all of the different types of elements

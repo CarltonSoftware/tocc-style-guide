@@ -3,6 +3,7 @@ import connect from '../../connect';
 import elements from '../../elements.json';
 import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
+const packageJson = require('../../../package.json');
 
 class Element extends React.Component {
   constructor(props) {
@@ -102,8 +103,8 @@ class Element extends React.Component {
       );
     }
 
-    const cdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/" + this.getMb().id;
-    const fontCdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/fonts/" + this.getMb().id + '.css';
+    const cdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/" + packageJson.version + '/' + this.getMb().id;
+    const fontCdn = "https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/fonts/" + packageJson.version + '/' + this.getMb().id + '.css';
 
     return (
       <div className="container ElementListScreen">

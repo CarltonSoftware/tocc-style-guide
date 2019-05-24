@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Actor&display=swap");
+@font-face {
+  font-family: 'wheatland';
+  src: url("../fonts/wheatland/wheatland.eot");
+  src: url("../fonts/wheatland/wheatland.eot?#iefix") format("embedded-opentype"), url("../fonts/wheatland/wheatland.woff2") format("woff2"), url("../fonts/wheatland/wheatland.woff") format("woff"), url("../fonts/wheatland/wheatland.ttf") format("truetype"), url("../fonts/wheatland/wheatland.svg#wheatland") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
