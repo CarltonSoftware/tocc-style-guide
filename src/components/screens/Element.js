@@ -66,7 +66,7 @@ class Element extends React.Component {
   loadCss() {
     let mb = this.getMb();
     this.setState({ loadingCss: true}, () => {
-      fetch(process.env.PUBLIC_URL + '/css/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
+      fetch(process.env.PUBLIC_URL + '/css/' + packageJson.version + '/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
         res.text().then((css) => {
           this.setState({ loadingCss: false, css: css });
         });
