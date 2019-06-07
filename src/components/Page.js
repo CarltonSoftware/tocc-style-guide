@@ -20,7 +20,7 @@ class Page extends React.Component {
       		    </p>
       		  </div>
           </div>
-    		</footer>
+        </footer>
       </BrowserRouter>
     );
   }

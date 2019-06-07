@@ -7,6 +7,7 @@ import ElementListScreen from './screens/ElementList';
 import ElementScreen from './screens/Element';
 import HomeScreen from './screens/Home';
 import Page from './Page';
+import 'bulma';
 
 class App extends React.Component {
   constructor(props) {

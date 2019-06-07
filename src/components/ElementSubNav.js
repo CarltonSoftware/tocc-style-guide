@@ -1,6 +1,7 @@
 import React from 'react';
-import elements from '../elements.json';
 import { NavLink } from 'react-router-dom';
+const elements = {};
+console.log(require('toccstyles').elements);
 
 export default (props) => {
   if (!elements[props.element]) {

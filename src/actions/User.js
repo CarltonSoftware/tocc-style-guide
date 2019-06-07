@@ -22,12 +22,15 @@ export const whoAmi = function() {
       a.mutateResponse(response.entity);
 
       var setting = getSelectedMarketingBrandSetting(a, marketingBrand_settingname);
+      var brand = { id: 'vanilla' };
       if (setting) {
-        dispatch({
-          type: EVENTS.SELECT_MARKETINGBRAND,
-          marketingBrand: setting.getDecodedValue().pop()
-        });
+        brand = setting.getDecodedValue().pop();
       }
+      
+      dispatch({
+        type: EVENTS.SELECT_MARKETINGBRAND,
+        marketingBrand: brand
+      });
 
       // Load root
       client.getInstance().getRootCacheable().then(function(json) {
@@ -150,7 +153,10 @@ export const selectMarketingBrand = function(actor, marketingBrand) {
         marketingBrand === null ? marketingBrand : { id: marketingBrand.id, name: marketingBrand.name },
         marketingBrand === null ? -1 : 0,
         function() {
-          window.location.reload()
+          dispatch({
+            type: EVENTS.SELECT_MARKETINGBRAND,
+            marketingBrand: marketingBrand
+          });
         }
       )
     );

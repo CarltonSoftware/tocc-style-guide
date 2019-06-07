@@ -3,8 +3,8 @@ import ToggleClassButton from './ToggleClassButton';
 import { NavLink } from 'react-router-dom';
 import connect from '../connect';
 import { client } from 'plato-js-client';
-import elements from '../elements.json';
 import * as EVENTS from '../events';
+const elements = require('toccstyles').elements;
 
 class NavBar extends React.Component {
   getElementLinks() {

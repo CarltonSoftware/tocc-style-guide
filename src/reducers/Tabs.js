@@ -107,6 +107,31 @@ const Tabs = (state = {}, action) => {
   case EVENTS.GET_CURRENTUSER_SUCCESS:
     return {...state, user: action.user };
   case EVENTS.SELECT_MARKETINGBRAND:
+    
+    // This is a bit of a hack - can't get toccstyles module import working properly
+    var css = {
+      toccfonts: EVENTS.CDN + '/fonts/' + action.marketingBrand.id + '.css',
+      toccstyles: EVENTS.CDN + '/' + action.marketingBrand.id + '/index.css'
+    };
+    
+    for (const i in css) {
+      if (document.getElementById(i)) {
+        document.getElementById(i).href = css[i];
+      } else {
+        var head = document.getElementsByTagName('HEAD')[0];
+
+        // Create new link Element 
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.id = i;
+        link.type = 'text/css';
+        link.href = css[i];
+
+        // Append link element to HTML head 
+        head.appendChild(link);
+      }
+    }
+    
     return {...state, selectedMarketingBrand: action.marketingBrand };
   case EVENTS.GET_CURRENTUSER_ERROR:
   case EVENTS.LOGOUT:

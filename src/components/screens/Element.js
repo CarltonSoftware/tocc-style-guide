@@ -1,15 +1,14 @@
 import React from 'react';
 import connect from '../../connect';
-import elements from '../../elements.json';
 import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
-const packageJson = require('../../../package.json');
+const stylesVersion = require('toccstyles').version;
+const cdn = "https://s3.eu-west-2.amazonaws.com/toccstyles/" + stylesVersion;
+const elements = require('toccstyles').elements;
 
 class Element extends React.Component {
   constructor(props) {
     super(props);
-
-    this.importScss(props);
 
     this.state = {
       loadingHtml: false,
@@ -35,19 +34,19 @@ class Element extends React.Component {
 
     return mb;
   }
-
-  importScss(props) {
-    let mb = this.getMb(props);
-
-    import('../../scss/fonts/_' + mb.id + '.scss');
-    import('../../scss/' + props.match.params.element + '/' + mb.id + '/_' + props.match.params.item + '.scss');
+  
+  getFontsPath(mb) {
+    return cdn + '/fonts/' + mb.id + '.css';
+  }
+  
+  getCssPath(mb) {
+    return cdn + '/' + mb.id + '/index.css';
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.match.params.element !== prevProps.match.params.element 
       || this.props.match.params.item !== prevProps.match.params.item
     ) {
-      this.importScss(this.props);
       this.loadHtml();
       this.loadCss();
     }
@@ -66,7 +65,7 @@ class Element extends React.Component {
   loadCss() {
     let mb = this.getMb();
     this.setState({ loadingCss: true}, () => {
-      fetch(process.env.PUBLIC_URL + '/css/' + packageJson.version + '/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
+      fetch(process.env.PUBLIC_URL + '/css/' + stylesVersion + '/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
         res.text().then((css) => {
           this.setState({ loadingCss: false, css: css });
         });
@@ -103,9 +102,8 @@ class Element extends React.Component {
       );
     }
 
-    const cdn = "https://s3.eu-west-2.amazonaws.com/tocc-style-guide";
-    const cssCdn = cdn + "/css/" + packageJson.version + '/' + this.getMb().id;
-    const fontCdn = cdn + "/fonts/" + packageJson.version + '/' + this.getMb().id + '.css';
+    const cssCdn = this.getCssPath(this.getMb());
+    const fontCdn = this.getFontsPath(this.getMb());
 
     return (
       <div className="container ElementListScreen">

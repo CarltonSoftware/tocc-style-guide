@@ -1,9 +1,9 @@
 import React from 'react';
 import connect from '../../connect';
-import elements from '../../elements.json';
 import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
 import Hero from '../Hero';
+const elements = require('toccstyles').elements;
 
 class ElementList extends React.Component {
   render() {
