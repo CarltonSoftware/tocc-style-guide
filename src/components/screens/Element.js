@@ -65,7 +65,7 @@ class Element extends React.Component {
   loadCss() {
     let mb = this.getMb();
     this.setState({ loadingCss: true}, () => {
-      fetch(process.env.PUBLIC_URL + '/css/' + stylesVersion + '/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
+      fetch(cdn + '/' + mb.id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css').then((res) => {
         res.text().then((css) => {
           this.setState({ loadingCss: false, css: css });
         });
@@ -104,14 +104,15 @@ class Element extends React.Component {
 
     const cssCdn = this.getCssPath(this.getMb());
     const fontCdn = this.getFontsPath(this.getMb());
+    const componentCdn = cdn + '/' + this.getMb().id + '/' + this.props.match.params.element + '/' + this.props.match.params.item + '/' + this.props.match.params.item + '.css';
 
     return (
       <div className="container ElementListScreen">
         <div className="columns">
-          <div className="column is-one-quarter">
+          <div className="column is-one-fifth">
             <ElementSubNav element={ this.props.match.params.element } />
           </div>
-          <div className="column is-three-quarters">
+          <div className="column is-four-fifths">
             { this.state.loadingHtml && <p>Loading preview</p> }
             <div className="content">
               <h2>{ element.name }</h2>
@@ -149,7 +150,7 @@ class Element extends React.Component {
                     &lt;link rel="stylesheet" type="text/css" href="{fontCdn}" /&gt;
                   </pre>
                   <pre>
-                    &lt;link rel="stylesheet" type="text/css" href="{cssCdn}/{this.props.match.params.element}/{this.props.match.params.item}/{this.props.match.params.item}.css" /&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="{componentCdn}" /&gt;
                   </pre>
                 </li>
                 <li>Use the html shown in the markup tab to create your element.</li>
