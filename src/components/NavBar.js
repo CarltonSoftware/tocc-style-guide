@@ -64,7 +64,9 @@ class NavBar extends React.Component {
                 { this.props.Tabs.MarketingBrand && <div className="navbar-dropdown">
                   <a href="#" onClick={ () => { this.props.selectMarketingBrand(this.props.Tabs.user, null); } } className="navbar-item">Vanilla</a>
                   { 
-                    this.props.Tabs.MarketingBrand.map((mb, i) => {
+                    this.props.Tabs.MarketingBrand.filter((mb, j) => {
+                      return [9, 7, 2, 13, 16, 17, 20, 14].indexOf(mb.id) < 0;
+                    }).map((mb, i) => {
                       const selectMb = () => {
                         this.props.selectMarketingBrand(this.props.Tabs.user, mb);
                       };
