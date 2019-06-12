@@ -115,7 +115,7 @@ class Element extends React.Component {
           <div className="column is-four-fifths">
             { this.state.loadingHtml && <p>Loading preview</p> }
             <div className="content">
-              <h2>{ element.name }</h2>
+              <h2>{ element.short }</h2>
               <p>{ element.description }</p>
             </div>
             <div className="tags is-small">

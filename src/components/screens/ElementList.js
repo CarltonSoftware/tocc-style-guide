@@ -15,12 +15,9 @@ class ElementList extends React.Component {
       );
     }
 
-    const name = this.props.match.params.element;
-
     return (
       <div className="container ElementListScreen">
         <Hero>
-          <h3>{ name.charAt(0).toUpperCase() + name.slice(1) }</h3>
           <ElementSubNav element={ this.props.match.params.element } />
         </Hero>
       </div>

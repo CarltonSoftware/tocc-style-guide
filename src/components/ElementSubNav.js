@@ -6,14 +6,15 @@ export default (props) => {
   if (!elements[props.element]) {
     return null;
   }
-
+  
   return (
     <aside className="menu">
+      <h3>{ props.element.charAt(0).toUpperCase() + props.element.slice(1) }</h3>
       <ul className="menu-list">
         { 
           elements[props.element].map((e, i) => {
             return (
-              <li key={i}><NavLink to={ { pathname: '/' + props.element + '/' + e.name } }>{ e.name.charAt(0).toUpperCase() + e.name.slice(1) }</NavLink></li>
+              <li key={i}><NavLink to={ { pathname: '/' + props.element + '/' + e.name } }>{ e.short }</NavLink></li>
             );
           })
         }
