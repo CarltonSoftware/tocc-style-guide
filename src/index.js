@@ -1,4 +1,6 @@
-import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { client } from 'plato-js-client';
@@ -6,6 +8,8 @@ import { Provider } from 'react-redux'
 import store from './store';
 import App from './components/App';
 import Login from './components/Login';
+
+require('details-polyfill');
 
 client.getInstance().setInstance({
   apiRoot: 'https://toccl.test.api.tabs-software.co.uk',
