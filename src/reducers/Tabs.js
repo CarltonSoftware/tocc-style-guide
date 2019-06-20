@@ -109,9 +109,10 @@ const Tabs = (state = {}, action) => {
   case EVENTS.SELECT_MARKETINGBRAND:
     
     // This is a bit of a hack - can't get toccstyles module import working properly
+    const r = Math.round(Math.random() * 1000000000, 2);
     var css = {
-      toccfonts: EVENTS.CDN + '/fonts/' + action.marketingBrand.id + '.css',
-      toccstyles: EVENTS.CDN + '/' + action.marketingBrand.id + '/index.css'
+      toccfonts: EVENTS.CDN + '/fonts/' + action.marketingBrand.id + '.css?r=' + r,
+      toccstyles: EVENTS.CDN + '/' + action.marketingBrand.id + '/index.css?r=' + r
     };
     
     for (const i in css) {
