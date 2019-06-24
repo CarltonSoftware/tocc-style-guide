@@ -109,10 +109,7 @@ class Element extends React.Component {
     return (
       <div className="container ElementListScreen">
         <div className="columns">
-          <div className="column is-one-fifth">
-            <ElementSubNav element={ this.props.match.params.element } />
-          </div>
-          <div className="column is-four-fifths">
+          <div className="column">
             { this.state.loadingHtml && <p>Loading preview</p> }
             <div className="content">
               <h2>{ element.short }</h2>

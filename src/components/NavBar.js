@@ -10,9 +10,20 @@ class NavBar extends React.Component {
   getElementLinks() {
     return Object.keys(elements).map((e, i) => {
       return (
-        <NavLink className="navbar-item" to={ { pathname: '/' + e } } key={ i }>
-          { e.charAt(0).toUpperCase() + e.slice(1) + 's' }
-        </NavLink>
+        <React.Fragment key={ i }>
+          <h3 className="navbar-item">
+            { e.charAt(0).toUpperCase() + e.slice(1) + 's' }
+          </h3>
+          <hr className="navbar-divider" />
+          { 
+            elements[e].map((j, k) => {
+              return (
+                <NavLink className="navbar-item" to={ { pathname: '/' + e + '/' + j.name } } key={ k }>{ j.short }</NavLink>
+              );
+            })
+          }
+          <hr className="navbar-divider" />
+        </React.Fragment>
       );
     })
   }
