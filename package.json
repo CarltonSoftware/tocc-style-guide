@@ -10,6 +10,7 @@
     "predeploy": "react-scripts build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://styleguide.originalcottages.co.uk",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.462.0",
