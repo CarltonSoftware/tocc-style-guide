@@ -10,7 +10,7 @@ https://gitcdn.xyz/repo/CarltonSoftware/tocc-style-guide/master/public/css/10/in
 
 ### Prerequisite
 
-You will need the (https://github.com/CarltonSoftware/toccstyles)[TOCCStyles] repo installed.  Once cloned create a node symlink (yarn link).
+You will need the [TOCC Styles](https://github.com/CarltonSoftware/toccstyles) repo installed.  Once cloned create a node symlink (yarn link).
 
 ### Install
 
