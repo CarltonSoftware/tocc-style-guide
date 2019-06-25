@@ -12,10 +12,10 @@ import Login from './components/Login';
 require('details-polyfill');
 
 client.getInstance().setInstance({
-  apiRoot: 'https://toccl.test.api.tabs-software.co.uk',
+  apiRoot: 'https://toccl.api.tabs-software.co.uk',
   apiPrefix: '/v2',
   oAuthRedirectUrl: window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/oauth.html',
-  clientId: '16_41n59rhkvnqc408400scg4soww4goo0koc8gksg8oggwwc44co',
+  clientId: '16_2jgop2ihc0sg0sgwccskk0c0804k4ogw40s44ccgs4c8g0wgw4',
 });
 
 if (window.location.hash) {
