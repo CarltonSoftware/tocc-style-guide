@@ -5,7 +5,8 @@
   "main": "index.js",
   "author": "Alex Wyett",
   "scripts": {
-    "start": "PORT=7777 react-scripts start",
+    "copycss": "rm -Rf public/css && cp -Rf node_modules/toccstyles/dist public/css",
+    "start": "yarn run copycss && PORT=7777 react-scripts start",
     "build": "react-scripts build",
     "predeploy": "react-scripts build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build"

@@ -2,8 +2,8 @@ import React from 'react';
 import connect from '../../connect';
 import NotFoundScreen from './NotFound';
 import ElementSubNav from '../ElementSubNav';
-const stylesVersion = require('toccstyles').version;
-const cdn = "https://s3.eu-west-2.amazonaws.com/toccstyles/" + stylesVersion;
+import * as EVENTS from '../../events';
+const cdn = EVENTS.CDN;
 const elements = require('toccstyles').elements;
 
 class Element extends React.Component {
