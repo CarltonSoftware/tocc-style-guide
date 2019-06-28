@@ -34,6 +34,13 @@ class NavBar extends React.Component {
 
   render() {
     const links = this.getElementLinks();
+    let selectedWebsite = null;
+    if (this.props.Tabs.selectedMarketingBrand 
+      && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
+      && this.props.Tabs.MarketingBrand
+    ) {
+      selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
+    }
 
     return (
       <nav className="navbar">
@@ -73,7 +80,7 @@ class NavBar extends React.Component {
                 </a>
 
                 { this.props.Tabs.MarketingBrand && <div className="navbar-dropdown">
-                  <a href="#" onClick={ () => { this.props.selectMarketingBrand(this.props.Tabs.user, null); } } className="navbar-item">Vanilla</a>
+                  <a href="#" onClick={ () => { this.props.selectMarketingBrand(this.props.Tabs.user, { id: "vanilla", name: "Vanilla" }); } } className="navbar-item">Vanilla</a>
                   { 
                     this.props.Tabs.MarketingBrand.filter((mb, j) => {
                       return [9, 7, 2, 13, 16, 17, 20, 14].indexOf(mb.id) < 0;
@@ -88,6 +95,8 @@ class NavBar extends React.Component {
                   }
                 </div> }
               </div>
+              
+              { selectedWebsite && selectedWebsite.website && <div className="navbar-item"><a href={ selectedWebsite.website } target="_blank">View website</a></div> }
             </div> }
 
             <div className="navbar-end">

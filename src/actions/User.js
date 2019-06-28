@@ -22,9 +22,9 @@ export const whoAmi = function() {
       a.mutateResponse(response.entity);
 
       var setting = getSelectedMarketingBrandSetting(a, marketingBrand_settingname);
-      var brand = { id: 'vanilla' };
+      var brand = { id: 'vanilla', name: 'Vanilla' };
       if (setting) {
-        brand = setting.getDecodedValue().pop();
+        brand = setting.getDecodedValue().pop() || brand;
       }
       
       dispatch({
