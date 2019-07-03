@@ -10,11 +10,11 @@ class NavBar extends React.Component {
   getElementLinks() {
     return Object.keys(elements).map((e, i) => {
       return (
-        <React.Fragment key={ i }>
-          <h3 className="navbar-item">
+        <div className="navbar-item has-dropdown is-hoverable" key={ i }>
+          <a href="#" className="navbar-link">
             { e.charAt(0).toUpperCase() + e.slice(1) + 's' }
-          </h3>
-          <hr className="navbar-divider" />
+          </a>
+          <div className="navbar-dropdown">
           { 
             elements[e].map((j, k) => {
               return (
@@ -22,10 +22,10 @@ class NavBar extends React.Component {
               );
             })
           }
-          <hr className="navbar-divider" />
-        </React.Fragment>
+          </div>
+        </div>    
       );
-    })
+    });
   }
 
   whoAmi() {
@@ -33,7 +33,6 @@ class NavBar extends React.Component {
   }
 
   render() {
-    const links = this.getElementLinks();
     let selectedWebsite = null;
     if (this.props.Tabs.selectedMarketingBrand 
       && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
@@ -62,16 +61,8 @@ class NavBar extends React.Component {
               <NavLink className="navbar-item" to={ { pathname: '/' } }>
                 Home
               </NavLink>
-
-              { links.length > 0 && <div className="navbar-item has-dropdown is-hoverable">
-                <a href="#" className="navbar-link">
-                  Elements
-                </a>
-
-                <div className="navbar-dropdown">
-                  { links }
-                </div>
-              </div> }
+              
+              { this.getElementLinks() }
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a href="#" className="navbar-link">

@@ -1,7 +1,6 @@
 import React from 'react';
 import connect from '../../connect';
 import NotFoundScreen from './NotFound';
-import ElementSubNav from '../ElementSubNav';
 import * as EVENTS from '../../events';
 const cdn = EVENTS.CDN;
 const elements = require('toccstyles').elements;
