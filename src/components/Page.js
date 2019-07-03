@@ -16,7 +16,7 @@ class Page extends React.Component {
          	<div className="container">
       		  <div className="content">
       		    <p>
-      		      <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank">IT/Marketing</a>.
+      		      <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank" rel="noopener noreferrer">IT/Marketing</a>.
       		    </p>
       		  </div>
           </div>
