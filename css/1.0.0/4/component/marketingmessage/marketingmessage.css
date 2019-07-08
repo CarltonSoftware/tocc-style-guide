@@ -84,17 +84,14 @@
     float: left;
     border-right: 90px solid white;
   }
-  .oc-marketingmessages--wrapper .oc-marketingmessage:after {
+  .oc-marketingmessages--wrapper .oc-marketingmessage + .oc-marketingmessage:before {
     content: '';
     height: 100%;
     position: absolute;
     width: 1px;
     background-color: #F1F1F1;
     top: 0;
-    right: -45px;
-  }
-  .oc-marketingmessages--wrapper .oc-marketingmessage:last-of-type:after {
-    display: none;
+    left: -45px;
   }
   .oc-marketingmessages--wrapper .oc-marketingmessage .oc-title {
     min-height: 80px;
