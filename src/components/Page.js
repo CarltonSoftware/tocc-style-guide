@@ -38,13 +38,15 @@ class Page extends React.Component {
         { this.props.Tabs.state === EVENTS.GET_CURRENTUSER_START && <div className="container" style={ { minHeight: '70vh', paddingTop: '2rem' } }><p>Please wait...</p></div> }
         { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && <div style={ { minHeight: '70vh', paddingTop: '2rem' } }>{ this.props.children }</div> }
         <footer className="footer" style={ { minHeight: '30vh' } }>
-          <div className="columns">
-            <div className="column is-3">
-              <p>
-                <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank" rel="noopener noreferrer">IT/Marketing</a>.
-              </p>
+          <div className="container">
+            <div className="columns">
+              <div className="column is-3">
+                <p>
+                  <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank" rel="noopener noreferrer">IT/Marketing</a>.
+                </p>
+              </div>
+              { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && this.getElementLinks() }
             </div>
-            { this.getElementLinks() }
           </div>
         </footer>
       </BrowserRouter>
