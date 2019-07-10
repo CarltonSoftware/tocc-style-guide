@@ -20,6 +20,7 @@
   border-radius: 2px;
   line-height: 1;
   white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
   background: #5B8772;
   font-size: 12px;
 }
@@ -84,7 +85,7 @@
   font-size: 16px;
 }
 
-.oc-label--normal {
+.oc-label--normal, .oc-label__related .oc-label {
   font-size: 14px;
 }
 
@@ -102,4 +103,31 @@
 
 .oc-label--nano {
   font-size: 8px;
+}
+
+.oc-label--hollow, .oc-label__related .oc-label {
+  background: none;
+  border: 1px solid #F1F1F1;
+}
+
+.oc-label--hollow, .oc-label__related .oc-label, .oc-label--hollow:hover, .oc-label__related .oc-label:hover, .oc-label--hollow:visited, .oc-label__related .oc-label:visited {
+  color: #5B8772;
+}
+
+.oc-label--padded, .oc-label__related .oc-label {
+  padding: 8px 12px;
+  line-height: 20px;
+}
+
+.oc-label__related {
+  margin-bottom: 1rem;
+}
+
+.oc-label__related:before {
+  margin-right: 2rem;
+  line-height: 37px;
+}
+
+.oc-label__related > * {
+  margin-right: 4px;
 }
