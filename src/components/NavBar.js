@@ -97,7 +97,7 @@ class NavBar extends React.Component {
                 </div> }
               </div>
               
-              { selectedWebsite && selectedWebsite.website && <div className="navbar-item"><a href={ selectedWebsite.website } target="_blank">View website</a></div> }
+              { selectedWebsite && selectedWebsite.website && <div className="navbar-item"><a href={ selectedWebsite.website } target="_blank" rel="noopener noreferrer">View website</a></div> }
             </div> }
           </div>
         </div>
