@@ -1,6 +1,35 @@
 import React from 'react';
 import connect from '../../connect';
 
+class Colour extends React.Component {
+  constructor(props) {
+    super(props);
+    this.colourRef = React.createRef();
+    this.state = {
+      color: null,
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(function() {
+      const styles = window.getComputedStyle(this.colourRef.current);
+      this.setState({
+        color: styles.backgroundColor,
+        loading: false
+      });
+    }.bind(this), 2000);
+  }
+
+  render() {
+    return (
+      <span ref={ this.colourRef } className={ "oc-label oc-label--" + this.props.color }>
+        { this.props.color }: { this.state.loading && '...' }{ !this.state.loading && this.state.color }
+      </span>
+    );
+  }
+}
+
 class Home extends React.Component {
   render() {
     return (
@@ -26,7 +55,7 @@ class Home extends React.Component {
                 ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'].map((c, i) => {
                   return (
                     <li key={ i }>
-                      <span className={ "oc-label oc-label--" + c }>Color { c }</span>
+                      <Colour color={ c } />
                     </li>
                   );
                 })
