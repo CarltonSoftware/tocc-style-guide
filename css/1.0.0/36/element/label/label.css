@@ -1,0 +1,105 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _label.scss
+ * @brand    St. Ives Holidays
+ * @name     label
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _label.scss
+ * @brand    Vanilla
+ * @name     label
+ * @author   Tabs System User
+ */
+.oc-label {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 2px;
+  line-height: 1;
+  white-space: nowrap;
+  background: #444444;
+  font-size: 12px;
+}
+
+.oc-label, .oc-label:hover, .oc-label:visited {
+  color: white;
+}
+
+.oc-label--upper {
+  text-transform: uppercase;
+}
+
+.oc-label--one {
+  background: #444444;
+}
+
+.oc-label--two {
+  background: #44A542;
+}
+
+.oc-label--three {
+  background: #FECE00;
+}
+
+.oc-label--four {
+  background: #85D0F0;
+}
+
+.oc-label--five {
+  background: #1CABE0;
+}
+
+.oc-label--six {
+  background: #EEEEEE;
+}
+
+.oc-label--seven {
+  background: #28A2AF;
+}
+
+.oc-label--lightgrey {
+  background: #F1F1F1;
+}
+
+.oc-label--reallylightgrey {
+  background: #F8F8F8;
+}
+
+.oc-label--almostwhite {
+  background: #FEFEFE;
+}
+
+.oc-label--darkgrey {
+  background: #5B5B5B;
+}
+
+.oc-label--eight {
+  background: #FFED9E;
+}
+
+.oc-label--large {
+  font-size: 16px;
+}
+
+.oc-label--normal {
+  font-size: 14px;
+}
+
+.oc-label--small {
+  font-size: 12px;
+}
+
+.oc-label--mini {
+  font-size: 11px;
+}
+
+.oc-label--tiny {
+  font-size: 10px;
+}
+
+.oc-label--nano {
+  font-size: 8px;
+}
