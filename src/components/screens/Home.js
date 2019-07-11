@@ -97,6 +97,17 @@ class Home extends React.Component {
       'fontFamily'
     );
     
+    const Sf = CssHoc(
+      (props) => {
+        return (
+          <blockquote className="oc-slogan" ref={ props.cssRef }>
+            Slogan font: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
+          </blockquote>
+        );
+      },
+      'fontFamily'
+    );
+    
     return (
       <section className="hero">
         <div className="hero-body">
@@ -117,7 +128,16 @@ class Home extends React.Component {
               <ul className="oc-list--inline oc-clear__margin--small">
                 { 
                   colors.map((c, i) => {
-                    const Col = CssHoc(Colour, 'backgroundColor');
+                    const Col = CssHoc(
+                      (props) => {
+                        return (
+                          <span ref={ props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label oc-label--" + props.color }>
+                            { props.color }: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
+                          </span>
+                        );
+                      },
+                      'backgroundColor'
+                    );
                     return (
                       <li key={ i }>
                         <Col color={ c } />
@@ -130,6 +150,7 @@ class Home extends React.Component {
               <Tf />
               <Bf />
             </div>
+            <Sf />
             
           </div>
         </div>
