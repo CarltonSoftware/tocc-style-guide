@@ -1,5 +1,6 @@
 import React from 'react';
 import connect from '../../connect';
+const versionNumber = require('toccstyles').version;
 
 function CssHoc(CssComponent, CssProperty) {
   return class extends React.Component {
@@ -21,7 +22,7 @@ function CssHoc(CssComponent, CssProperty) {
             loading: false
           });
         }
-      }.bind(this), 2000);
+      }.bind(this), 1000);
     }
     
     render() {
@@ -31,36 +32,6 @@ function CssHoc(CssComponent, CssProperty) {
     }
   }
 }
-
-class Colour extends React.Component {
-  render() {
-    return (
-      <span ref={ this.props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label oc-label--" + this.props.color }>
-        { this.props.color }: { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
-      </span>
-    );
-  }
-};
-
-class TitleFont extends React.Component {
-  render() {
-    return (
-      <h5 ref={ this.props.cssRef }>
-        { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
-      </h5>
-    );
-  }
-};
-
-class BodyFont extends React.Component {
-  render() {
-    return (
-      <p ref={ this.props.cssRef }>
-        { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
-      </p>
-    );
-  }
-};
 
 class Home extends React.Component {
   render() {
@@ -115,7 +86,7 @@ class Home extends React.Component {
             <div className="oc-content">
               <h1>
                 The Original Cottage Company
-                <small className="oc-subtitle">Style Guide</small>
+                <small className="oc-subtitle">Style Guide version: { versionNumber }</small>
               </h1>
               <p>This site is intended to be a store of the components used in TOCC web applications.</p>
               <p>
