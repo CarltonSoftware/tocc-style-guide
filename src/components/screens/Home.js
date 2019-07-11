@@ -1,37 +1,102 @@
 import React from 'react';
 import connect from '../../connect';
 
-class Colour extends React.Component {
-  constructor(props) {
-    super(props);
-    this.colourRef = React.createRef();
-    this.state = {
-      color: null,
-      loading: true
-    };
-  }
+function CssHoc(CssComponent, CssProperty) {
+  return class extends React.Component {
+    constructor(props) {
+      super(props);
+      this._ref = React.createRef();
+      this.state = {
+        value: null,
+        loading: true
+      };
+    }
 
-  componentDidMount() {
-    setTimeout(function() {
-      const styles = window.getComputedStyle(this.colourRef.current);
-      this.setState({
-        color: styles.backgroundColor,
-        loading: false
-      });
-    }.bind(this), 2000);
-  }
-
-  render() {
-    return (
-      <span ref={ this.colourRef } className={ "oc-label oc-label--" + this.props.color }>
-        { this.props.color }: { this.state.loading && '...' }{ !this.state.loading && this.state.color }
-      </span>
-    );
+    componentDidMount() {
+      setTimeout(function() {
+        if (this._ref.current) {
+          const styles = window.getComputedStyle(this._ref.current);
+          this.setState({
+            value: styles[CssProperty],
+            loading: false
+          });
+        }
+      }.bind(this), 2000);
+    }
+    
+    render() {
+      return (
+        <CssComponent cssRef={ this._ref } cssLoading={ this.state.loading } cssValue={ this.state.value } {...this.props} />
+      );
+    }
   }
 }
 
+class Colour extends React.Component {
+  render() {
+    return (
+      <span ref={ this.props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label oc-label--" + this.props.color }>
+        { this.props.color }: { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
+      </span>
+    );
+  }
+};
+
+class TitleFont extends React.Component {
+  render() {
+    return (
+      <h5 ref={ this.props.cssRef }>
+        { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
+      </h5>
+    );
+  }
+};
+
+class BodyFont extends React.Component {
+  render() {
+    return (
+      <p ref={ this.props.cssRef }>
+        { this.props.cssLoading && '...' }{ !this.props.cssLoading && this.props.cssValue }
+      </p>
+    );
+  }
+};
+
 class Home extends React.Component {
   render() {
+    let selectedWebsite = null;
+    if (this.props.Tabs.selectedMarketingBrand 
+      && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
+      && this.props.Tabs.MarketingBrand
+    ) {
+      selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
+    }
+    
+    const colors = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 
+      'eight', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
+    
+    const Tf = CssHoc(
+      (props) => {
+        return (
+          <h5 ref={ props.cssRef }>
+            Title font: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
+          </h5>
+        );
+      },
+      'fontFamily'
+    );
+    
+    const Bf = CssHoc(
+      (props) => {
+        return (
+          <p ref={ props.cssRef }>
+            Body font: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
+          </p>
+        );
+      },
+      'fontFamily'
+    );
+    
     return (
       <section className="hero">
         <div className="hero-body">
@@ -47,20 +112,24 @@ class Home extends React.Component {
                 marketing brand variances by selecting brand from the navigation bar above.
               </p>
             
-              <h4>Globals</h4>
+              <h4>Globals { selectedWebsite && <span>for { selectedWebsite.name }</span> }</h4>
               <h5>Colours</h5>
+              <ul className="oc-list--inline oc-clear__margin--small">
+                { 
+                  colors.map((c, i) => {
+                    const Col = CssHoc(Colour, 'backgroundColor');
+                    return (
+                      <li key={ i }>
+                        <Col color={ c } />
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+              <h5>Fonts</h5>
+              <Tf />
+              <Bf />
             </div>
-            <ul className="oc-list--inline">
-              { 
-                ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'].map((c, i) => {
-                  return (
-                    <li key={ i }>
-                      <Colour color={ c } />
-                    </li>
-                  );
-                })
-              }
-            </ul>
             
           </div>
         </div>
