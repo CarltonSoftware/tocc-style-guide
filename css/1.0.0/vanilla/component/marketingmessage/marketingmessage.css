@@ -18,7 +18,12 @@
   overflow: hidden;
   white-space: nowrap;
   min-height: auto !important;
-  padding-bottom: 0;
+  padding: 0;
+}
+
+.oc-marketingmessage > .oc-title,
+.oc-marketingmessage > .oc-title > a {
+  font-weight: bold;
 }
 
 .oc-marketingmessage > .oc-content {
@@ -76,12 +81,12 @@
     float: left;
     border-right: 90px solid white;
   }
-  .oc-marketingmessages--wrapper .oc-marketingmessage + .oc-marketingmessage:before {
+  .oc-marketingmessages--wrapper .oc-marketingmessage:after {
     content: '';
     height: 100%;
     position: absolute;
     width: 1px;
-    background-color: #F8F8F8;
+    background-color: #EEEEEE;
     top: 0;
     left: -45px;
   }
