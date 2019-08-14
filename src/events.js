@@ -23,7 +23,7 @@ export const UPDATE_ITEM_IN_STATE_COLLECTION_ERROR = 'UPDATE_ITEM_IN_STATE_COLLE
 
 export const DELETE_ITEM_FROM_STATE_COLLECTION = 'DELETE_ITEM_FROM_STATE_COLLECTION';
 
-let domain = "https://toccstyles.s3.eu-west-2.amazonaws.com/";
+let domain = "https://toccstyles.originalcottages.co.uk/";
 if (window.location.hostname === 'localhost') {
   domain = '/css/';
 } 
