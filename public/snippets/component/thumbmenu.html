@@ -1,34 +1,44 @@
-Please note this component is fixed to the bottom of the viewport and only visible at mobile sizes.
+<p>
+    Simple thumb menu, normally positioned at the bottom of the screen.
+</p>
 
-<div class="oc-thumbmenu">
-    <ul>
-        <li>
-            <a href="#">
-                <div class="oc-thumbmenu__link">
-                    <span class="oc-thumbmenu__icon fa fa-user"></span>Account
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="oc-thumbmenu__link">
-                    <span class="oc-thumbmenu__icon fa fa-calendar-week"></span>Bookings
-                </div>
-            </a>
-        </li>
-        <li>
+<p>
+    Add the class <strong>oc-thumbmenu--sticky</strong> or 
+    <strong>oc-thumbmenu--fixed</strong> to use either positioning scheme to 
+    move the menu to the bottom and hide when not at mobile size.
+</p>
+
+<div style="width:640px">
+    <div class="oc-thumbmenu oc-thumbmenu--sticky">
+        <ul>
+            <li>
                 <a href="#">
                     <div class="oc-thumbmenu__link">
-                        <span class="oc-thumbmenu__icon fa fa-gifts"></span>Extras
+                        <span class="oc-thumbmenu__icon fa fa-user"></span>Account
                     </div>
                 </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="oc-thumbmenu__link">
-                    <span class="oc-thumbmenu__icon fa fa-question-circle"></span>Help
-                </div>
-            </a>
-        </li>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="oc-thumbmenu__link">
+                        <span class="oc-thumbmenu__icon fa fa-calendar-week"></span>Bookings
+                    </div>
+                </a>
+            </li>
+            <li>
+                    <a href="#">
+                        <div class="oc-thumbmenu__link">
+                            <span class="oc-thumbmenu__icon fa fa-gifts"></span>Extras
+                        </div>
+                    </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="oc-thumbmenu__link">
+                        <span class="oc-thumbmenu__icon fa fa-question-circle"></span>Help
+                    </div>
+                </a>
+            </li>
         </ul>
+    </div>
 </div>
