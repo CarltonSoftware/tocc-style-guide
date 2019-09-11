@@ -75,7 +75,7 @@
   content: "\f2cd";
 }
 
-.oc-propertyattribute--attr06:before {
+.oc-propertyattribute--attr29:before, .oc-propertyattribute--attr06:before {
   content: "\f400";
 }
 
@@ -93,6 +93,10 @@
 
 .oc-propertyattribute--attr225:before {
   content: "\f521";
+}
+
+.oc-propertyattribute--attr904:before {
+  content: "\f451";
 }
 
 .oc-propertyattribute--attr83:before {
@@ -151,4 +155,9 @@
   .oc-propertyattributes--featured .oc-propertyattribute:before {
     width: 24px;
   }
+}
+
+.oc-propertyattributes .oc-propertyattribute--attr867 {
+  overflow: visible;
+  white-space: normal;
 }
