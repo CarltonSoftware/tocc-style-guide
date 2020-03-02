@@ -31,7 +31,7 @@
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "tabsutils": "github:carltonsoftware/tabsutils"
+    "tabsutils": "git+ssh://git@bitbucket.org/carltonsoftware/tabsutils.git"
   },
   "eslintConfig": {
     "extends": "react-app"
