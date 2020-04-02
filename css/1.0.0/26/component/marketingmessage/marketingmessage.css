@@ -32,6 +32,7 @@
 .oc-marketingmessage > .oc-title,
 .oc-marketingmessage > .oc-title > a {
   font-weight: normal;
+  font-family: "Oswald", sans-serif;
 }
 
 .oc-marketingmessage > .oc-content {

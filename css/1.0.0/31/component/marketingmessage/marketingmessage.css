@@ -31,7 +31,8 @@
 
 .oc-marketingmessage > .oc-title,
 .oc-marketingmessage > .oc-title > a {
-  font-weight: normal;
+  font-weight: bold;
+  font-family: "Museo Sans 300", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .oc-marketingmessage > .oc-content {

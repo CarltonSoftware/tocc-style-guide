@@ -2,7 +2,7 @@
  * TOCC Style Guide Element
  * 
  * @filename _marketingmessage.scss
- * @brand    Project King
+ * @brand    Grace Darling Holidays
  * @name     marketingmessage
  * @author   Tabs System User
  */
@@ -31,7 +31,8 @@
 
 .oc-marketingmessage > .oc-title,
 .oc-marketingmessage > .oc-title > a {
-  font-weight: normal;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
 
 .oc-marketingmessage > .oc-content {

@@ -15,7 +15,7 @@
  * @author   Tabs System User
  */
 .oc-thumbmenu {
-  background: #555555;
+  background: #D9610E;
   color: #FEFEFE;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .oc-thumbmenu__item--current {
-  background: #666666;
+  background: #F07E26;
   color: #FEFEFE;
 }
 

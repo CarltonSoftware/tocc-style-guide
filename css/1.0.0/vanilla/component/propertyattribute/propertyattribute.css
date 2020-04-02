@@ -47,6 +47,35 @@
   content: "\f5e4";
 }
 
+.oc-propertyattribute--attr27:before {
+  content: "\f498";
+}
+
+.oc-propertyattribute--attr17:before {
+  content: "\f898";
+}
+
+.oc-propertyattribute--attr70:before {
+  content: "\f861";
+}
+
+.oc-propertyattribute--attr31:before {
+  content: "\f555";
+  transform: rotate(-90deg);
+}
+
+.oc-propertyattribute--attr26:before {
+  content: "\f4b7";
+}
+
+.oc-propertyattribute--attr34:before, .oc-propertyattribute--attr07:before {
+  content: "\f538";
+}
+
+.oc-propertyattribute--attr19:before {
+  content: "\f6c0";
+}
+
 .oc-propertyattribute--bedrooms:before, .oc-propertyattribute--attr116:before, .oc-propertyattribute--attr115:before, .oc-propertyattribute--attr156:before, .oc-propertyattribute--attr20:before, .oc-propertyattribute--attr564:before {
   content: "\f236";
 }
@@ -81,6 +110,10 @@
 
 .oc-propertyattribute--attr84:before {
   content: "\f593";
+}
+
+.oc-propertyattribute--attr801:before {
+  content: "\f5e7";
 }
 
 .oc-propertyattribute--attr05:before {
