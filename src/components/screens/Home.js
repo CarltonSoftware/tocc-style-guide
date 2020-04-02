@@ -24,7 +24,7 @@ function CssHoc(CssComponent, CssProperty) {
         }
       }.bind(this), 1000);
     }
-    
+
     render() {
       return (
         <CssComponent cssRef={ this._ref } cssLoading={ this.state.loading } cssValue={ this.state.value } {...this.props} />
@@ -36,16 +36,16 @@ function CssHoc(CssComponent, CssProperty) {
 class Home extends React.Component {
   render() {
     let selectedWebsite = null;
-    if (this.props.Tabs.selectedMarketingBrand 
+    if (this.props.Tabs.selectedMarketingBrand
       && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
       && this.props.Tabs.MarketingBrand
     ) {
       selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
     }
-    
-    const colors = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 
+
+    const colors = ['one', 'two', 'three', 'four', 'five', 'six', 'seven',
       'eight', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
-    
+
     const Tf = CssHoc(
       (props) => {
         return (
@@ -56,7 +56,7 @@ class Home extends React.Component {
       },
       'fontFamily'
     );
-    
+
     const Bf = CssHoc(
       (props) => {
         return (
@@ -67,7 +67,7 @@ class Home extends React.Component {
       },
       'fontFamily'
     );
-    
+
     const Sf = CssHoc(
       (props) => {
         return (
@@ -78,7 +78,7 @@ class Home extends React.Component {
       },
       'fontFamily'
     );
-    
+
     return (
       <section className="hero">
         <div className="hero-body">
@@ -90,19 +90,19 @@ class Home extends React.Component {
               </h1>
               <p>This site is intended to be a store of the components used in TOCC web applications.</p>
               <p>
-                You will be able to browse components by type and see the 
+                You will be able to browse components by type and see the
                 marketing brand variances by selecting brand from the navigation bar above.
               </p>
-            
+
               <h4>Globals { selectedWebsite && <span>for { selectedWebsite.name }</span> }</h4>
               <h5>Colours</h5>
               <ul className="oc-list--inline oc-clear__margin--small">
-                { 
+                {
                   colors.map((c, i) => {
                     const Col = CssHoc(
                       (props) => {
                         return (
-                          <span ref={ props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label oc-label--" + props.color }>
+                          <span ref={ props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label bg--" + props.color }>
                             { props.color }: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
                           </span>
                         );
@@ -117,12 +117,40 @@ class Home extends React.Component {
                   })
                 }
               </ul>
+              <h5>Border colours</h5>
+              <ul className="oc-list--inline oc-clear__margin--small">
+                {
+                  colors.map((c, i) => {
+                    return (
+                      <li key={ i }>
+                        <span className={ "oc-label c--one bg--almostwhite bd--" + c }>
+                          .bd--{ c }
+                        </span>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+              <h5>Background colours</h5>
+              <ul className="oc-list--inline oc-clear__margin--small">
+                {
+                  colors.map((c, i) => {
+                    return (
+                      <li key={ i }>
+                        <span style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC', color: 'white' } } className={ "oc-label bg--" + c }>
+                          .bg--{ c }
+                        </span>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
               <h5>Fonts</h5>
               <Tf />
               <Bf />
             </div>
             <Sf />
-            
+
           </div>
         </div>
       </section>
