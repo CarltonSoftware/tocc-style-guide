@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _callout.scss
  * @brand    Vanilla
  * @name     callout
@@ -35,4 +35,20 @@
 
 .oc-callout + .oc-callout {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group {
+    display: table;
+    border-spacing: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group > .oc-callout {
+    display: table-cell;
+    width: 50%;
+  }
 }
