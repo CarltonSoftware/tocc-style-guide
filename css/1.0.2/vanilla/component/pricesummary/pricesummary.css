@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _pricesummary.scss
  * @brand    Vanilla
  * @name     pricesummary
@@ -84,13 +84,13 @@
 .oc-pricesummary--enquiry tbody,
 .oc-pricesummary--enquiry thead,
 .oc-pricesummary--enquiry tfoot {
-  background: none;
+  background: none !important;
 }
 
 .oc-pricesummary--enquiry tbody tr,
 .oc-pricesummary--enquiry thead tr,
 .oc-pricesummary--enquiry tfoot tr {
-  background: none;
+  background: none !important;
 }
 
 .oc-pricesummary--enquiry tbody tr th,

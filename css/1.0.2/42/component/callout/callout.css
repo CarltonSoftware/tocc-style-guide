@@ -2,7 +2,7 @@
  * TOCC Style Guide Element
  * 
  * @filename _callout.scss
- * @brand    Lakes Cottage Care
+ * @brand    Cornish Cottage Care
  * @name     callout
  * @author   Tabs System User
  */
@@ -43,6 +43,16 @@
 
 .oc-callout + .oc-callout {
   margin-top: 1rem;
+}
+
+.oc-callout--collapse {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.oc-callout--adjacent_fit + .oc-callout {
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 40em) {

@@ -1,0 +1,87 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _buttonlabel.scss
+ * @brand    SALT Norfolk
+ * @name     buttonlabel
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _buttonlabel.scss
+ * @brand    Vanilla
+ * @name     buttonlabel
+ * @author   Tabs System User
+ */
+.oc-buttonlabel {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel:before, .oc-buttonlabel:after {
+    content: " ";
+    display: table;
+  }
+  .oc-buttonlabel:after {
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  .oc-buttonlabel {
+    *zoom: 1;
+  }
+}
+
+.oc-buttonlabel > .oc-label,
+.oc-buttonlabel > .oc-button {
+  padding: 0.85em 1em;
+  font-size: 0.9rem;
+  border: 0 none;
+  margin: 0;
+  white-space: normal;
+}
+
+.oc-buttonlabel > i {
+  position: absolute;
+  text-align: center;
+  top: 1rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > i {
+    top: 0.5rem;
+  }
+}
+
+.oc-buttonlabel > i + .oc-label {
+  margin-left: 2rem;
+  line-height: inherit;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > i + .oc-label {
+    padding-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.oc-buttonlabel > .oc-label {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > .oc-label {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > .oc-button:not(.oc-button--expanded) {
+    float: right;
+  }
+}

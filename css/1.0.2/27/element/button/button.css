@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _button.scss
  * @brand    Vanilla
  * @name     button
@@ -50,6 +50,36 @@
   margin-left: 0;
 }
 
+.oc-button--success {
+  background-color: #008800;
+  color: white;
+}
+
+.oc-button--success:hover, .oc-button--success:focus {
+  background-color: #007400;
+  color: white;
+}
+
+.oc-button--warning {
+  background-color: #ff9900;
+  color: white;
+}
+
+.oc-button--warning:hover, .oc-button--warning:focus {
+  background-color: #d98200;
+  color: white;
+}
+
+.oc-button--alert {
+  background-color: #990000;
+  color: white;
+}
+
+.oc-button--alert:hover, .oc-button--alert:focus {
+  background-color: #820000;
+  color: white;
+}
+
 .oc-button--disabled, .oc-button[disabled] {
   opacity: 0.25;
   cursor: not-allowed;
@@ -81,6 +111,43 @@
 .oc-button--hollow:hover.disabled, .oc-button--hollow:hover[disabled], .oc-button--hollow:focus.disabled, .oc-button--hollow:focus[disabled] {
   border: 1px solid #Df990C;
   color: #Df990C;
+}
+
+.oc-button.--tiny {
+  font-size: 0.6rem;
+}
+
+.oc-button.--small {
+  font-size: 0.75rem;
+}
+
+.oc-button.--default {
+  font-size: 0.9rem;
+}
+
+.oc-button.--large {
+  font-size: 1.25rem;
+}
+
+.oc-button--icon {
+  position: relative;
+}
+
+.oc-button--icon > i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: inherit !important;
+  height: 100%;
+  width: 2.57142857em;
+}
+
+.oc-button--icon > i:before {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
 }
 
 a.oc-button:hover, a.oc-button:focus {

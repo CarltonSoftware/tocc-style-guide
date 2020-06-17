@@ -1,0 +1,57 @@
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _button-group.scss
+ * @brand    Marsdens Property Management
+ * @name     button-group
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ * 
+ * @filename _button-group.scss
+ * @brand    Vanilla
+ * @name     button-group
+ * @author   Tabs System User
+ */
+.oc-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.oc-button-group:before, .oc-button-group:after {
+  content: " ";
+  display: table;
+}
+
+.oc-button-group:after {
+  display: block;
+  clear: both;
+  height: 1px;
+  margin-top: -1px;
+  visibility: hidden;
+}
+
+.oc-button-group {
+  *zoom: 1;
+}
+
+.oc-button-group::before, .oc-button-group::after {
+  display: none;
+}
+
+.oc-button-group .oc-button {
+  margin: 0;
+  margin-right: 1px;
+  flex: 0 0 auto;
+}
+
+.oc-button-group .oc-button:last-child {
+  margin-right: 0;
+}
+
+.oc-button-group--expanded .oc-button {
+  flex: 1 1 0px;
+}
