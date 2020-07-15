@@ -50,6 +50,16 @@
   }
 }
 
+.oc-buttonlabel > i.fa-exclamation-circle {
+  top: 0.5rem;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > i.fa-exclamation-circle {
+    top: 0.3rem;
+  }
+}
+
 .oc-buttonlabel > i + .oc-label {
   margin-left: 2rem;
   line-height: inherit;

@@ -43,6 +43,21 @@
   background: none;
 }
 
+.oc-callout--icon {
+  padding-left: 2.5rem;
+}
+
+.oc-callout--icon > .oc-title > i {
+  margin-left: -1.5rem;
+  margin-right: 0.5rem;
+}
+
+.oc-callout__footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 .oc-callout--adjacent_fit + .oc-callout {
   padding-bottom: 0;
 }

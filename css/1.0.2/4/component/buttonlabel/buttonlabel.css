@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _buttonlabel.scss
  * @brand    Big House Holidays
  * @name     buttonlabel
@@ -55,6 +55,16 @@
 @media screen and (min-width: 64.0625em) {
   .oc-buttonlabel > i {
     top: 0.5rem;
+  }
+}
+
+.oc-buttonlabel > i.fa-exclamation-circle {
+  top: 0.5rem;
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-buttonlabel > i.fa-exclamation-circle {
+    top: 0.3rem;
   }
 }
 

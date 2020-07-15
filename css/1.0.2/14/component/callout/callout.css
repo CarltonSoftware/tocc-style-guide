@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _callout.scss
  * @brand    Marsdens Cornish Cottages
  * @name     callout
@@ -49,6 +49,21 @@
   margin: 0;
   padding: 0;
   background: none;
+}
+
+.oc-callout--icon {
+  padding-left: 2.5rem;
+}
+
+.oc-callout--icon > .oc-title > i {
+  margin-left: -1.5rem;
+  margin-right: 0.5rem;
+}
+
+.oc-callout__footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .oc-callout--adjacent_fit + .oc-callout {
