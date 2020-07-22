@@ -81,6 +81,14 @@
   background: #FEFEFE;
 }
 
+.oc-label--white {
+  background: #FFFFFF;
+}
+
+.oc-label--black {
+  background: #000000;
+}
+
 .oc-label--darkgrey {
   background: #5B5B5B;
 }

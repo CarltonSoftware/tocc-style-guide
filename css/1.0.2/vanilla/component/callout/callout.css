@@ -43,6 +43,11 @@
   background: none;
 }
 
+.oc-callout--hollow {
+  background: none;
+  border: 1px solid #F8F8F8;
+}
+
 .oc-callout--icon {
   padding-left: 2.5rem;
 }
@@ -50,6 +55,10 @@
 .oc-callout--icon > .oc-title > i {
   margin-left: -1.5rem;
   margin-right: 0.5rem;
+}
+
+.oc-callout--icon > .oc-callout__footer {
+  margin-left: -1.5rem;
 }
 
 .oc-callout__footer {
