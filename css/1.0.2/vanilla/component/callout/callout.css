@@ -72,19 +72,24 @@
 }
 
 @media screen and (min-width: 40em) {
-  .oc-callout-group {
+  .oc-callout-group:not(.oc-callout-group--full) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full) > .oc-callout {
+    width: calc(50% - 0.5rem);
+  }
+  .oc-callout-group:not(.oc-callout-group--full) > .oc-callout:nth-child(odd) {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
   .oc-callout-group > .oc-callout {
-    width: 50%;
     margin-top: 0;
     margin-bottom: 1rem;
-  }
-  .oc-callout-group > .oc-callout:nth-child(odd) {
-    border-right: 1rem solid white;
   }
 }
