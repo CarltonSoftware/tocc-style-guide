@@ -41,6 +41,15 @@
   margin-top: 0;
 }
 
+.oc-callout > .oc-title[class*="bg--"] {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.oc-callout > .oc-title[class*="bg--"] + * {
+  margin-top: 2rem;
+}
+
 .oc-callout + .oc-callout {
   margin-top: 1rem;
 }
@@ -109,6 +118,17 @@
   opacity: 0.5;
 }
 
+.oc-callout--testimonial {
+  background: linear-gradient(45deg, #efefef, white, #f3f3f3);
+  box-shadow: 0 9px 5px -7px #d4d4d4;
+  border: 1px solid #efefef;
+}
+
+.oc-callout--postit {
+  background: linear-gradient(45deg, #fff692, #fffbcc);
+  box-shadow: 0 20px 20px -20px grey;
+}
+
 @media screen and (min-width: 40em) {
   .oc-callout-group:not(.oc-callout-group--full) {
     display: flex;
@@ -118,9 +138,15 @@
 
 @media screen and (min-width: 40em) {
   .oc-callout-group:not(.oc-callout-group--full) > .oc-callout {
+    width: calc(50%);
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout {
     width: calc(50% - 0.5rem);
   }
-  .oc-callout-group:not(.oc-callout-group--full) > .oc-callout:nth-child(odd) {
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout:nth-child(odd) {
     margin-right: 1rem;
   }
 }

@@ -105,6 +105,10 @@
   background: #990000;
 }
 
+.oc-label--green {
+  background: #42A74A;
+}
+
 .oc-label--large {
   font-size: 16px;
 }
