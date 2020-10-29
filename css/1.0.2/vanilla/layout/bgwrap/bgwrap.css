@@ -1,0 +1,226 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _bgwrap.scss
+ * @brand    Vanilla
+ * @name     bgwrap
+ * @author   Tabs System User
+ */
+.oc-bgwrap {
+  position: relative;
+  max-width: 1440px;
+  background: #888888;
+}
+
+.oc-bgwrap:after, .oc-bgwrap:before {
+  position: absolute;
+  width: calc((1440px - 100%) / 2);
+  height: 100%;
+  content: '';
+  display: block;
+  top: 0;
+}
+
+.oc-bgwrap:before {
+  left: calc((1440px - 100%) / 2 * -1);
+}
+
+.oc-bgwrap:after {
+  right: calc((1440px - 100%) / 2 * -1);
+}
+
+.oc-bgwrap:after, .oc-bgwrap:before {
+  background: #888888;
+}
+
+.oc-bgwrap.oc-bgwrap--one {
+  background: #555555;
+}
+
+.oc-bgwrap.oc-bgwrap--one:after, .oc-bgwrap.oc-bgwrap--one:before {
+  background: #555555;
+}
+
+.oc-bgwrap.oc-bgwrap--two {
+  background: #666666;
+}
+
+.oc-bgwrap.oc-bgwrap--two:after, .oc-bgwrap.oc-bgwrap--two:before {
+  background: #666666;
+}
+
+.oc-bgwrap.oc-bgwrap--three {
+  background: #777777;
+}
+
+.oc-bgwrap.oc-bgwrap--three:after, .oc-bgwrap.oc-bgwrap--three:before {
+  background: #777777;
+}
+
+.oc-bgwrap.oc-bgwrap--four {
+  background: #888888;
+}
+
+.oc-bgwrap.oc-bgwrap--four:after, .oc-bgwrap.oc-bgwrap--four:before {
+  background: #888888;
+}
+
+.oc-bgwrap.oc-bgwrap--five {
+  background: #999999;
+}
+
+.oc-bgwrap.oc-bgwrap--five:after, .oc-bgwrap.oc-bgwrap--five:before {
+  background: #999999;
+}
+
+.oc-bgwrap.oc-bgwrap--six {
+  background: #AAAAAA;
+}
+
+.oc-bgwrap.oc-bgwrap--six:after, .oc-bgwrap.oc-bgwrap--six:before {
+  background: #AAAAAA;
+}
+
+.oc-bgwrap.oc-bgwrap--seven {
+  background: #BBBBBB;
+}
+
+.oc-bgwrap.oc-bgwrap--seven:after, .oc-bgwrap.oc-bgwrap--seven:before {
+  background: #BBBBBB;
+}
+
+.oc-bgwrap.oc-bgwrap--eight {
+  background: #CCCCCC;
+}
+
+.oc-bgwrap.oc-bgwrap--eight:after, .oc-bgwrap.oc-bgwrap--eight:before {
+  background: #CCCCCC;
+}
+
+.oc-bgwrap.oc-bgwrap--grey {
+  background: #EEEEEE;
+}
+
+.oc-bgwrap.oc-bgwrap--grey:after, .oc-bgwrap.oc-bgwrap--grey:before {
+  background: #EEEEEE;
+}
+
+.oc-bgwrap.oc-bgwrap--lightgrey {
+  background: #F1F1F1;
+}
+
+.oc-bgwrap.oc-bgwrap--lightgrey:after, .oc-bgwrap.oc-bgwrap--lightgrey:before {
+  background: #F1F1F1;
+}
+
+.oc-bgwrap.oc-bgwrap--reallylightgrey {
+  background: #F8F8F8;
+}
+
+.oc-bgwrap.oc-bgwrap--reallylightgrey:after, .oc-bgwrap.oc-bgwrap--reallylightgrey:before {
+  background: #F8F8F8;
+}
+
+.oc-bgwrap.oc-bgwrap--almostwhite {
+  background: #FEFEFE;
+}
+
+.oc-bgwrap.oc-bgwrap--almostwhite:after, .oc-bgwrap.oc-bgwrap--almostwhite:before {
+  background: #FEFEFE;
+}
+
+.oc-bgwrap.oc-bgwrap--white {
+  background: #FFFFFF;
+}
+
+.oc-bgwrap.oc-bgwrap--white:after, .oc-bgwrap.oc-bgwrap--white:before {
+  background: #FFFFFF;
+}
+
+.oc-bgwrap.oc-bgwrap--black {
+  background: #000000;
+}
+
+.oc-bgwrap.oc-bgwrap--black:after, .oc-bgwrap.oc-bgwrap--black:before {
+  background: #000000;
+}
+
+.oc-bgwrap.oc-bgwrap--darkgrey {
+  background: #5B5B5B;
+}
+
+.oc-bgwrap.oc-bgwrap--darkgrey:after, .oc-bgwrap.oc-bgwrap--darkgrey:before {
+  background: #5B5B5B;
+}
+
+.oc-bgwrap.oc-bgwrap--success {
+  background: #008800;
+}
+
+.oc-bgwrap.oc-bgwrap--success:after, .oc-bgwrap.oc-bgwrap--success:before {
+  background: #008800;
+}
+
+.oc-bgwrap.oc-bgwrap--warning {
+  background: #ff9900;
+}
+
+.oc-bgwrap.oc-bgwrap--warning:after, .oc-bgwrap.oc-bgwrap--warning:before {
+  background: #ff9900;
+}
+
+.oc-bgwrap.oc-bgwrap--alert {
+  background: #990000;
+}
+
+.oc-bgwrap.oc-bgwrap--alert:after, .oc-bgwrap.oc-bgwrap--alert:before {
+  background: #990000;
+}
+
+.oc-bgwrap.oc-bgwrap--green {
+  background: #42A74A;
+}
+
+.oc-bgwrap.oc-bgwrap--green:after, .oc-bgwrap.oc-bgwrap--green:before {
+  background: #42A74A;
+}
+
+.oc-bgwrap.oc-bgwrap--bc1 {
+  background: #555555;
+}
+
+.oc-bgwrap.oc-bgwrap--bc1:after, .oc-bgwrap.oc-bgwrap--bc1:before {
+  background: #555555;
+}
+
+.oc-bgwrap.oc-bgwrap--bc2 {
+  background: #666666;
+}
+
+.oc-bgwrap.oc-bgwrap--bc2:after, .oc-bgwrap.oc-bgwrap--bc2:before {
+  background: #666666;
+}
+
+.oc-bgwrap.oc-bgwrap--bc3 {
+  background: #777777;
+}
+
+.oc-bgwrap.oc-bgwrap--bc3:after, .oc-bgwrap.oc-bgwrap--bc3:before {
+  background: #777777;
+}
+
+.oc-bgwrap.oc-bgwrap--bc4 {
+  background: #888888;
+}
+
+.oc-bgwrap.oc-bgwrap--bc4:after, .oc-bgwrap.oc-bgwrap--bc4:before {
+  background: #888888;
+}
+
+.oc-bgwrap.oc-bgwrap--bc5 {
+  background: #999999;
+}
+
+.oc-bgwrap.oc-bgwrap--bc5:after, .oc-bgwrap.oc-bgwrap--bc5:before {
+  background: #999999;
+}

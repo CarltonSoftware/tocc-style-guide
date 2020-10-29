@@ -450,6 +450,20 @@ h5.oc-title {
   font-family: "Lora", sans-serif;
 }
 
+@media screen and (min-width: 64.0625em) {
+  .oc-content[data-lg-columns='2'] {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 64.0625em) {
+  .oc-content[data-lg-columns='3'] {
+    column-count: 3;
+    column-gap: 2rem;
+  }
+}
+
 .oc-content p:not(:last-child),
 .oc-content table:not(:last-child),
 .oc-content figure:not(:last-child),

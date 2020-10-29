@@ -101,6 +101,26 @@
   background: #42A74A;
 }
 
+.oc-label--bc1 {
+  background: #555555;
+}
+
+.oc-label--bc2 {
+  background: #666666;
+}
+
+.oc-label--bc3 {
+  background: #777777;
+}
+
+.oc-label--bc4 {
+  background: #888888;
+}
+
+.oc-label--bc5 {
+  background: #999999;
+}
+
 .oc-label--large {
   font-size: 16px;
 }

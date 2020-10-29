@@ -171,6 +171,26 @@
   color: #42A74A;
 }
 
+.oc-list--ticked > *.oc-list--bc1:before {
+  color: #555555;
+}
+
+.oc-list--ticked > *.oc-list--bc2:before {
+  color: #666666;
+}
+
+.oc-list--ticked > *.oc-list--bc3:before {
+  color: #777777;
+}
+
+.oc-list--ticked > *.oc-list--bc4:before {
+  color: #888888;
+}
+
+.oc-list--ticked > *.oc-list--bc5:before {
+  color: #999999;
+}
+
 .oc-list--ticked > *.oc-list--crossed:before {
   content: "\f057";
 }
