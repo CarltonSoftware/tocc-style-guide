@@ -43,8 +43,8 @@ class Home extends React.Component {
       selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
     }
 
-    const colors = ['one', 'two', 'three', 'four', 'five', 'six', 'seven',
-      'eight', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
+    const colors = ['bc1', 'bc2', 'bc3', 'bc5', 'bc6', 'oc1', 'oc2',
+      'oc3', 'oc4', 'oc5', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
 
     const Tf = CssHoc(
       (props) => {
