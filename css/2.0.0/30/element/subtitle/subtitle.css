@@ -1,0 +1,48 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _subtitle.scss
+ * @brand    SALT Norfolk
+ * @name     subtitle
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _subtitle.scss
+ * @brand    Vanilla
+ * @name     subtitle
+ * @author   Tabs System User
+ */
+.oc-subtitle {
+  font-family: "sharpsansbook";
+  line-height: 16px;
+  display: block;
+  font-size: 11px;
+}
+
+.oc-subtitle, .oc-subtitle--parent {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5B6064;
+  font-family: "sharpsansbook";
+}
+
+.oc-subtitle em, .oc-subtitle--parent em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.oc-subtitle--parent {
+  margin: 0;
+  margin-bottom: 0.6rem;
+  font-family: "sharpsansbook";
+}
+
+.oc-subtitle--medium {
+  font-size: 16px;
+}
+
+.oc-subtitle--large {
+  font-size: 28px;
+}

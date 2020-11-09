@@ -1,0 +1,78 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _imagetile.scss
+ * @brand    Cornish Quay
+ * @name     imagetile
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _imagetile.scss
+ * @brand    Vanilla
+ * @name     imagetile
+ * @author   Tabs System User
+ */
+.oc-imagetile {
+  position: relative;
+  color: white;
+}
+
+.oc-imagetile, .oc-imagetile:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
+.oc-imagetile:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.48) 23%, rgba(0, 0, 0, 0) 40%);
+  content: '';
+}
+
+.oc-imagetile > figure > img,
+.oc-imagetile > img {
+  display: block;
+}
+
+.oc-imagetile > figure > img + figcaption,
+.oc-imagetile > figure > img + .oc-imagetile__caption,
+.oc-imagetile > img + figcaption,
+.oc-imagetile > img + .oc-imagetile__caption {
+  font-family: 'sharpsansbook';
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.oc-imagetile > figure > img + figcaption em,
+.oc-imagetile > figure > img + .oc-imagetile__caption em,
+.oc-imagetile > img + figcaption em,
+.oc-imagetile > img + .oc-imagetile__caption em {
+  font-family: Georgia;
+}
+
+.oc-imagetile > figure > img + figcaption em:before,
+.oc-imagetile > figure > img + .oc-imagetile__caption em:before,
+.oc-imagetile > img + figcaption em:before,
+.oc-imagetile > img + .oc-imagetile__caption em:before {
+  content: "\a";
+  white-space: pre;
+}
+
+.oc-imagetile > figure > img + figcaption small,
+.oc-imagetile > figure > img + .oc-imagetile__caption small,
+.oc-imagetile > img + figcaption small,
+.oc-imagetile > img + .oc-imagetile__caption small {
+  font-size: 14px;
+}

@@ -1,0 +1,231 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _label.scss
+ * @brand    Jean Bartlett Cottage Holidays
+ * @name     label
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _label.scss
+ * @brand    Vanilla
+ * @name     label
+ * @author   Tabs System User
+ */
+.oc-label {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 0px;
+  line-height: 1;
+  white-space: nowrap;
+  font-family: "sharpsansbook";
+  background: #004AA2;
+  font-size: 12px;
+}
+
+.oc-label, .oc-label:hover, .oc-label:visited {
+  color: white;
+}
+
+.oc-label--upper {
+  text-transform: uppercase;
+}
+
+.oc-label--one {
+  background: #004AA2;
+}
+
+.oc-label--two {
+  background: #46B29D;
+}
+
+.oc-label--three {
+  background: #384C5B;
+}
+
+.oc-label--four {
+  background: #026DC8;
+}
+
+.oc-label--five {
+  background: #F53855;
+}
+
+.oc-label--six {
+  background: #F0CA4D;
+}
+
+.oc-label--seven {
+  background: #E5F1F5;
+}
+
+.oc-label--eight {
+  background: #CCCCCC;
+}
+
+.oc-label--grey {
+  background: #EEEEEE;
+}
+
+.oc-label--lightgrey {
+  background: #F1F1F1;
+}
+
+.oc-label--reallylightgrey {
+  background: #F8F8F8;
+}
+
+.oc-label--almostwhite {
+  background: #FEFEFE;
+}
+
+.oc-label--white {
+  background: #FFFFFF;
+}
+
+.oc-label--black {
+  background: #000000;
+}
+
+.oc-label--darkgrey {
+  background: #5B5B5B;
+}
+
+.oc-label--success {
+  background: #008800;
+}
+
+.oc-label--warning {
+  background: #ff9900;
+}
+
+.oc-label--alert {
+  background: #990000;
+}
+
+.oc-label--green {
+  background: #42A74A;
+}
+
+.oc-label--bc1 {
+  background: #242F8D;
+}
+
+.oc-label--bc2 {
+  background: #5B63AA;
+}
+
+.oc-label--bc3 {
+  background: #9197C6;
+}
+
+.oc-label--bc4 {
+  background: #C8CBE2;
+}
+
+.oc-label--bc5 {
+  background: #202A7F;
+}
+
+.oc-label--oc1 {
+  background: #FFA44B;
+}
+
+.oc-label--oc2 {
+  background: #FFBB78;
+}
+
+.oc-label--oc3 {
+  background: #FFD1A5;
+}
+
+.oc-label--oc4 {
+  background: #FFE8D2;
+}
+
+.oc-label--oc5 {
+  background: #E59343;
+}
+
+.oc-label--ocg1 {
+  background: #5B6064;
+}
+
+.oc-label--ocg2 {
+  background: #84888B;
+}
+
+.oc-label--ocg3 {
+  background: #ADAFB1;
+}
+
+.oc-label--ocg4 {
+  background: #D6D7D8;
+}
+
+.oc-label--ocg5 {
+  background: #52565A;
+}
+
+.oc-label--large {
+  font-size: 16px;
+}
+
+.oc-label--normal, .oc-label__related .oc-label {
+  font-size: 14px;
+}
+
+.oc-label--small {
+  font-size: 12px;
+}
+
+.oc-label--mini {
+  font-size: 11px;
+}
+
+.oc-label--tiny {
+  font-size: 10px;
+}
+
+.oc-label--nano {
+  font-size: 8px;
+}
+
+.oc-label--hollow, .oc-label__related .oc-label {
+  background: none;
+  border: 1px solid #F1F1F1;
+}
+
+.oc-label--hollow, .oc-label__related .oc-label, .oc-label--hollow:hover, .oc-label__related .oc-label:hover, .oc-label--hollow:visited, .oc-label__related .oc-label:visited {
+  color: #004AA2;
+}
+
+.oc-label--padded, .oc-label__related .oc-label {
+  padding: 8px 12px;
+  line-height: 20px;
+}
+
+.oc-label__related {
+  white-space: nowrap;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-label__related {
+    white-space: normal;
+  }
+}
+
+.oc-label__related:before {
+  margin-right: 2rem;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.oc-label__related > * {
+  margin-right: 4px;
+  margin-bottom: 1rem;
+}

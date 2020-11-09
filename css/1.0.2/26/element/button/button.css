@@ -23,7 +23,7 @@
   border-radius: 2px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   text-transform: none;
   font-size: 0.9rem;
   -webkit-appearance: none;
@@ -78,6 +78,16 @@
 .oc-button--alert:hover, .oc-button--alert:focus {
   background-color: #820000;
   color: #3E3935;
+}
+
+.oc-button--inverse {
+  background-color: #3E3935;
+  color: #F5C400;
+}
+
+.oc-button--inverse:hover, .oc-button--inverse:focus {
+  background-color: #3E3935;
+  color: #F5C400;
 }
 
 .oc-button.oc-loading {

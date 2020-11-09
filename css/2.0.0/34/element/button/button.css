@@ -1,0 +1,229 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _button.scss
+ * @brand    Porthleven Holidays
+ * @name     button
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _button.scss
+ * @brand    Vanilla
+ * @name     button
+ * @author   Tabs System User
+ */
+.oc-button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-family: "sharpsansbook";
+  font-weight: bold;
+  text-transform: none;
+  font-size: 0.9rem;
+  -webkit-appearance: none;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FFA44B;
+  color: white;
+}
+
+[data-whatinput='mouse'] .oc-button {
+  outline: 0;
+}
+
+.oc-button:hover, .oc-button:focus {
+  background-color: #E59343;
+  color: white;
+}
+
+.oc-button--expanded {
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.oc-button--success {
+  background-color: #008800;
+  color: white;
+}
+
+.oc-button--success:hover, .oc-button--success:focus {
+  background-color: #007400;
+  color: white;
+}
+
+.oc-button--warning {
+  background-color: #ff9900;
+  color: white;
+}
+
+.oc-button--warning:hover, .oc-button--warning:focus {
+  background-color: #d98200;
+  color: white;
+}
+
+.oc-button--alert {
+  background-color: #990000;
+  color: white;
+}
+
+.oc-button--alert:hover, .oc-button--alert:focus {
+  background-color: #820000;
+  color: white;
+}
+
+.oc-button--search {
+  background-color: #6E95CF;
+  color: white;
+}
+
+.oc-button--search:hover, .oc-button--search:focus {
+  background-color: #6386BA;
+  color: white;
+}
+
+.oc-button--inverse {
+  background-color: white;
+  color: #FFA44B;
+}
+
+.oc-button--inverse:hover, .oc-button--inverse:focus {
+  background-color: white;
+  color: #FFA44B;
+}
+
+.oc-button.oc-loading {
+  position: relative;
+}
+
+.oc-button.oc-loading:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-top: -0.6rem;
+  margin-left: -0.6rem;
+  z-index: 1;
+}
+
+.oc-button.oc-loading:after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.oc-button--disabled, .oc-button[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.oc-button--disabled, .oc-button--disabled:hover, .oc-button--disabled:focus, .oc-button[disabled], .oc-button[disabled]:hover, .oc-button[disabled]:focus {
+  background-color: #FFA44B;
+  color: white;
+}
+
+.oc-button--hollow {
+  border: 1px solid #FFA44B;
+  color: #FFA44B;
+}
+
+.oc-button--hollow, .oc-button--hollow:hover, .oc-button--hollow:focus {
+  background-color: transparent;
+}
+
+.oc-button--hollow.disabled, .oc-button--hollow.disabled:hover, .oc-button--hollow.disabled:focus, .oc-button--hollow[disabled], .oc-button--hollow[disabled]:hover, .oc-button--hollow[disabled]:focus {
+  background-color: transparent;
+}
+
+.oc-button--hollow:hover, .oc-button--hollow:focus {
+  border-color: #a55200;
+  color: #a55200;
+}
+
+.oc-button--hollow:hover.disabled, .oc-button--hollow:hover[disabled], .oc-button--hollow:focus.disabled, .oc-button--hollow:focus[disabled] {
+  border: 1px solid #FFA44B;
+  color: #FFA44B;
+}
+
+.oc-button.oc-tiny {
+  font-size: 0.6rem;
+}
+
+.oc-button.oc-tiny.oc-loading:before {
+  height: 0.9rem;
+  width: 0.9rem;
+  margin-top: -0.45rem;
+  margin-left: -0.45rem;
+}
+
+.oc-button.oc-small {
+  font-size: 0.75rem;
+}
+
+.oc-button.oc-small.oc-loading:before {
+  height: 1.05rem;
+  width: 1.05rem;
+  margin-top: -0.525rem;
+  margin-left: -0.525rem;
+}
+
+.oc-button.oc-default {
+  font-size: 0.9rem;
+}
+
+.oc-button.oc-default.oc-loading:before {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-top: -0.6rem;
+  margin-left: -0.6rem;
+}
+
+.oc-button.oc-large {
+  font-size: 1.25rem;
+}
+
+.oc-button.oc-large.oc-loading:before {
+  height: 1.55rem;
+  width: 1.55rem;
+  margin-top: -0.775rem;
+  margin-left: -0.775rem;
+}
+
+.oc-button--icon {
+  position: relative;
+}
+
+.oc-button--icon > i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: inherit !important;
+  height: 100%;
+  width: 2.57142857em;
+}
+
+.oc-button--icon > i:before {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+}
+
+a.oc-button:hover, a.oc-button:focus {
+  text-decoration: none;
+}

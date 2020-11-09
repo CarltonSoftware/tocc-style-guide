@@ -1,0 +1,33 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _strapline.scss
+ * @brand    Vanilla
+ * @name     strapline
+ * @author   Tabs System User
+ * @date     2019-06-06
+ */
+.oc-strapline {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5B6064;
+  font-family: "sharpsansbook";
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.oc-strapline em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.oc-strapline span {
+  color: red;
+  padding-right: 0.5rem;
+  font-weight: bold;
+}
+
+.oc-strapline--specialoffer span:before {
+  content: "Special Offer";
+}
