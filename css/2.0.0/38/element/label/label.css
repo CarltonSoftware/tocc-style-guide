@@ -109,6 +109,10 @@
   background: #42A74A;
 }
 
+.oc-label--transparent {
+  background: transparent;
+}
+
 .oc-label--bc1 {
   background: #FF5B3F;
 }
@@ -199,7 +203,7 @@
 }
 
 .oc-label--hollow, .oc-label__related .oc-label, .oc-label--hollow:hover, .oc-label__related .oc-label:hover, .oc-label--hollow:visited, .oc-label__related .oc-label:visited {
-  color: #576B6B;
+  color: #E55239;
 }
 
 .oc-label--padded, .oc-label__related .oc-label {
@@ -228,4 +232,9 @@
 .oc-label__related > * {
   margin-right: 4px;
   margin-bottom: 1rem;
+}
+
+.oc-label__related .oc-label {
+  font-weight: bold;
+  color: #FF5B3F;
 }

@@ -57,11 +57,12 @@
   line-height: 20px;
   color: #5B6064;
   font-family: "sharpsansbook";
+  font-family: Georgia;
+  font-style: italic;
   max-width: 100%;
   color: white;
   pointer-events: none;
-  background-color: #555555;
-  font-weight: bold;
+  background-color: #A29D78;
 }
 
 .oc-figure__caption em,

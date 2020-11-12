@@ -193,6 +193,14 @@
   background: #42A74A;
 }
 
+.oc-bgwrap.oc-bgwrap--transparent {
+  background: transparent;
+}
+
+.oc-bgwrap.oc-bgwrap--transparent:after, .oc-bgwrap.oc-bgwrap--transparent:before {
+  background: transparent;
+}
+
 .oc-bgwrap.oc-bgwrap--bc1 {
   background: #555555;
 }
@@ -492,6 +500,14 @@
 
 .oc-block.oc-bgwrap--green:after, .oc-block.oc-bgwrap--green:before {
   background: #42A74A;
+}
+
+.oc-block.oc-bgwrap--transparent {
+  background: transparent;
+}
+
+.oc-block.oc-bgwrap--transparent:after, .oc-block.oc-bgwrap--transparent:before {
+  background: transparent;
 }
 
 .oc-block.oc-bgwrap--bc1 {

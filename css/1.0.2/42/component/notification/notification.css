@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _notification.scss
  * @brand    Cornish Cottage Care
  * @name     notification
@@ -8,22 +8,20 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _notification.scss
  * @brand    Vanilla
  * @name     notification
  * @author   Tabs System User
  */
 .oc-notification {
+  background: #5B5B5B;
   position: relative;
   max-width: 1440px;
-  background: #5B5B5B;
-  width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 1rem;
 }
 
 .oc-notification:after, .oc-notification:before {
+  background: #5B5B5B;
   position: absolute;
   width: calc((1440px - 100%) / 2);
   height: 100%;
@@ -38,17 +36,6 @@
 
 .oc-notification:after {
   right: calc((1440px - 100%) / 2 * -1);
-}
-
-.oc-notification:after, .oc-notification:before {
-  background: #5B5B5B;
-}
-
-@media screen and (min-width: 40em) {
-  .oc-notification {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 .oc-notification button,
@@ -97,5 +84,18 @@
   .oc-notification p {
     text-align: center;
     font-size: 14px;
+  }
+}
+
+.oc-notification {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-notification {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

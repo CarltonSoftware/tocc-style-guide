@@ -43,6 +43,15 @@
   color: white;
 }
 
+.oc-button--disabled, .oc-button[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.oc-button--disabled, .oc-button--disabled:hover, .oc-button--disabled:focus, .oc-button[disabled], .oc-button[disabled]:hover, .oc-button[disabled]:focus {
+  color: white;
+}
+
 .oc-button--expanded {
   display: block;
   width: 100%;
@@ -124,16 +133,6 @@
   top: 0;
   left: 0;
   z-index: 0;
-}
-
-.oc-button--disabled, .oc-button[disabled] {
-  opacity: 0.25;
-  cursor: not-allowed;
-}
-
-.oc-button--disabled, .oc-button--disabled:hover, .oc-button--disabled:focus, .oc-button[disabled], .oc-button[disabled]:hover, .oc-button[disabled]:focus {
-  background-color: #FFA44B;
-  color: white;
 }
 
 .oc-button--hollow {

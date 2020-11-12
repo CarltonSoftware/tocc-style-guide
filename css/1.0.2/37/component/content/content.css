@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _content.scss
  * @brand    Northumbria Byways
  * @name     content
@@ -210,6 +210,40 @@ h5.oc-title {
   color: #555555;
 }
 
+.oc-table--collapsable thead {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-table--collapsable thead {
+    display: table-header-group;
+  }
+}
+
+.oc-table--collapsable tbody,
+.oc-table--collapsable tbody tr,
+.oc-table--collapsable tbody tr td,
+.oc-table--collapsable tfoot,
+.oc-table--collapsable tfoot tr,
+.oc-table--collapsable tfoot tr td {
+  display: block;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-table--collapsable tbody,
+  .oc-table--collapsable tfoot {
+    display: table-row-group;
+  }
+  .oc-table--collapsable tbody tr,
+  .oc-table--collapsable tfoot tr {
+    display: table-row;
+  }
+  .oc-table--collapsable tbody tr td,
+  .oc-table--collapsable tfoot tr td {
+    display: table-cell;
+  }
+}
+
 .oc-table thead,
 .oc-table tbody,
 .oc-table tfoot {
@@ -407,40 +441,6 @@ h5.oc-title {
   border-top: 0 none;
 }
 
-.oc-table--collapsable thead {
-  display: none;
-}
-
-@media screen and (min-width: 40em) {
-  .oc-table--collapsable thead {
-    display: table-header-group;
-  }
-}
-
-.oc-table--collapsable tbody,
-.oc-table--collapsable tbody tr,
-.oc-table--collapsable tbody tr td,
-.oc-table--collapsable tfoot,
-.oc-table--collapsable tfoot tr,
-.oc-table--collapsable tfoot tr td {
-  display: block;
-}
-
-@media screen and (min-width: 40em) {
-  .oc-table--collapsable tbody,
-  .oc-table--collapsable tfoot {
-    display: table-row-group;
-  }
-  .oc-table--collapsable tbody tr,
-  .oc-table--collapsable tfoot tr {
-    display: table-row;
-  }
-  .oc-table--collapsable tbody tr td,
-  .oc-table--collapsable tfoot tr td {
-    display: table-cell;
-  }
-}
-
 .oc-content p,
 .oc-content table thead tr th,
 .oc-content table tbody tr td,
@@ -448,20 +448,6 @@ h5.oc-title {
   font-size: 14px;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
-}
-
-@media screen and (min-width: 64.0625em) {
-  .oc-content[data-lg-columns='2'] {
-    column-count: 2;
-    column-gap: 2rem;
-  }
-}
-
-@media screen and (min-width: 64.0625em) {
-  .oc-content[data-lg-columns='3'] {
-    column-count: 3;
-    column-gap: 2rem;
-  }
 }
 
 .oc-content p:not(:last-child),
@@ -488,6 +474,40 @@ h5.oc-title {
 .oc-content table thead tr th,
 .oc-content table thead tr td {
   color: #555555;
+}
+
+.oc-content table--collapsable thead {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-content table--collapsable thead {
+    display: table-header-group;
+  }
+}
+
+.oc-content table--collapsable tbody,
+.oc-content table--collapsable tbody tr,
+.oc-content table--collapsable tbody tr td,
+.oc-content table--collapsable tfoot,
+.oc-content table--collapsable tfoot tr,
+.oc-content table--collapsable tfoot tr td {
+  display: block;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-content table--collapsable tbody,
+  .oc-content table--collapsable tfoot {
+    display: table-row-group;
+  }
+  .oc-content table--collapsable tbody tr,
+  .oc-content table--collapsable tfoot tr {
+    display: table-row;
+  }
+  .oc-content table--collapsable tbody tr td,
+  .oc-content table--collapsable tfoot tr td {
+    display: table-cell;
+  }
 }
 
 .oc-content table thead,
@@ -687,40 +707,6 @@ h5.oc-title {
   border-top: 0 none;
 }
 
-.oc-content table--collapsable thead {
-  display: none;
-}
-
-@media screen and (min-width: 40em) {
-  .oc-content table--collapsable thead {
-    display: table-header-group;
-  }
-}
-
-.oc-content table--collapsable tbody,
-.oc-content table--collapsable tbody tr,
-.oc-content table--collapsable tbody tr td,
-.oc-content table--collapsable tfoot,
-.oc-content table--collapsable tfoot tr,
-.oc-content table--collapsable tfoot tr td {
-  display: block;
-}
-
-@media screen and (min-width: 40em) {
-  .oc-content table--collapsable tbody,
-  .oc-content table--collapsable tfoot {
-    display: table-row-group;
-  }
-  .oc-content table--collapsable tbody tr,
-  .oc-content table--collapsable tfoot tr {
-    display: table-row;
-  }
-  .oc-content table--collapsable tbody tr td,
-  .oc-content table--collapsable tfoot tr td {
-    display: table-cell;
-  }
-}
-
 .oc-content img,
 .oc-content figure {
   width: 100%;
@@ -752,6 +738,10 @@ h5.oc-title {
 .oc-content img.align-center,
 .oc-content figure.align-center {
   margin-bottom: 1rem;
+}
+
+.oc-content img.align-center,
+.oc-content figure.align-center {
   display: block;
   margin-left: auto;
   margin-right: auto;

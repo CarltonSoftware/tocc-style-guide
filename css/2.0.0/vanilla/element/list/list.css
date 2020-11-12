@@ -169,6 +169,10 @@
   color: #42A74A;
 }
 
+.oc-list--ticked > *.oc-list--transparent:before {
+  color: transparent;
+}
+
 .oc-list--ticked > *.oc-list--bc1:before {
   color: #555555;
 }

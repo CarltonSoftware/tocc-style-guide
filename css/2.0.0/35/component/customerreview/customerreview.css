@@ -22,10 +22,6 @@
   position: relative;
   overflow: hidden;
   padding: 1rem 1rem 1rem 1.5rem;
-  font-size: 14px;
-  line-height: 20px;
-  color: #5B6064;
-  font-family: "sharpsansbook";
 }
 
 @media screen and (min-width: 40em) {
@@ -37,7 +33,6 @@
 .oc-customerreview, .oc-customerreview__date,
 .oc-customerreview > .oc-title,
 .oc-customerreview > .tocc__title {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
@@ -47,11 +42,6 @@
 .oc-customerreview em, .oc-customerreview__date em,
 .oc-customerreview > .oc-title em,
 .oc-customerreview > .tocc__title em {
-  font-family: Georgia;
-  font-style: italic;
-}
-
-.oc-customerreview em {
   font-family: Georgia;
   font-style: italic;
 }
@@ -70,14 +60,15 @@
 .oc-customerreview > .oc-title,
 .oc-customerreview > .tocc__title {
   font-weight: bold;
-  font-size: 12pt;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: #033234;
+  color: #555555;
   padding: 0;
 }
 
 .oc-customerreview > .oc-content, .oc-customerreview__description {
+  font-family: Georgia;
+  font-style: italic;
   margin-bottom: 1rem;
 }
 
