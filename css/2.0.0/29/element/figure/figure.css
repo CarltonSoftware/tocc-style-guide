@@ -71,6 +71,11 @@
   font-style: italic;
 }
 
+.oc-figure__caption--inverse {
+  color: #7AAA49;
+  background-color: white;
+}
+
 .oc-figure img {
   max-width: 100%;
   display: block;
