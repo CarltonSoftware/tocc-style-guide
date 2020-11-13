@@ -3,7 +3,21 @@ import connect from '../../connect';
 
 class Logos extends React.Component {
   getLogos() {
-    return ['emaillogo.png', 'logo.png'];
+    // TODO: host this and download it
+    return [
+      {
+        file: 'emaillogo.png',
+        text: 'Logo for use in emails'
+      },
+      {
+        file: 'logo.png',
+        text: 'Logo for screen use, currently used on the websites'
+      },
+      {
+        file: 'logo300dpi.png',
+        text: 'High resolution logo for use in printed documents'
+      }
+    ];
   }
 
   render() {
@@ -25,17 +39,20 @@ class Logos extends React.Component {
 
       logos = this.getLogos();
       logos = logos.map((logo) => (
-        <div key={logo} className="content">
-          <h4>{logo}</h4>
+        <div key={logo.file} className="content">
+          <h4>{logo.file}</h4>
+          <p>
+            {logo.text}
+          </p>
           <p>
             <img
-              src={'//logos.originalcottages.co.uk/' + brandCode + '/' + logo}
+              src={'//logos.originalcottages.co.uk/' + brandCode + '/' + logo.file}
             />
           </p>
           <pre>
-            https://logos.originalcottages.co.uk/{brandCode}/{logo}
+            https://logos.originalcottages.co.uk/{brandCode}/{logo.file}
             <br />
-            http://logos.originalcottages.co.uk/{brandCode}/{logo}
+            http://logos.originalcottages.co.uk/{brandCode}/{logo.file}
           </pre>
         </div>
       ));
