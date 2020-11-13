@@ -16,6 +16,10 @@ class Logos extends React.Component {
       {
         file: 'logo300dpi.png',
         text: 'High resolution logo for use in printed documents'
+      },
+      {
+        file: 'logo72dpi.png',
+        text: 'Larger logo for on-screen use.'
       }
     ];
   }
