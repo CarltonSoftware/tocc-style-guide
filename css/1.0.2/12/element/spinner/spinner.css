@@ -1,0 +1,28 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _spinner.scss
+ * @brand    Kent and Sussex Holiday Cottages
+ * @name     spinner
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _spinner.scss
+ * @brand    Vanilla
+ * @name     spinner
+ * @author   Tabs System User
+ */
+.oc-loading:before,
+.oc-spinner:before {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: .25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite;
+  content: "";
+  display: inline-block;
+}

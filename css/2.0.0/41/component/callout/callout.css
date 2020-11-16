@@ -140,10 +140,48 @@
 }
 
 @media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full) > .oc-callout--third {
+    width: 33.333333%;
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full) > .oc-callout--quarter {
+    width: calc(25%);
+  }
+}
+
+@media screen and (min-width: 40em) {
   .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout {
     width: calc(50% - 0.5rem);
   }
   .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout:nth-child(odd) {
     margin-right: 1rem;
+  }
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout.oc-callout--third {
+    margin-right: 1rem;
+  }
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout.oc-callout--third:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout.oc-callout--quarter {
+    margin-right: 1rem;
+  }
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout.oc-callout--quarter:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout--third {
+    width: 32%;
+    width: calc((100% / 3) - 0.66667rem);
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout--quarter {
+    width: calc(25% - 0.75rem);
   }
 }
