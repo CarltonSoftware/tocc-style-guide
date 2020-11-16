@@ -6,6 +6,7 @@ import LogoutScreen from './screens/Logout';
 import ElementListScreen from './screens/ElementList';
 import ElementScreen from './screens/Element';
 import HomeScreen from './screens/Home';
+import LogosScreen from './screens/Logos';
 import Page from './Page';
 import 'bulma';
 
@@ -20,6 +21,7 @@ class App extends React.Component {
       <Page>
         <Switch>
           <Route exact path="/" component={ HomeScreen } />
+          <Route exact path="/logos" component={ LogosScreen } />
           <Route exact path="/logout" component={ LogoutScreen } />
           <Route exact path="/:element" component={ ElementListScreen } />
           <Route exact path="/:element/:item" component={ ElementScreen } />
