@@ -14,7 +14,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-list em {
@@ -126,7 +126,7 @@
 }
 
 .oc-list--ticked > *.oc-list--grey:before {
-  color: #EEEEEE;
+  color: #CCCCCC;
 }
 
 .oc-list--ticked > *.oc-list--lightgrey:before {

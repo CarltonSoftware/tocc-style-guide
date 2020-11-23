@@ -43,15 +43,16 @@
 .oc-imagetile > figure > img + .oc-imagetile__caption,
 .oc-imagetile > img + figcaption,
 .oc-imagetile > img + .oc-imagetile__caption {
-  font-family: 'sharpsansbook';
-  font-size: 28px;
+  font-family: sharpsansbook,sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 38px;
   color: white;
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
-  font-weight: bold;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   z-index: 1;
 }
 
@@ -74,5 +75,5 @@
 .oc-imagetile > figure > img + .oc-imagetile__caption small,
 .oc-imagetile > img + figcaption small,
 .oc-imagetile > img + .oc-imagetile__caption small {
-  font-size: 14px;
+  font-size: 16px;
 }

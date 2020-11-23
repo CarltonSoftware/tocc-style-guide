@@ -36,7 +36,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-customerreview em, .oc-customerreview__date em,
@@ -62,7 +62,7 @@
   font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: #555555;
+  color: #450C34;
   padding: 0;
 }
 

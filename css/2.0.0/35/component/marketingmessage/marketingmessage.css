@@ -32,7 +32,7 @@
 .oc-marketingmessage > .oc-title,
 .oc-marketingmessage > .oc-title > a {
   font-weight: bold;
-  font-family: "TT Norms", sans-serif;
+  font-family: sharpsansbook;
 }
 
 .oc-marketingmessage > .oc-content {
@@ -99,7 +99,7 @@
     height: 100%;
     position: absolute;
     width: 1px;
-    background-color: #EEEEEE;
+    background-color: #CCCCCC;
     top: 0;
     left: -45px;
   }

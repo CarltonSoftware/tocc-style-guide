@@ -17,7 +17,7 @@
 .oc-bgwrap {
   position: relative;
   max-width: 1440px;
-  background: #888888;
+  margin: 0 auto;
 }
 
 .oc-bgwrap:after, .oc-bgwrap:before {
@@ -35,10 +35,6 @@
 
 .oc-bgwrap:after {
   right: calc((1440px - 100%) / 2 * -1);
-}
-
-.oc-bgwrap:after, .oc-bgwrap:before {
-  background: #888888;
 }
 
 .oc-bgwrap.oc-bgwrap--one {
@@ -106,11 +102,11 @@
 }
 
 .oc-bgwrap.oc-bgwrap--grey {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-bgwrap.oc-bgwrap--grey:after, .oc-bgwrap.oc-bgwrap--grey:before {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-bgwrap.oc-bgwrap--lightgrey {
@@ -202,43 +198,43 @@
 }
 
 .oc-bgwrap.oc-bgwrap--bc1 {
-  background: #555555;
+  background: #450C34;
 }
 
 .oc-bgwrap.oc-bgwrap--bc1:after, .oc-bgwrap.oc-bgwrap--bc1:before {
-  background: #555555;
+  background: #450C34;
 }
 
 .oc-bgwrap.oc-bgwrap--bc2 {
-  background: #666666;
+  background: #744967;
 }
 
 .oc-bgwrap.oc-bgwrap--bc2:after, .oc-bgwrap.oc-bgwrap--bc2:before {
-  background: #666666;
+  background: #744967;
 }
 
 .oc-bgwrap.oc-bgwrap--bc3 {
-  background: #777777;
+  background: #A2869A;
 }
 
 .oc-bgwrap.oc-bgwrap--bc3:after, .oc-bgwrap.oc-bgwrap--bc3:before {
-  background: #777777;
+  background: #A2869A;
 }
 
 .oc-bgwrap.oc-bgwrap--bc4 {
-  background: #888888;
+  background: #DOC2CC;
 }
 
 .oc-bgwrap.oc-bgwrap--bc4:after, .oc-bgwrap.oc-bgwrap--bc4:before {
-  background: #888888;
+  background: #DOC2CC;
 }
 
 .oc-bgwrap.oc-bgwrap--bc5 {
-  background: #999999;
+  background: #3E0B2F;
 }
 
 .oc-bgwrap.oc-bgwrap--bc5:after, .oc-bgwrap.oc-bgwrap--bc5:before {
-  background: #999999;
+  background: #3E0B2F;
 }
 
 .oc-bgwrap.oc-bgwrap--oc1 {
@@ -415,11 +411,11 @@
 }
 
 .oc-block.oc-bgwrap--grey {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-block.oc-bgwrap--grey:after, .oc-block.oc-bgwrap--grey:before {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-block.oc-bgwrap--lightgrey {
@@ -511,43 +507,43 @@
 }
 
 .oc-block.oc-bgwrap--bc1 {
-  background: #555555;
+  background: #450C34;
 }
 
 .oc-block.oc-bgwrap--bc1:after, .oc-block.oc-bgwrap--bc1:before {
-  background: #555555;
+  background: #450C34;
 }
 
 .oc-block.oc-bgwrap--bc2 {
-  background: #666666;
+  background: #744967;
 }
 
 .oc-block.oc-bgwrap--bc2:after, .oc-block.oc-bgwrap--bc2:before {
-  background: #666666;
+  background: #744967;
 }
 
 .oc-block.oc-bgwrap--bc3 {
-  background: #777777;
+  background: #A2869A;
 }
 
 .oc-block.oc-bgwrap--bc3:after, .oc-block.oc-bgwrap--bc3:before {
-  background: #777777;
+  background: #A2869A;
 }
 
 .oc-block.oc-bgwrap--bc4 {
-  background: #888888;
+  background: #DOC2CC;
 }
 
 .oc-block.oc-bgwrap--bc4:after, .oc-block.oc-bgwrap--bc4:before {
-  background: #888888;
+  background: #DOC2CC;
 }
 
 .oc-block.oc-bgwrap--bc5 {
-  background: #999999;
+  background: #3E0B2F;
 }
 
 .oc-block.oc-bgwrap--bc5:after, .oc-block.oc-bgwrap--bc5:before {
-  background: #999999;
+  background: #3E0B2F;
 }
 
 .oc-block.oc-bgwrap--oc1 {

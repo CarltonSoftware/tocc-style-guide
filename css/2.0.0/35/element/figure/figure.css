@@ -56,13 +56,13 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   font-family: Georgia;
   font-style: italic;
   max-width: 100%;
   color: white;
   pointer-events: none;
-  background-color: #555555;
+  background-color: #450C34;
 }
 
 .oc-figure__caption em,
@@ -72,7 +72,7 @@
 }
 
 .oc-figure__caption--inverse {
-  color: #555555;
+  color: #450C34;
   background-color: white;
 }
 

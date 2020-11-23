@@ -25,6 +25,12 @@ h1.oc-title {
   }
 }
 
+.oc-content h1 em,
+h1.oc-title em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
 .oc-content h2,
 h2.oc-title {
   text-rendering: optimizeLegibility;
@@ -41,6 +47,12 @@ h2.oc-title {
     font-size: 28px;
     line-height: 38px;
   }
+}
+
+.oc-content h2 em,
+h2.oc-title em {
+  font-family: Georgia;
+  font-style: italic;
 }
 
 .oc-content h3,
@@ -61,6 +73,12 @@ h3.oc-title {
   }
 }
 
+.oc-content h3 em,
+h3.oc-title em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
 .oc-content h4,
 h4.oc-title {
   text-rendering: optimizeLegibility;
@@ -79,6 +97,12 @@ h4.oc-title {
   }
 }
 
+.oc-content h4 em,
+h4.oc-title em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
 .oc-content h5,
 h5.oc-title {
   text-rendering: optimizeLegibility;
@@ -95,6 +119,12 @@ h5.oc-title {
     font-size: 16px;
     line-height: 26px;
   }
+}
+
+.oc-content h5 em,
+h5.oc-title em {
+  font-family: Georgia;
+  font-style: italic;
 }
 
 .oc-prefix:before {
@@ -121,7 +151,7 @@ h5.oc-title {
 .oc-prefix--title:before {
   color: #555555;
   font-weight: bold;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   text-transform: none;
 }
 
@@ -240,7 +270,7 @@ h5.oc-title {
 .oc-content blockquote > a {
   color: #555555;
   font-weight: bold;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   text-transform: none;
 }
 
@@ -279,7 +309,7 @@ h5.oc-title {
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   padding: 0.5rem;
   vertical-align: middle;
 }
@@ -512,7 +542,7 @@ h5.oc-title {
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-content p em,
@@ -580,7 +610,7 @@ h5.oc-title {
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   padding: 0.5rem;
   vertical-align: middle;
 }
@@ -878,7 +908,7 @@ h5.oc-title {
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   padding: 5px 0;
   font-weight: bold;
   font-size: 12px;
@@ -920,6 +950,12 @@ h5.oc-title {
   }
 }
 
+.oc-content blockquote em,
+.oc-content blockquote > p em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
 .oc-content ul,
 .oc-content ol {
   margin-left: 1.25rem;
@@ -931,7 +967,7 @@ h5.oc-title {
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-content ul li em,

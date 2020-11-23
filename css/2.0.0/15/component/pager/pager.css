@@ -38,7 +38,7 @@
 .oc-pager__item,
 .oc-pager__item a {
   background-color: white;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   color: #888569;
   cursor: pointer;
 }

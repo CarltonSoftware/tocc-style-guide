@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   border: 1px solid black;
   padding: 0.5rem;
   width: 100%;

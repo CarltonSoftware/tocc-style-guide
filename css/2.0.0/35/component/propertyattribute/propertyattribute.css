@@ -22,7 +22,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -43,7 +43,7 @@
   line-height: 1;
   font-family: 'Font Awesome 5 Pro';
   font-weight: 900;
-  color: #555555;
+  color: #450C34;
   font-size: 1.25em;
   margin-right: 0.5rem;
   content: "\f059";

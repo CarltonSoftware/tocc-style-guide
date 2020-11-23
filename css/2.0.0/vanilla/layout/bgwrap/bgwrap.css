@@ -9,7 +9,7 @@
 .oc-bgwrap {
   position: relative;
   max-width: 1440px;
-  background: #888888;
+  margin: 0 auto;
 }
 
 .oc-bgwrap:after, .oc-bgwrap:before {
@@ -27,10 +27,6 @@
 
 .oc-bgwrap:after {
   right: calc((1440px - 100%) / 2 * -1);
-}
-
-.oc-bgwrap:after, .oc-bgwrap:before {
-  background: #888888;
 }
 
 .oc-bgwrap.oc-bgwrap--one {
@@ -98,11 +94,11 @@
 }
 
 .oc-bgwrap.oc-bgwrap--grey {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-bgwrap.oc-bgwrap--grey:after, .oc-bgwrap.oc-bgwrap--grey:before {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-bgwrap.oc-bgwrap--lightgrey {
@@ -407,11 +403,11 @@
 }
 
 .oc-block.oc-bgwrap--grey {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-block.oc-bgwrap--grey:after, .oc-block.oc-bgwrap--grey:before {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-block.oc-bgwrap--lightgrey {

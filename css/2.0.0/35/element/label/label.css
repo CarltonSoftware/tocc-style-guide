@@ -20,7 +20,7 @@
   border-radius: 0px;
   line-height: 1;
   white-space: nowrap;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   background: #033234;
   font-size: 12px;
 }
@@ -66,7 +66,7 @@
 }
 
 .oc-label--grey {
-  background: #EEEEEE;
+  background: #CCCCCC;
 }
 
 .oc-label--lightgrey {
@@ -114,23 +114,23 @@
 }
 
 .oc-label--bc1 {
-  background: #555555;
+  background: #450C34;
 }
 
 .oc-label--bc2 {
-  background: #666666;
+  background: #744967;
 }
 
 .oc-label--bc3 {
-  background: #777777;
+  background: #A2869A;
 }
 
 .oc-label--bc4 {
-  background: #888888;
+  background: #DOC2CC;
 }
 
 .oc-label--bc5 {
-  background: #999999;
+  background: #3E0B2F;
 }
 
 .oc-label--oc1 {
@@ -203,7 +203,7 @@
 }
 
 .oc-label--hollow, .oc-label__related .oc-label, .oc-label--hollow:hover, .oc-label__related .oc-label:hover, .oc-label--hollow:visited, .oc-label__related .oc-label:visited {
-  color: #999999;
+  color: #3E0B2F;
 }
 
 .oc-label--padded, .oc-label__related .oc-label {
@@ -236,5 +236,5 @@
 
 .oc-label__related .oc-label {
   font-weight: bold;
-  color: #555555;
+  color: #450C34;
 }

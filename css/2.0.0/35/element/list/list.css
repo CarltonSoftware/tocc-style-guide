@@ -22,7 +22,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #5B6064;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-list em {
@@ -134,7 +134,7 @@
 }
 
 .oc-list--ticked > *.oc-list--grey:before {
-  color: #EEEEEE;
+  color: #CCCCCC;
 }
 
 .oc-list--ticked > *.oc-list--lightgrey:before {
@@ -182,23 +182,23 @@
 }
 
 .oc-list--ticked > *.oc-list--bc1:before {
-  color: #555555;
+  color: #450C34;
 }
 
 .oc-list--ticked > *.oc-list--bc2:before {
-  color: #666666;
+  color: #744967;
 }
 
 .oc-list--ticked > *.oc-list--bc3:before {
-  color: #777777;
+  color: #A2869A;
 }
 
 .oc-list--ticked > *.oc-list--bc4:before {
-  color: #888888;
+  color: #DOC2CC;
 }
 
 .oc-list--ticked > *.oc-list--bc5:before {
-  color: #999999;
+  color: #3E0B2F;
 }
 
 .oc-list--ticked > *.oc-list--oc1:before {

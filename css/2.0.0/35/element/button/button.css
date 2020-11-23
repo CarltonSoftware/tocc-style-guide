@@ -22,7 +22,7 @@
   border: 1px solid transparent;
   border-radius: 0px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  font-family: "sharpsansbook";
+  font-family: sharpsansbook, sans-serif;
   font-weight: bold;
   text-transform: none;
   font-size: 0.9rem;
@@ -90,12 +90,12 @@
 }
 
 .oc-button--search {
-  background-color: #555555;
+  background-color: #450C34;
   color: white;
 }
 
 .oc-button--search:hover, .oc-button--search:focus {
-  background-color: #999999;
+  background-color: #3E0B2F;
   color: white;
 }
 
