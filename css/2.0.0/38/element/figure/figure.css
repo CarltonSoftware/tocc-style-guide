@@ -65,8 +65,8 @@
   background-color: #FF5B3F;
 }
 
-.oc-figure__caption em,
-.oc-figure__caption > a em {
+.oc-figure__caption > em,
+.oc-figure__caption > a > em {
   font-family: Georgia;
   font-style: italic;
 }

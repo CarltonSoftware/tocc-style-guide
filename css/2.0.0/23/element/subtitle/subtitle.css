@@ -28,7 +28,7 @@
   font-family: sharpsansbook, sans-serif;
 }
 
-.oc-subtitle em, .oc-subtitle--parent em {
+.oc-subtitle > em, .oc-subtitle--parent > em {
   font-family: Georgia;
   font-style: italic;
 }

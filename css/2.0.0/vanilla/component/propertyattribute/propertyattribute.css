@@ -20,7 +20,7 @@
   white-space: nowrap;
 }
 
-.oc-propertyattribute em {
+.oc-propertyattribute > em {
   font-family: Georgia;
   font-style: italic;
 }

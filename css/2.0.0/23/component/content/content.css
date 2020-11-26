@@ -33,10 +33,22 @@ h1.oc-title {
   }
 }
 
-.oc-content h1 em,
-h1.oc-title em {
+.oc-content h1 > em,
+h1.oc-title > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content h1 > a,
+h1.oc-title > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content h1 > a:visited, .oc-content h1 > a:hover,
+h1.oc-title > a:visited,
+h1.oc-title > a:hover {
+  color: #516083;
 }
 
 .oc-content h2,
@@ -57,10 +69,22 @@ h2.oc-title {
   }
 }
 
-.oc-content h2 em,
-h2.oc-title em {
+.oc-content h2 > em,
+h2.oc-title > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content h2 > a,
+h2.oc-title > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content h2 > a:visited, .oc-content h2 > a:hover,
+h2.oc-title > a:visited,
+h2.oc-title > a:hover {
+  color: #516083;
 }
 
 .oc-content h3,
@@ -81,10 +105,22 @@ h3.oc-title {
   }
 }
 
-.oc-content h3 em,
-h3.oc-title em {
+.oc-content h3 > em,
+h3.oc-title > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content h3 > a,
+h3.oc-title > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content h3 > a:visited, .oc-content h3 > a:hover,
+h3.oc-title > a:visited,
+h3.oc-title > a:hover {
+  color: #516083;
 }
 
 .oc-content h4,
@@ -105,10 +141,22 @@ h4.oc-title {
   }
 }
 
-.oc-content h4 em,
-h4.oc-title em {
+.oc-content h4 > em,
+h4.oc-title > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content h4 > a,
+h4.oc-title > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content h4 > a:visited, .oc-content h4 > a:hover,
+h4.oc-title > a:visited,
+h4.oc-title > a:hover {
+  color: #516083;
 }
 
 .oc-content h5,
@@ -129,10 +177,22 @@ h5.oc-title {
   }
 }
 
-.oc-content h5 em,
-h5.oc-title em {
+.oc-content h5 > em,
+h5.oc-title > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content h5 > a,
+h5.oc-title > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content h5 > a:visited, .oc-content h5 > a:hover,
+h5.oc-title > a:visited,
+h5.oc-title > a:hover {
+  color: #516083;
 }
 
 .oc-prefix:before {
@@ -153,7 +213,7 @@ h5.oc-title em {
 
 .oc-prefix--bold:before {
   font-weight: bold;
-  color: #002F56;
+  color: #172B59;
 }
 
 .oc-prefix--title:before {
@@ -298,7 +358,7 @@ h5.oc-title {
 
 .oc-table thead tr th,
 .oc-table thead tr td {
-  color: #002F56;
+  color: #172B59;
 }
 
 .oc-table thead,
@@ -322,12 +382,12 @@ h5.oc-title {
   vertical-align: middle;
 }
 
-.oc-table thead tr th em,
-.oc-table thead tr td em,
-.oc-table tbody tr th em,
-.oc-table tbody tr td em,
-.oc-table tfoot tr th em,
-.oc-table tfoot tr td em {
+.oc-table thead tr th > em,
+.oc-table thead tr td > em,
+.oc-table tbody tr th > em,
+.oc-table tbody tr td > em,
+.oc-table tfoot tr th > em,
+.oc-table tfoot tr td > em {
   font-family: Georgia;
   font-style: italic;
 }
@@ -553,10 +613,10 @@ h5.oc-title {
   font-family: sharpsansbook, sans-serif;
 }
 
-.oc-content p em,
-.oc-content table thead tr th em,
-.oc-content table tbody tr td em,
-.oc-content table tfoot tr td em {
+.oc-content p > em,
+.oc-content table thead tr th > em,
+.oc-content table tbody tr td > em,
+.oc-content table tfoot tr td > em {
   font-family: Georgia;
   font-style: italic;
 }
@@ -590,6 +650,16 @@ h5.oc-title {
   font-weight: bold;
 }
 
+.oc-content p a:visited, .oc-content p a:hover,
+.oc-content table a:visited,
+.oc-content table a:hover,
+.oc-content figure a:visited,
+.oc-content figure a:hover,
+.oc-content blockquote a:visited,
+.oc-content blockquote a:hover {
+  color: #516083;
+}
+
 .oc-content table {
   border-collapse: collapse;
   width: 100%;
@@ -599,7 +669,7 @@ h5.oc-title {
 
 .oc-content table thead tr th,
 .oc-content table thead tr td {
-  color: #002F56;
+  color: #172B59;
 }
 
 .oc-content table thead,
@@ -623,12 +693,12 @@ h5.oc-title {
   vertical-align: middle;
 }
 
-.oc-content table thead tr th em,
-.oc-content table thead tr td em,
-.oc-content table tbody tr th em,
-.oc-content table tbody tr td em,
-.oc-content table tfoot tr th em,
-.oc-content table tfoot tr td em {
+.oc-content table thead tr th > em,
+.oc-content table thead tr td > em,
+.oc-content table tbody tr th > em,
+.oc-content table tbody tr td > em,
+.oc-content table tfoot tr th > em,
+.oc-content table tfoot tr td > em {
   font-family: Georgia;
   font-style: italic;
 }
@@ -922,7 +992,7 @@ h5.oc-title {
   font-size: 12px;
 }
 
-.oc-content figure figcaption em {
+.oc-content figure figcaption > em {
   font-family: Georgia;
   font-style: italic;
 }
@@ -958,10 +1028,22 @@ h5.oc-title {
   }
 }
 
-.oc-content blockquote em,
-.oc-content blockquote > p em {
+.oc-content blockquote > em,
+.oc-content blockquote > p > em {
   font-family: Georgia;
   font-style: italic;
+}
+
+.oc-content blockquote > a,
+.oc-content blockquote > p > a {
+  color: #172B59;
+  font-weight: bold;
+}
+
+.oc-content blockquote > a:visited, .oc-content blockquote > a:hover,
+.oc-content blockquote > p > a:visited,
+.oc-content blockquote > p > a:hover {
+  color: #516083;
 }
 
 .oc-content ul,
@@ -978,8 +1060,8 @@ h5.oc-title {
   font-family: sharpsansbook, sans-serif;
 }
 
-.oc-content ul li em,
-.oc-content ol li em {
+.oc-content ul li > em,
+.oc-content ol li > em {
   font-family: Georgia;
   font-style: italic;
 }

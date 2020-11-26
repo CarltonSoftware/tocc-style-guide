@@ -19,7 +19,7 @@
   font-size: 14px;
 }
 
-.oc-pricesummary em {
+.oc-pricesummary > em {
   font-family: Georgia;
   font-style: italic;
 }

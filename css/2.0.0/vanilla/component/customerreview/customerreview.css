@@ -31,9 +31,9 @@
   font-family: sharpsansbook, sans-serif;
 }
 
-.oc-customerreview em, .oc-customerreview__date em,
-.oc-customerreview > .oc-title em,
-.oc-customerreview > .tocc__title em {
+.oc-customerreview > em, .oc-customerreview__date > em,
+.oc-customerreview > .oc-title > em,
+.oc-customerreview > .tocc__title > em {
   font-family: Georgia;
   font-style: italic;
 }

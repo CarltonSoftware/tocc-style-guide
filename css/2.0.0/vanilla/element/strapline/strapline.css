@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-.oc-strapline em {
+.oc-strapline > em {
   font-family: Georgia;
   font-style: italic;
 }

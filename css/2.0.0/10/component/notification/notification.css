@@ -93,8 +93,8 @@
   font-size: 12px;
 }
 
-.oc-notification em,
-.oc-notification p em {
+.oc-notification > em,
+.oc-notification p > em {
   font-family: Georgia;
   font-style: italic;
 }

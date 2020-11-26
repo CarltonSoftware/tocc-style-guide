@@ -16,7 +16,7 @@
   font-family: sharpsansbook, sans-serif;
 }
 
-.oc-comment em {
+.oc-comment > em {
   font-family: Georgia;
   font-style: italic;
 }
