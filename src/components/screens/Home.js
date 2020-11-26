@@ -44,7 +44,7 @@ class Home extends React.Component {
     }
 
     const colors = ['bc1', 'bc2', 'bc3', 'bc5', 'bc6', 'oc1', 'oc2',
-      'oc3', 'oc4', 'oc5', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
+      'oc3', 'oc4', 'oc5', 'ocg1', 'ocg2', 'ocg3', 'ocg4', 'ocg5', 'grey', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];
 
     const Tf = CssHoc(
       (props) => {
