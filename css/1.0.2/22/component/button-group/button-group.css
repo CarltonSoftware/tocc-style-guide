@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _button-group.scss
  * @brand    Red Rose
  * @name     button-group
@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _button-group.scss
  * @brand    Vanilla
  * @name     button-group
@@ -38,7 +38,7 @@
   *zoom: 1;
 }
 
-.oc-button-group:before, .oc-button-group:after {
+.oc-button-group::before, .oc-button-group::after {
   display: none;
 }
 

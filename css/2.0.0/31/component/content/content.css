@@ -48,7 +48,7 @@ h1.oc-title > a {
 .oc-content h1 > a:visited, .oc-content h1 > a:hover,
 h1.oc-title > a:visited,
 h1.oc-title > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content h2,
@@ -84,7 +84,7 @@ h2.oc-title > a {
 .oc-content h2 > a:visited, .oc-content h2 > a:hover,
 h2.oc-title > a:visited,
 h2.oc-title > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content h3,
@@ -120,7 +120,7 @@ h3.oc-title > a {
 .oc-content h3 > a:visited, .oc-content h3 > a:hover,
 h3.oc-title > a:visited,
 h3.oc-title > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content h4,
@@ -156,7 +156,7 @@ h4.oc-title > a {
 .oc-content h4 > a:visited, .oc-content h4 > a:hover,
 h4.oc-title > a:visited,
 h4.oc-title > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content h5,
@@ -192,7 +192,7 @@ h5.oc-title > a {
 .oc-content h5 > a:visited, .oc-content h5 > a:hover,
 h5.oc-title > a:visited,
 h5.oc-title > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-prefix:before {
@@ -657,7 +657,7 @@ h5.oc-title {
 .oc-content figure a:hover,
 .oc-content blockquote a:visited,
 .oc-content blockquote a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content table {
@@ -1043,7 +1043,7 @@ h5.oc-title {
 .oc-content blockquote > a:visited, .oc-content blockquote > a:hover,
 .oc-content blockquote > p > a:visited,
 .oc-content blockquote > p > a:hover {
-  color: #516083;
+  color: #152750;
 }
 
 .oc-content ul,

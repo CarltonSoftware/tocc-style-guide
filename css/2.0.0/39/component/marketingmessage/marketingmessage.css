@@ -32,7 +32,7 @@
 .oc-marketingmessage > .oc-title,
 .oc-marketingmessage > .oc-title > a {
   font-weight: bold;
-  font-family: sharpsansbook;
+  font-family: sharpsansbook, sans-serif;
 }
 
 .oc-marketingmessage > .oc-content {

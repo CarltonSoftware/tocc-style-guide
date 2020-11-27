@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _booleansliderswitch.scss
  * @brand    Suffolk Cottage Holidays
  * @name     booleansliderswitch
@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _booleansliderswitch.scss
  * @brand    Vanilla
  * @name     booleansliderswitch
@@ -16,7 +16,7 @@
  */
 .oc-booleansliderswitch {
   height: 40px;
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   max-width: 300px;
   border-radius: 3px;
   display: flex;
@@ -47,19 +47,22 @@
   align-self: center;
   width: 30px;
   height: 30px;
+  align-self: center;
   border-radius: 2px;
   margin-right: 4px;
   text-align: center;
   line-height: 30px;
   cursor: pointer;
   content: attr(data-msg-on);
-  color: #5b5b5b;
+  color: #5B5B5B;
+  margin-left: 4px;
 }
 
 .oc-booleansliderswitch input:after {
   align-self: center;
   width: 30px;
   height: 30px;
+  align-self: center;
   border-radius: 2px;
   margin-right: 4px;
   text-align: center;
@@ -71,11 +74,32 @@
 }
 
 .oc-booleansliderswitch input[type="checkbox"]:checked:before {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  border-radius: 2px;
+  margin-right: 4px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  content: attr(data-msg-on);
   background: #019701;
   color: white;
+  margin-left: 4px;
 }
 
 .oc-booleansliderswitch input[type="checkbox"]:checked:after {
-  color: #5b5b5b;
-  background: none;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  border-radius: 2px;
+  margin-right: 4px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  content: attr(data-msg-off);
+  color: #5B5B5B;
+  background: white;
 }

@@ -1,0 +1,57 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _skeleton.scss
+ * @brand    Wales Cottage Holidays
+ * @name     skeleton
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _skeleton.scss
+ * @brand    Vanilla
+ * @name     skeleton
+ * @author   Tabs System User
+ */
+.oc-skeleton {
+  position: relative;
+  overflow: hidden;
+}
+
+.oc-skeleton:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9), transparent);
+  animation: oc-skeleton__keyframes 2s ease-out infinite;
+}
+
+.oc-skeleton__blur {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, currentColor 10%, currentColor 90%, rgba(255, 255, 255, 0) 90%);
+  opacity: 0.4;
+  display: inline-block;
+}
+
+.oc-skeleton__blur:after {
+  content: '&nbsp;';
+  width: 0;
+}
+
+.oc-skeleton__blur--fullwidth {
+  width: 100%;
+}
+
+.oc-skeleton__blur--halfwidth {
+  width: 50%;
+}
+
+@keyframes oc-skeleton__keyframes {
+  to {
+    left: 100%;
+  }
+}

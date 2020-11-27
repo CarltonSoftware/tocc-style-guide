@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _subtitle.scss
  * @brand    Marsdens Property Management
  * @name     subtitle
@@ -8,26 +8,26 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _subtitle.scss
  * @brand    Vanilla
  * @name     subtitle
  * @author   Tabs System User
  */
 .oc-subtitle {
+  font-size: 14px;
+  color: #5b5b5b;
+  font-family: "Open Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
   line-height: 16px;
   display: block;
   font-size: 11px;
 }
 
-.oc-subtitle, .oc-subtitle--parent {
+.oc-subtitle--parent {
   font-size: 14px;
   color: #5b5b5b;
   font-family: "Open Sans", sans-serif;
-}
-
-.oc-subtitle--parent {
   margin: 0;
   margin-bottom: 0.6rem;
   font-family: "Open Sans", sans-serif;

@@ -5,7 +5,6 @@
          url('SharpSans-Book.eot') format('eot');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'sharpsansbook';
@@ -14,7 +13,6 @@
          url('SharpSans-BookItalic.eot') format('eot');
     font-weight: normal;
     font-style: italic;
-    font-display: swap;
 }
 @font-face {
     font-family: 'sharpsansbook';
@@ -23,7 +21,6 @@
          url('SharpSans-Semibold.eot') format('eot');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'sharpsansbook';
@@ -32,5 +29,4 @@
          url('SharpSans-SemiboldItalic.eot') format('eot');
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
 }

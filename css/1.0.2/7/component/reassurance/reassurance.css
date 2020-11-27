@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _reassurance.scss
  * @brand    Cornish Quay
  * @name     reassurance
@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _reassurance.scss
  * @brand    Vanilla
  * @name     reassurance
@@ -119,12 +119,13 @@
 }
 
 .oc-reassurancebar--bg {
+  background: #F1F1F1;
   position: relative;
   max-width: 1440px;
-  background: #F1F1F1;
 }
 
 .oc-reassurancebar--bg:after, .oc-reassurancebar--bg:before {
+  background: #F1F1F1;
   position: absolute;
   width: calc((1440px - 100%) / 2);
   height: 100%;
@@ -139,8 +140,4 @@
 
 .oc-reassurancebar--bg:after {
   right: calc((1440px - 100%) / 2 * -1);
-}
-
-.oc-reassurancebar--bg:after, .oc-reassurancebar--bg:before {
-  background: #F1F1F1;
 }
