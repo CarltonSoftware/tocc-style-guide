@@ -24,6 +24,7 @@
   width: 100%;
   height: 100%;
   max-width: 400px;
+  min-height: 300px;
 }
 
 .oc-imagetile:after {

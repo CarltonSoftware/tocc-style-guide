@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _label.scss
  * @brand    Jean Bartlett Cottage Holidays
  * @name     label
@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- * 
+ *
  * @filename _label.scss
  * @brand    Vanilla
  * @name     label
@@ -81,6 +81,14 @@
   background: #FEFEFE;
 }
 
+.oc-label--white {
+  background: #FFFFFF;
+}
+
+.oc-label--black {
+  background: #000000;
+}
+
 .oc-label--darkgrey {
   background: #5B5B5B;
 }
@@ -95,6 +103,30 @@
 
 .oc-label--alert {
   background: #990000;
+}
+
+.oc-label--green {
+  background: #42A74A;
+}
+
+.oc-label--bc1 {
+  background: #555555;
+}
+
+.oc-label--bc2 {
+  background: #666666;
+}
+
+.oc-label--bc3 {
+  background: #777777;
+}
+
+.oc-label--bc4 {
+  background: #888888;
+}
+
+.oc-label--bc5 {
+  background: #999999;
 }
 
 .oc-label--large {

@@ -34,7 +34,7 @@
   font-family: sharpsansbook, sans-serif;
   text-transform: none;
   font-weight: bold;
-  background: #174C5C;
+  background-color: #174C5C;
   font-size: 16px;
 }
 
@@ -55,6 +55,16 @@
   right: 10px;
   transform: rotate(-360deg), translateY(-50%);
   transition: transform 150ms ease;
+  color: #FFFFFF;
+}
+
+.oc-detail--accordion summary {
+  background-color: #F8F8F8;
+  font-size: 22px;
+}
+
+.oc-detail--accordion summary, .oc-detail--accordion summary:after {
+  color: #174C5C;
 }
 
 .oc-detail[open] summary:after {
