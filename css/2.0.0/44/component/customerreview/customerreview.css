@@ -1,0 +1,75 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _customerreview.scss
+ * @brand    Derbyshire Country Cottages
+ * @name     customerreview
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _customerreview.scss
+ * @brand    Vanilla
+ * @name     customerreview
+ * @author   Tabs System User
+ */
+.oc-customerreview {
+  border: 1px solid #d8d8d8;
+  border-radius: 0px;
+  height: 270px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .oc-customerreview {
+    width: 379px;
+  }
+}
+
+.oc-customerreview, .oc-customerreview__date,
+.oc-customerreview > .oc-title,
+.oc-customerreview > .tocc__title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5B6064;
+  font-family: sharpsansbook, sans-serif;
+}
+
+.oc-customerreview > em, .oc-customerreview__date > em,
+.oc-customerreview > .oc-title > em,
+.oc-customerreview > .tocc__title > em {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.oc-customerreview:after {
+  content: '';
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 1px, white);
+}
+
+.oc-customerreview > .oc-title,
+.oc-customerreview > .tocc__title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #0A7066;
+  padding: 0;
+}
+
+.oc-customerreview > .oc-content, .oc-customerreview__description {
+  margin-bottom: 1rem;
+}
+
+.oc-customerreview__date {
+  margin-bottom: 0;
+}

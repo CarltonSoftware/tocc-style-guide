@@ -141,6 +141,14 @@
   background: #FFFFFF;
 }
 
+.oc-bgwrap.oc-bgwrap--disabled {
+  background: #E3E3E3;
+}
+
+.oc-bgwrap.oc-bgwrap--disabled:after, .oc-bgwrap.oc-bgwrap--disabled:before {
+  background: #E3E3E3;
+}
+
 .oc-bgwrap.oc-bgwrap--black {
   background: #000000;
 }
@@ -198,43 +206,43 @@
 }
 
 .oc-bgwrap.oc-bgwrap--bc1 {
-  background: #896B95;
+  background: #0A7066;
 }
 
 .oc-bgwrap.oc-bgwrap--bc1:after, .oc-bgwrap.oc-bgwrap--bc1:before {
-  background: #896B95;
+  background: #0A7066;
 }
 
 .oc-bgwrap.oc-bgwrap--bc2 {
-  background: #A790B0;
+  background: #47948C;
 }
 
 .oc-bgwrap.oc-bgwrap--bc2:after, .oc-bgwrap.oc-bgwrap--bc2:before {
-  background: #A790B0;
+  background: #47948C;
 }
 
 .oc-bgwrap.oc-bgwrap--bc3 {
-  background: #C4B5CA;
+  background: #84B7B2;
 }
 
 .oc-bgwrap.oc-bgwrap--bc3:after, .oc-bgwrap.oc-bgwrap--bc3:before {
-  background: #C4B5CA;
+  background: #84B7B2;
 }
 
 .oc-bgwrap.oc-bgwrap--bc4 {
-  background: #E1DAE4;
+  background: #C2DBD9;
 }
 
 .oc-bgwrap.oc-bgwrap--bc4:after, .oc-bgwrap.oc-bgwrap--bc4:before {
-  background: #E1DAE4;
+  background: #C2DBD9;
 }
 
 .oc-bgwrap.oc-bgwrap--bc5 {
-  background: #7B6086;
+  background: #09655C;
 }
 
 .oc-bgwrap.oc-bgwrap--bc5:after, .oc-bgwrap.oc-bgwrap--bc5:before {
-  background: #7B6086;
+  background: #09655C;
 }
 
 .oc-bgwrap.oc-bgwrap--oc1 {
@@ -450,6 +458,14 @@
   background: #FFFFFF;
 }
 
+.oc-block.oc-bgwrap--disabled {
+  background: #E3E3E3;
+}
+
+.oc-block.oc-bgwrap--disabled:after, .oc-block.oc-bgwrap--disabled:before {
+  background: #E3E3E3;
+}
+
 .oc-block.oc-bgwrap--black {
   background: #000000;
 }
@@ -507,43 +523,43 @@
 }
 
 .oc-block.oc-bgwrap--bc1 {
-  background: #896B95;
+  background: #0A7066;
 }
 
 .oc-block.oc-bgwrap--bc1:after, .oc-block.oc-bgwrap--bc1:before {
-  background: #896B95;
+  background: #0A7066;
 }
 
 .oc-block.oc-bgwrap--bc2 {
-  background: #A790B0;
+  background: #47948C;
 }
 
 .oc-block.oc-bgwrap--bc2:after, .oc-block.oc-bgwrap--bc2:before {
-  background: #A790B0;
+  background: #47948C;
 }
 
 .oc-block.oc-bgwrap--bc3 {
-  background: #C4B5CA;
+  background: #84B7B2;
 }
 
 .oc-block.oc-bgwrap--bc3:after, .oc-block.oc-bgwrap--bc3:before {
-  background: #C4B5CA;
+  background: #84B7B2;
 }
 
 .oc-block.oc-bgwrap--bc4 {
-  background: #E1DAE4;
+  background: #C2DBD9;
 }
 
 .oc-block.oc-bgwrap--bc4:after, .oc-block.oc-bgwrap--bc4:before {
-  background: #E1DAE4;
+  background: #C2DBD9;
 }
 
 .oc-block.oc-bgwrap--bc5 {
-  background: #7B6086;
+  background: #09655C;
 }
 
 .oc-block.oc-bgwrap--bc5:after, .oc-block.oc-bgwrap--bc5:before {
-  background: #7B6086;
+  background: #09655C;
 }
 
 .oc-block.oc-bgwrap--oc1 {

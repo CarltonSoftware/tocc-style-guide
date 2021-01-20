@@ -62,7 +62,7 @@
   max-width: 100%;
   color: white;
   pointer-events: none;
-  background-color: #896B95;
+  background-color: #0A7066;
 }
 
 .oc-figure__caption > em,
@@ -72,7 +72,7 @@
 }
 
 .oc-figure__caption--inverse {
-  color: #896B95;
+  color: #0A7066;
   background-color: white;
 }
 

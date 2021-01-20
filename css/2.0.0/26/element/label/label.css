@@ -85,6 +85,10 @@
   background: #FFFFFF;
 }
 
+.oc-label--disabled {
+  background: #E3E3E3;
+}
+
 .oc-label--black {
   background: #000000;
 }
@@ -114,23 +118,23 @@
 }
 
 .oc-label--bc1 {
-  background: #896B95;
+  background: #0A7066;
 }
 
 .oc-label--bc2 {
-  background: #A790B0;
+  background: #47948C;
 }
 
 .oc-label--bc3 {
-  background: #C4B5CA;
+  background: #84B7B2;
 }
 
 .oc-label--bc4 {
-  background: #E1DAE4;
+  background: #C2DBD9;
 }
 
 .oc-label--bc5 {
-  background: #7B6086;
+  background: #09655C;
 }
 
 .oc-label--oc1 {
@@ -203,7 +207,7 @@
 }
 
 .oc-label--hollow, .oc-label__related .oc-label, .oc-label--hollow:hover, .oc-label__related .oc-label:hover, .oc-label--hollow:visited, .oc-label__related .oc-label:visited {
-  color: #7B6086;
+  color: #09655C;
 }
 
 .oc-label--padded, .oc-label__related .oc-label {
@@ -236,5 +240,5 @@
 
 .oc-label__related .oc-label {
   font-weight: bold;
-  color: #896B95;
+  color: #0A7066;
 }

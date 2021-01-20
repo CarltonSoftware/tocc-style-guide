@@ -23,12 +23,12 @@
 }
 
 .oc-callout a:not(.oc-button) {
-  color: #896B95;
+  color: #0A7066;
   font-weight: bold;
 }
 
 .oc-callout a:not(.oc-button):visited, .oc-callout a:not(.oc-button):hover {
-  color: #7B6086;
+  color: #09655C;
 }
 
 .oc-callout > *:first-child:not(.oc-callout),

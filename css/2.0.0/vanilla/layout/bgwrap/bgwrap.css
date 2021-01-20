@@ -133,6 +133,14 @@
   background: #FFFFFF;
 }
 
+.oc-bgwrap.oc-bgwrap--disabled {
+  background: #E3E3E3;
+}
+
+.oc-bgwrap.oc-bgwrap--disabled:after, .oc-bgwrap.oc-bgwrap--disabled:before {
+  background: #E3E3E3;
+}
+
 .oc-bgwrap.oc-bgwrap--black {
   background: #000000;
 }
@@ -440,6 +448,14 @@
 
 .oc-block.oc-bgwrap--white:after, .oc-block.oc-bgwrap--white:before {
   background: #FFFFFF;
+}
+
+.oc-block.oc-bgwrap--disabled {
+  background: #E3E3E3;
+}
+
+.oc-block.oc-bgwrap--disabled:after, .oc-block.oc-bgwrap--disabled:before {
+  background: #E3E3E3;
 }
 
 .oc-block.oc-bgwrap--black {

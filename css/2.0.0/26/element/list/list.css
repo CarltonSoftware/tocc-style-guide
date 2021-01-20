@@ -153,6 +153,10 @@
   color: #FFFFFF;
 }
 
+.oc-list--ticked > *.oc-list--disabled:before {
+  color: #E3E3E3;
+}
+
 .oc-list--ticked > *.oc-list--black:before {
   color: #000000;
 }
@@ -182,23 +186,23 @@
 }
 
 .oc-list--ticked > *.oc-list--bc1:before {
-  color: #896B95;
+  color: #0A7066;
 }
 
 .oc-list--ticked > *.oc-list--bc2:before {
-  color: #A790B0;
+  color: #47948C;
 }
 
 .oc-list--ticked > *.oc-list--bc3:before {
-  color: #C4B5CA;
+  color: #84B7B2;
 }
 
 .oc-list--ticked > *.oc-list--bc4:before {
-  color: #E1DAE4;
+  color: #C2DBD9;
 }
 
 .oc-list--ticked > *.oc-list--bc5:before {
-  color: #7B6086;
+  color: #09655C;
 }
 
 .oc-list--ticked > *.oc-list--oc1:before {

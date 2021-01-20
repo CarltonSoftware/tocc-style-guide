@@ -85,6 +85,10 @@
   background: #FFFFFF;
 }
 
+.oc-label--disabled {
+  background: #E3E3E3;
+}
+
 .oc-label--black {
   background: #000000;
 }

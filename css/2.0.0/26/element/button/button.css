@@ -90,12 +90,12 @@
 }
 
 .oc-button--search {
-  background-color: #896B95;
+  background-color: #0A7066;
   color: white;
 }
 
 .oc-button--search:hover, .oc-button--search:focus {
-  background-color: #7B6086;
+  background-color: #09655C;
   color: white;
 }
 

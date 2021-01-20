@@ -145,6 +145,10 @@
   color: #FFFFFF;
 }
 
+.oc-list--ticked > *.oc-list--disabled:before {
+  color: #E3E3E3;
+}
+
 .oc-list--ticked > *.oc-list--black:before {
   color: #000000;
 }
