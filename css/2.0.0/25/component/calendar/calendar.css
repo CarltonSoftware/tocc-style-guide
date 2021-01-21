@@ -98,12 +98,7 @@
 }
 
 .oc-calendar [class$="__dropdown--select"] > * select {
-  line-height: 2.4rem;
-  height: 2.4rem;
   width: 100%;
-  border: 1px solid #F1F1F1;
-  background: none;
-  color: #5B6064;
 }
 
 .oc-calendar [class$="__dropdown--select"] > *:first-of-type {

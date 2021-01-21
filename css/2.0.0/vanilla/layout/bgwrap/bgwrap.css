@@ -141,6 +141,14 @@
   background: #E3E3E3;
 }
 
+.oc-bgwrap.oc-bgwrap--formelement {
+  background: #D5D5D5;
+}
+
+.oc-bgwrap.oc-bgwrap--formelement:after, .oc-bgwrap.oc-bgwrap--formelement:before {
+  background: #D5D5D5;
+}
+
 .oc-bgwrap.oc-bgwrap--black {
   background: #000000;
 }
@@ -456,6 +464,14 @@
 
 .oc-block.oc-bgwrap--disabled:after, .oc-block.oc-bgwrap--disabled:before {
   background: #E3E3E3;
+}
+
+.oc-block.oc-bgwrap--formelement {
+  background: #D5D5D5;
+}
+
+.oc-block.oc-bgwrap--formelement:after, .oc-block.oc-bgwrap--formelement:before {
+  background: #D5D5D5;
 }
 
 .oc-block.oc-bgwrap--black {
