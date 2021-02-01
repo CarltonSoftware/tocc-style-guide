@@ -39,7 +39,7 @@
   margin-bottom: 0;
 }
 
-.oc-callout > .oc-callout {
+.oc-callout > .oc-callout:last-of-type {
   margin-bottom: 0;
 }
 

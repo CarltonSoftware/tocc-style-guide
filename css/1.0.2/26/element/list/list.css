@@ -1,6 +1,6 @@
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _list.scss
  * @brand    Good Life Lake District Cottages
  * @name     list
@@ -8,7 +8,7 @@
  */
 /**
  * TOCC Style Guide Element
- *
+ * 
  * @filename _list.scss
  * @brand    Vanilla
  * @name     list
@@ -71,134 +71,4 @@
   border-radius: 50%;
   color: white;
   font-weight: bold;
-}
-
-.oc-list--ticked > * {
-  padding-left: 1.6rem;
-}
-
-.oc-list--ticked > *:before {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
-  content: "\f058";
-  color: #42A74A;
-  position: absolute;
-  left: 0;
-  font-size: 20px;
-  padding-top: 1px;
-}
-
-.oc-list--ticked > *.oc-list--one:before {
-  color: #54284E;
-}
-
-.oc-list--ticked > *.oc-list--two:before {
-  color: #F5C400;
-}
-
-.oc-list--ticked > *.oc-list--three:before {
-  color: #A87EB1;
-}
-
-.oc-list--ticked > *.oc-list--four:before {
-  color: #64B1BC;
-}
-
-.oc-list--ticked > *.oc-list--five:before {
-  color: #3E3935;
-}
-
-.oc-list--ticked > *.oc-list--six:before {
-  color: #006068;
-}
-
-.oc-list--ticked > *.oc-list--seven:before {
-  color: #8D846A;
-}
-
-.oc-list--ticked > *.oc-list--eight:before {
-  color: #DBD9D6;
-}
-
-.oc-list--ticked > *.oc-list--grey:before {
-  color: #EEEEEE;
-}
-
-.oc-list--ticked > *.oc-list--lightgrey:before {
-  color: #F1F1F1;
-}
-
-.oc-list--ticked > *.oc-list--reallylightgrey:before {
-  color: #F8F8F8;
-}
-
-.oc-list--ticked > *.oc-list--almostwhite:before {
-  color: #FEFEFE;
-}
-
-.oc-list--ticked > *.oc-list--white:before {
-  color: #FFFFFF;
-}
-
-.oc-list--ticked > *.oc-list--black:before {
-  color: #000000;
-}
-
-.oc-list--ticked > *.oc-list--darkgrey:before {
-  color: #5B5B5B;
-}
-
-.oc-list--ticked > *.oc-list--success:before {
-  color: #008800;
-}
-
-.oc-list--ticked > *.oc-list--warning:before {
-  color: #ff9900;
-}
-
-.oc-list--ticked > *.oc-list--alert:before {
-  color: #990000;
-}
-
-.oc-list--ticked > *.oc-list--green:before {
-  color: #42A74A;
-}
-
-.oc-list--ticked > *.oc-list--bc1:before {
-  color: #555555;
-}
-
-.oc-list--ticked > *.oc-list--bc2:before {
-  color: #666666;
-}
-
-.oc-list--ticked > *.oc-list--bc3:before {
-  color: #777777;
-}
-
-.oc-list--ticked > *.oc-list--bc4:before {
-  color: #888888;
-}
-
-.oc-list--ticked > *.oc-list--bc5:before {
-  color: #999999;
-}
-
-.oc-list--ticked > *.oc-list--crossed:before {
-  content: "\f057";
-}
-
-.oc-list--ticked.oc-list--inline > * {
-  padding-left: 0;
-}
-
-.oc-list--ticked.oc-list--inline > *:before {
-  position: static;
 }

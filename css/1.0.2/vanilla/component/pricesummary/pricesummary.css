@@ -68,11 +68,7 @@
   text-align: right;
 }
 
-.oc-pricesummary thead,
-.oc-pricesummary tbody,
-.oc-pricesummary tfoot,
-.oc-pricesummary tr,
-.oc-pricesummary td {
+.oc-pricesummary thead, .oc-pricesummary tbody, .oc-pricesummary tfoot, .oc-pricesummary tr, .oc-pricesummary td {
   border: 0 none;
 }
 
