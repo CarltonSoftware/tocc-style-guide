@@ -1,0 +1,38 @@
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _button-floating.scss
+ * @brand    North Devon Holiday Cottages
+ * @name     button-floating
+ * @author   Tabs System User
+ */
+/**
+ * TOCC Style Guide Element
+ *
+ * @filename _button-floating.scss
+ * @brand    Vanilla
+ * @name     button-floating
+ * @author   Tabs System User
+ */
+.oc-button-floating {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #F8F8F8;
+  height: 83px;
+  width: 100%;
+  box-shadow: 1px 4px 10px #000;
+}
+
+.oc-button-floating .oc-button {
+  width: 95%;
+  margin-bottom: 0;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+}
