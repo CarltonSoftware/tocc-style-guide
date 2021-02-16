@@ -151,6 +151,25 @@ class Home extends React.Component {
             </div>
             <Sf />
 
+            <h5 className="oc-title">Visibility helpers</h5>
+            { ['small', 'medium', 'large', 'xlarge'].map((size, i) => {
+              return (
+                <React.Fragment key={ i }>
+                  <div className={ 'oc-callout oc-show--' + size }>
+                    <p>This will show for { size } screens and up</p>
+                  </div>
+                  <div className={ 'oc-callout oc-show--' + size + '-only' }>
+                    <p>This will show for { size } screens only</p>
+                  </div>
+                  <div className={ 'oc-callout oc-hide--' + size }>
+                    <p>This will hide for { size } screens and up</p>
+                  </div>
+                  <div className={ 'oc-callout oc-hide--' + size + '-only' }>
+                    <p>This will hide for { size } screens only</p>
+                  </div>
+                </React.Fragment>
+              );
+            }) }
           </div>
         </div>
       </section>
