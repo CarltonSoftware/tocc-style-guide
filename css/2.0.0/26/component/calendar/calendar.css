@@ -54,6 +54,10 @@
   border-right-color: #0A7066;
 }
 
+.oc-calendar [class$="__day--outside-month"] {
+  opacity: 0.7;
+}
+
 .oc-calendar [class$="__month"],
 .oc-calendar [class$="__header"],
 .oc-calendar [class$="__header "] {
