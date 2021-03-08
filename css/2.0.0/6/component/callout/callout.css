@@ -60,12 +60,6 @@
   margin-top: 2rem;
 }
 
-.oc-callout--collapse {
-  margin: 0;
-  padding: 0;
-  background: none;
-}
-
 .oc-callout--hollow {
   background: none;
   border: 1px solid #F8F8F8;
@@ -82,6 +76,24 @@
 
 .oc-callout--icon > .oc-callout__footer {
   margin-left: -1.5rem;
+}
+
+.oc-callout--collapse {
+  padding: 0;
+  background: none;
+}
+
+.oc-callout--collapse.oc-callout--collapse {
+  padding-left: 0;
+}
+
+.oc-callout--collapse.oc-callout--collapse > .oc-title > i {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.oc-callout--collapse.oc-callout--collapse > .oc-callout__footer {
+  margin-left: 0;
 }
 
 .oc-callout__footer {
@@ -207,4 +219,13 @@
   .oc-callout-group:not(.oc-callout-group--full):not(.oc-callout-group--nogutter) > .oc-callout--quarter {
     width: calc(25% - 0.75rem);
   }
+}
+
+.oc-callout-group--collapse {
+  margin-bottom: 1rem;
+}
+
+.oc-callout-group--collapse > .oc-callout {
+  padding: 0;
+  margin-bottom: 0;
 }
