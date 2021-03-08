@@ -22,7 +22,6 @@
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "object-path": "^0.11.4",
-    "plato-js-client": "git+https://github.com/carltonsoftware/plato-js-client.git",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
@@ -31,8 +30,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "tabsutils": "git+ssh://git@bitbucket.org/carltonsoftware/tabsutils.git"
+    "redux-thunk": "^2.3.0"
   },
   "eslintConfig": {
     "extends": "react-app"
