@@ -35,13 +35,7 @@ function CssHoc(CssComponent, CssProperty) {
 
 class Home extends React.Component {
   render() {
-    let selectedWebsite = null;
-    if (this.props.Tabs.selectedMarketingBrand
-      && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
-      && this.props.Tabs.MarketingBrand
-    ) {
-      selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
-    }
+    let selectedWebsite = this.props.Tabs.selectedMarketingBrand;
 
     const colors = ['bc1', 'bc2', 'bc3', 'bc5', 'bc6', 'oc1', 'oc2',
       'oc3', 'oc4', 'oc5', 'ocg1', 'ocg2', 'ocg3', 'ocg4', 'ocg5', 'grey', 'darkgrey', 'lightgrey', 'reallylightgrey', 'almostwhite'];

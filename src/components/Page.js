@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import NavBar from './NavBar';
 import { NavLink } from 'react-router-dom';
 import 'bulma';
-import * as EVENTS from '../events';
 const elements = require('toccstyles').elements;
 
 class Page extends React.Component {
@@ -16,7 +15,7 @@ class Page extends React.Component {
             <strong>{ e.charAt(0).toUpperCase() + e.slice(1) + 's' }</strong>
           </p>
           <ul className="oc-list">
-          { 
+          {
             elements[e].map((j, k) => {
               return (
                 <li key={ k }>
@@ -26,17 +25,16 @@ class Page extends React.Component {
             })
           }
           </ul>
-        </div>    
+        </div>
       );
     });
   }
-  
+
   render() {
     return (
       <BrowserRouter>
         <NavBar />
-        { this.props.Tabs.state === EVENTS.GET_CURRENTUSER_START && <div className="container" style={ { minHeight: '70vh', paddingTop: '2rem' } }><p>Please wait...</p></div> }
-        { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && <div style={ { minHeight: '70vh', paddingTop: '2rem' } }>{ this.props.children }</div> }
+        <div>{ this.props.children }</div>
         <footer className="footer" style={ { minHeight: '30vh' } }>
           <div className="container">
             <div className="columns">
@@ -45,7 +43,7 @@ class Page extends React.Component {
                   <strong>TOCC Style Guide</strong> by <a href="https://www.originalcottages.co.uk" target="_blank" rel="noopener noreferrer">IT/Marketing</a>.
                 </p>
               </div>
-              { this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && this.getElementLinks() }
+              { this.getElementLinks() }
             </div>
           </div>
         </footer>

@@ -9,7 +9,8 @@
     "start": "PORT=7777 react-scripts start",
     "build": "react-scripts build",
     "predeploy": "react-scripts build && cp CNAME build/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "postinstall": "npm link toccstyles"
   },
   "homepage": "https://styleguide.originalcottages.co.uk",
   "license": "MIT",
@@ -18,10 +19,10 @@
     "bulma": "^0.7.4",
     "details-polyfill": "^1.1.0",
     "dotenv": "^8.0.0",
-    "fs-extra": "^7.0.1",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "object-path": "^0.11.4",
+    "plato-js-client": "git+https://github.com/carltonsoftware/plato-js-client.git",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",

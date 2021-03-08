@@ -2,9 +2,8 @@ import React from 'react';
 import ToggleClassButton from './ToggleClassButton';
 import { NavLink } from 'react-router-dom';
 import connect from '../connect';
-import { client } from 'plato-js-client';
-import * as EVENTS from '../events';
 const elements = require('toccstyles').elements;
+const marketingbrands = require('toccstyles').marketingbrands;
 
 class NavBar extends React.Component {
   getElementLinks() {
@@ -28,19 +27,8 @@ class NavBar extends React.Component {
     });
   }
 
-  whoAmi() {
-    client.getInstance().whoAmi();
-  }
-
   render() {
-    let selectedWebsite = null;
-    if (this.props.Tabs.selectedMarketingBrand
-      && this.props.Tabs.selectedMarketingBrand.id !== 'vanilla'
-      && this.props.Tabs.MarketingBrand
-    ) {
-      selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(this.props.Tabs.selectedMarketingBrand.id);
-    }
-
+    let selectedWebsite = this.props.Tabs.selectedMarketingBrand;
     return (
       <nav className="navbar">
         <div className="container">
@@ -48,16 +36,6 @@ class NavBar extends React.Component {
             <a className="navbar-item" href="/">
               <img src={ process.env.PUBLIC_URL + '/img/logo.gif' } alt="The Original Cottage Company" />
             </a>
-
-            { this.props.Tabs.user && <div className="navbar-item">{ this.props.Tabs.user.getFullName() }</div> }
-            { this.props.Tabs.state === EVENTS.LOGOUT && <div className="navbar-item">You have been logged out</div> }
-
-            <div className="navbar-item">
-              <div className="buttons">
-                { !this.props.Tabs.user && this.props.Tabs.state !== EVENTS.GET_CURRENTUSER_START && <button className="button is-light" onClick={ this.whoAmi.bind(this) }>Login</button> }
-                { this.props.Tabs.user && <NavLink className="button is-light" to={ { pathname: '/logout' } }>Log out</NavLink> }
-              </div>
-            </div>
 
             <ToggleClassButton className="navbar-burger burger" target="mainnavsection">
               <span aria-hidden="true"></span>
@@ -67,7 +45,7 @@ class NavBar extends React.Component {
           </div>
 
           <div id="mainnavsection" className="navbar-menu">
-            { this.props.Tabs.state !== EVENTS.LOGOUT && <div className="navbar-start">
+            <div className="navbar-start">
               <NavLink className="navbar-item" to={ { pathname: '/' } }>
                 Home
               </NavLink>
@@ -80,31 +58,27 @@ class NavBar extends React.Component {
                   { this.props.Tabs.selectedMarketingBrand ? ' (' + this.props.Tabs.selectedMarketingBrand.id + ')' : null}
                 </a>
 
-                { this.props.Tabs.MarketingBrand && <div className="navbar-dropdown">
-                  <a href="#" onClick={ () => { this.props.selectMarketingBrand(this.props.Tabs.user, { id: "vanilla", name: "Vanilla" }); } } className="navbar-item">Vanilla</a>
+                <div className="navbar-dropdown">
+                  <a href="#" onClick={ () => { this.props.selectMarketingBrand({ id: "vanilla", name: "Vanilla" }); } } className="navbar-item">Vanilla</a>
                   {
-                    this.props.Tabs.MarketingBrand.filter((mb, j) => {
+                    marketingbrands.filter((mb, j) => {
                       return [9, 7, 2, 13, 16, 17, 20, 14].indexOf(mb.id) < 0;
                     }).map((mb, i) => {
                       const selectMb = () => {
-                        this.props.selectMarketingBrand(this.props.Tabs.user, mb);
+                        this.props.selectMarketingBrand(mb);
                       };
                       return (
                         <a key={i} href="#" onClick={ selectMb } className="navbar-item">{ mb.name } ({ mb.id })</a>
                       );
                     })
                   }
-                </div> }
+                </div>
               </div>
-
-              { selectedWebsite && (
-                <NavLink className="navbar-item" to={ { pathname: '/logos' } }>
-                  Logos
-                </NavLink>
-              )}
-
-              { selectedWebsite && selectedWebsite.website && <div className="navbar-item"><a href={ selectedWebsite.website } target="_blank" rel="noopener noreferrer">View website</a></div> }
-            </div> }
+              <NavLink className="navbar-item" to={ { pathname: '/logos' } }>
+                Logos
+              </NavLink>
+              <div className="navbar-item"><a href={ selectedWebsite.website } target="_blank" rel="noopener noreferrer">View website</a></div>
+            </div>
           </div>
         </div>
       </nav>

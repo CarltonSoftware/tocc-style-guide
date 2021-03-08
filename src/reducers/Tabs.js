@@ -1,13 +1,52 @@
 import * as EVENTS from '../events';
 const objectPath = require('object-path');
 
-const Tabs = (state = {}, action) => {
+const defaultState = {
+  selectedMarketingBrand: {
+    id: 8,
+    name: 'Original Cottages',
+    website: 'https://www.originalcottages.co.uk/',
+    code: 'OCMM'
+  },
+  state: EVENTS.SELECT_MARKETINGBRAND
+};
+
+const selectMarketingBrand = function(marketingBrand) {
+  // This is a bit of a hack - can't get toccstyles module import working properly
+  const r = Math.round(Math.random() * 1000000000, 2);
+  var css = {
+    toccfonts: EVENTS.CDN + '/fonts/' + marketingBrand.id + '.css?r=' + r,
+    toccstyles: EVENTS.CDN + '/' + marketingBrand.id + '/index.css?r=' + r
+  };
+
+  for (const i in css) {
+    if (document.getElementById(i)) {
+      document.getElementById(i).href = css[i];
+    } else {
+      var head = document.getElementsByTagName('HEAD')[0];
+
+      // Create new link Element
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.id = i;
+      link.type = 'text/css';
+      link.href = css[i];
+
+      // Append link element to HTML head
+      head.appendChild(link);
+    }
+  }
+}
+
+selectMarketingBrand(defaultState.selectedMarketingBrand);
+
+const Tabs = (state = defaultState, action) => {
   state['state'] = action.type;
-  
+
   if (action.status) {
     state['status'] = action.status;
   }
-  
+
   if (action.error) {
     state['error'] = action.error;
   }
@@ -21,7 +60,7 @@ const Tabs = (state = {}, action) => {
     default:
       break;
   }
-  
+
   var entity;
   switch (action.type) {
   case EVENTS.UPDATE_ENTITY_START:
@@ -33,7 +72,7 @@ const Tabs = (state = {}, action) => {
     }
     break;
   }
-  
+
   var collection;
   switch (action.type) {
   case EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_START:
@@ -46,12 +85,12 @@ const Tabs = (state = {}, action) => {
 
     action.entity.updating = (action.type === EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_START);
     action.entity.updated = (action.type === EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_SUCCESS);
-    
+
     if (collection.getEntityById(action.entityid)) {
       if (action.newentityid) {
         action.entity.id = action.newentityid;
       }
-      
+
       collection.updateElementById(action.entityid, action.entity);
     } else {
       collection.push(action.entity);
@@ -71,7 +110,7 @@ const Tabs = (state = {}, action) => {
   case EVENTS.GET_COLLECTION_ERROR:
     return { ...state };
   case EVENTS.UPDATE_ENTITY_START:
-    
+
     entity.updating = true;
     entity.updated = false;
     entity.error = undefined;
@@ -79,20 +118,20 @@ const Tabs = (state = {}, action) => {
 
     return { ...state, updating: true };
   case EVENTS.UPDATE_ENTITY_SUCCESS:
-    
+
     action.entity.updating = false;
     action.entity.updated = true;
     action.entity.error = undefined;
     objectPath.set(state, action.objectpath, action.entity);
-    
+
     return { ...state, updating: false };
   case EVENTS.UPDATE_ENTITY_ERROR:
-    
+
     action.entity.updating = false;
     action.entity.updated = false;
     action.entity.error = action.error;
     objectPath.set(state, action.objectpath, action.entity);
-    
+
     return { ...state, updating: false };
   case EVENTS.UPDATE_ITEM_IN_STATE_COLLECTION_START:
     return { ...state, collectionupdating: true };
@@ -107,32 +146,8 @@ const Tabs = (state = {}, action) => {
   case EVENTS.GET_CURRENTUSER_SUCCESS:
     return {...state, user: action.user };
   case EVENTS.SELECT_MARKETINGBRAND:
-    
-    // This is a bit of a hack - can't get toccstyles module import working properly
-    const r = Math.round(Math.random() * 1000000000, 2);
-    var css = {
-      toccfonts: EVENTS.CDN + '/fonts/' + action.marketingBrand.id + '.css?r=' + r,
-      toccstyles: EVENTS.CDN + '/' + action.marketingBrand.id + '/index.css?r=' + r
-    };
-    
-    for (const i in css) {
-      if (document.getElementById(i)) {
-        document.getElementById(i).href = css[i];
-      } else {
-        var head = document.getElementsByTagName('HEAD')[0];
+    selectMarketingBrand(action.marketingBrand);
 
-        // Create new link Element 
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.id = i;
-        link.type = 'text/css';
-        link.href = css[i];
-
-        // Append link element to HTML head 
-        head.appendChild(link);
-      }
-    }
-    
     return {...state, selectedMarketingBrand: action.marketingBrand };
   case EVENTS.GET_CURRENTUSER_ERROR:
   case EVENTS.LOGOUT:

@@ -11,11 +11,6 @@ import Page from './Page';
 import 'bulma';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    props.whoAmi();
-  }
-
   render() {
     return (
       <Page>
