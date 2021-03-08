@@ -25,42 +25,26 @@ class Logos extends React.Component {
   }
 
   render() {
-    let selectedWebsite = null;
-    let logos = null;
-    if (
-      this.props.Tabs.selectedMarketingBrand &&
-      this.props.Tabs.selectedMarketingBrand.id !== 'vanilla' &&
-      this.props.Tabs.MarketingBrand
-    ) {
-      selectedWebsite = this.props.Tabs.MarketingBrand.getEntityById(
-        this.props.Tabs.selectedMarketingBrand.id
-      );
-    }
-
-    if (selectedWebsite) {
-      let brandCode = selectedWebsite.code;
-      brandCode = brandCode.substring(0, 2).toLowerCase();
-
-      logos = this.getLogos();
-      logos = logos.map((logo) => (
-        <div key={logo.file} className="content">
-          <h4>{logo.file}</h4>
-          <p>
-            {logo.text}
-          </p>
-          <p>
-            <img
-              src={'//logos.originalcottages.co.uk/' + brandCode + '/' + logo.file}
-            />
-          </p>
-          <pre>
-            https://logos.originalcottages.co.uk/{brandCode}/{logo.file}
-            <br />
-            http://logos.originalcottages.co.uk/{brandCode}/{logo.file}
-          </pre>
-        </div>
-      ));
-    }
+    const selectedWebsite = this.props.Tabs.selectedMarketingBrand;
+    const brandCode = selectedWebsite.code.substring(0, 2).toLowerCase();
+    const logos = this.getLogos().map((logo) => (
+      <div key={logo.file} className="content">
+        <h4>{logo.file}</h4>
+        <p>
+          {logo.text}
+        </p>
+        <p>
+          <img
+            src={'//logos.originalcottages.co.uk/' + brandCode + '/' + logo.file}
+          />
+        </p>
+        <pre>
+          https://logos.originalcottages.co.uk/{brandCode}/{logo.file}
+          <br />
+          http://logos.originalcottages.co.uk/{brandCode}/{logo.file}
+        </pre>
+      </div>
+    ));
 
     return (
       <div className="container">
