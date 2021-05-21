@@ -33,23 +33,24 @@ function CssHoc(CssComponent, CssProperty) {
   }
 }
 
+
 class Home extends React.Component {
   render() {
     let selectedWebsite = this.props.Tabs.selectedMarketingBrand;
 
     const colors = [
-      'bc1', 'bc2', 'bc3', 'bc4', 'bc5',
-      'oc1', 'oc2', 'oc3', 'oc4', 'oc5',
-      'ocg1', 'ocg2', 'ocg3', 'ocg4', 'ocg5',
-      'sand1', 'sand2', 'sand3', 'sand4',
-      'land1', 'land2', 'land3', 'land4',
-      'sea1', 'sea2', 'sea3', 'sea4',
-      'woodland1', 'woodland2', 'woodland3', 'woodland4',
-      'dark1', 'light1', 'dark2', 'light2', 'dark3', 'light3', 'dark4', 'light4',
-      'dark5', 'light5', 'dark6', 'light6', 'dark7', 'light7', 'dark8', 'light8',
-      'dark9', 'light9', 'dark10', 'light10', 'dark11', 'light11', 'dark12', 'light12',
-      'darkgrey', 'lightgrey', 'cream',
-      'grey', 'reallylightgrey', 'almostwhite'
+      ['bc1', 'bc2', 'bc3', 'bc4', 'bc5'],
+      ['oc1', 'oc2', 'oc3', 'oc4', 'oc5'],
+      ['ocg1', 'ocg2', 'ocg3', 'ocg4', 'ocg5'],
+      ['sand1', 'sand2', 'sand3', 'sand4'],
+      ['land1', 'land2', 'land3', 'land4'],
+      ['sea1', 'sea2', 'sea3', 'sea4'],
+      ['woodland1', 'woodland2', 'woodland3', 'woodland4'],
+      ['dark1', 'light1', 'dark2', 'light2', 'dark3', 'light3', 'dark4', 'light4'],
+      ['dark5', 'light5', 'dark6', 'light6', 'dark7', 'light7', 'dark8', 'light8'],
+      ['dark9', 'light9', 'dark10', 'light10', 'dark11', 'light11', 'dark12', 'light12'],
+      ['darkgrey', 'lightgrey', 'cream'],
+      ['grey', 'reallylightgrey', 'almostwhite']
     ];
 
     const Tf = CssHoc(
@@ -104,53 +105,63 @@ class Home extends React.Component {
               <h5>Colours</h5>
               <ul className="oc-list--inline oc-clear__margin--small">
                 {
-                  colors.map((c, i) => {
-                    const Col = CssHoc(
-                      (props) => {
-                        return (
-                          <span ref={ props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label bg--" + props.color }>
-                            { props.color }: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
-                          </span>
-                        );
-                      },
-                      'backgroundColor'
-                    );
-                    return (
-                      <li key={ i }>
-                        <Col color={ c } />
-                      </li>
-                    );
+                  colors.map((row) => {
+
+                    return row.map((c, i) => {
+                      const Col = CssHoc(
+                        (props) => {
+                          return (
+                            <span ref={ props.cssRef } style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC' } } className={ "oc-label bg--" + props.color }>
+                              { props.color }: { props.cssLoading && '...' }{ !props.cssLoading && props.cssValue }
+                            </span>
+                          );
+                        },
+                        'backgroundColor'
+                      );
+                      return (
+                        <li key={ i }>
+                          <Col color={ c } />
+                        </li>
+                      );
+                    })
                   })
                 }
               </ul>
               <h5>Border colours</h5>
               <ul className="oc-list--inline oc-clear__margin--small">
                 {
-                  colors.map((c, i) => {
-                    return (
-                      <li key={ i }>
-                        <span className={ "oc-label c--one bg--almostwhite bd--" + c }>
-                          .bd--{ c }
-                        </span>
-                      </li>
-                    );
+                  colors.map((row) => {
+                    return row.map((c, i) => {
+                      return (
+                        <li key={ i }>
+                          <span className={ "oc-label c--one bg--almostwhite bd--" + c }>
+                            .bd--{ c }
+                          </span>
+                        </li>
+                      );
+                    })
                   })
                 }
               </ul>
               <h5>Background colours</h5>
               <ul className="oc-list--inline oc-clear__margin--small">
                 {
-                  colors.map((c, i) => {
-                    return (
-                      <li key={ i }>
-                        <span style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC', color: 'white' } } className={ "oc-label bg--" + c }>
-                          .bg--{ c }
-                        </span>
-                      </li>
-                    );
+                  colors.map((row) => {
+                    return row.map((c, i) => {
+                      return (
+                        <li key={ i }>
+                          <span style={ { border: '1px solid #CCC', textShadow: '1px 1px 0px #CCC', color: 'white' } } className={ "oc-label bg--" + c }>
+                            .bg--{ c }
+                          </span>
+                        </li>
+                      );
+                    })
                   })
                 }
               </ul>
+              <h5>Color Spectrum Palette</h5>
+              <p>Copy and paste into the options -</p>
+
               <h5>Fonts</h5>
               <Tf />
               <Bf />
